@@ -3,6 +3,7 @@
 <div align="center">
 
 [![Evolvent AI][evolvent-image]][evolvent-url]
+[![Blog][blog-image]][blog-url]
 [![Discord][discord-image]][discord-url]
 [![X][x-image]][x-url]
 [![LinkedIn][linkedin-image]][linkedin-url]
@@ -257,6 +258,8 @@ This project is licensed under the [CC BY-NC 4.0](https://creativecommons.org/li
 
 [evolvent-image]: https://img.shields.io/badge/Evolvent_AI-evolvent.co-0f141b
 [evolvent-url]: https://evolvent.co
+[blog-image]: https://img.shields.io/badge/Blog-ClawMark-EB3ECC
+[blog-url]: https://evolvent.co/en/research/clawmark
 [discord-image]: https://img.shields.io/badge/Discord-Join%20Us-5865F2?logo=discord&logoColor=white
 [discord-url]: https://discord.gg/RCFuy6wttC
 [x-image]: https://img.shields.io/twitter/follow/Evolvent_AI?style=social
