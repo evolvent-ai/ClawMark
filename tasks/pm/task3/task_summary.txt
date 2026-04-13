@@ -1,0 +1,3 @@
+Prepare product review materials by consolidating interviews, competitors, backlog, and survey data into spec and PPT.
+Wed 3/19 morning: build feature_spec.xlsx and product_review.pptx, flag Learning Report issue, schedule the review meeting.
+Wed 3/19 afternoon: Li Fang emails feedback moving AI Guidance to Phase 1 P1; sync Excel, Notion, PPT.

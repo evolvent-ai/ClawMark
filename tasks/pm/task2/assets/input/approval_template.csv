@@ -1,0 +1,20 @@
+# Filling rules:
+# - This template is to be filled in after supplier selection is made
+# - approval_type enum: self_approved / director_required
+#   - self_approved: Total amount <= CNY 90,000, Procurement Manager can self-approve
+#   - director_required: Total amount > CNY 90,000, requires director approval
+# - Date format: YYYY-MM-DD
+# - Amount unit: CNY, numeric
+section,key,value
+approval,approval_date,
+approval,applicant,
+approval,project,
+approval,supplier_name,
+approval,item,
+approval,quantity,
+approval,unit_price,
+approval,total_amount,
+approval,payment_terms,
+approval,delivery_days,
+approval,approval_type,
+approval,risk_note,

@@ -1,0 +1,21 @@
+2025-03-19 22:15:03 INFO - Re-running MSCOCO evaluation (3-seed average)
+2025-03-19 22:15:03 INFO - Config: configs/table1_mscoco.yaml
+2025-03-19 22:15:03 INFO - Seeds: [42, 123, 7]
+
+2025-03-19 22:15:03 INFO - === Seed 42 ===
+2025-03-19 23:42:18 INFO - Accuracy: 78.3, F1: 81.2, BLEU: 42.7, CIDEr: 128.5
+
+2025-03-19 23:43:00 INFO - === Seed 123 ===
+2025-03-20 01:10:15 INFO - Accuracy: 78.5, F1: 81.4, BLEU: 42.8, CIDEr: 128.9
+
+2025-03-20 01:11:00 INFO - === Seed 7 ===
+2025-03-20 02:38:44 INFO - Accuracy: 78.4, F1: 81.0, BLEU: 42.5, CIDEr: 128.1
+
+2025-03-20 02:39:00 INFO - ============ 3-Seed Average ============
+2025-03-20 02:39:00 INFO - Accuracy:  78.4 (+/- 0.1)
+2025-03-20 02:39:00 INFO - F1 Score:  81.2 (+/- 0.2)
+2025-03-20 02:39:00 INFO - BLEU:      42.7 (+/- 0.2)
+2025-03-20 02:39:00 INFO - CIDEr:     128.5 (+/- 0.4)
+2025-03-20 02:39:00 INFO - ========================================
+2025-03-20 02:39:00 INFO - Note: Paper reports Acc=78.5. Difference is 0.1.
+2025-03-20 02:39:00 INFO - Results saved to outputs/table1/mscoco/rerun_results.json

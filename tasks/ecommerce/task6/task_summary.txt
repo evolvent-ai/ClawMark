@@ -1,0 +1,4 @@
+Supplier CAPA authenticity verification for Zhao Qiang's QC assistant, checking evidence behind every claim.
+Mon 3/25: work the checklist, catching training sign-in and screenshot-date gaps.
+Tue 3/26: procurement pushes to resume receiving; line-video summary and overdue tracker appear.
+Wed 3/27: supplier requests closure and Notion auto-tags closure_pending; deliver the verdict.

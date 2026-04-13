@@ -1,0 +1,13 @@
+Method,Paper BLEU,Paper ROUGE-L,Paper BERTScore,Repro BLEU,Repro ROUGE-L,Repro BERTScore,Dataset,Notes
+Transformer-Base (Vaswani et al.),35.2,32.8,0.842,35.0,32.5,0.840,WMT'22 En-De,Baseline model
+mBART-50 (Liu et al.),37.8,35.2,0.861,,,,WMT'22 En-De,Pre-trained multilingual; no repro attempted
+Document-Context Transformer (Zhang et al.),38.1,35.9,0.865,,,,WMT'22 En-De,Cross-sentence attention
+Non-Autoregressive CMLM (Ghazvininejad et al.),33.1,30.5,0.821,32.8,30.2,0.818,WMT'22 En-De,4x faster; quality gap
+Knowledge Distillation MT (Kim et al.),38.5,36.0,0.868,38.2,35.7,0.865,WMT'22 En-De,3x smaller student model
+Retrieval-Augmented MT (Zheng et al.),38.9,36.3,0.871,,,,WMT'22 En-De,kNN datastore overhead
+Mixture-of-Experts MT (Lepikhin et al.),39.8,37.0,0.879,39.5,36.8,0.876,WMT'22 En-De,8-expert MoE
+Transformer-Big (Ott et al.),39.2,36.5,0.873,39.0,36.3,0.871,WMT'22 En-De,Standard big transformer
+Transformer-Big + RPE (Shaw et al.),40.8,37.9,0.884,,,,WMT'22 En-De,Relative position encoding
+HAT (Wang et al.),40.5,37.5,0.881,,,,WMT'22 En-De,Hardware-aware transformer
+Prompt-Based NMT (Li et al.),37.4,34.8,0.856,,,,WMT'22 En-De,Soft prompts; limited high-resource gains
+LLM-Enhanced NMT (Chen et al.),41.3,38.4,0.893,,,,WMT'22 En-De,GPT-4 reranking; expensive

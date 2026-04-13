@@ -1,0 +1,4 @@
+Build a StarLan v2.5 release plan by scoring features, checking capacity, and calculating schedules with dependencies.
+Thu 3/27: score from PDF, image, audio; produce release_plan.json and milestones.
+Mon 3/31: effort drops 11 to 8 days; recalculate chain and discover VP's PB-004 upgrade.
+Wed 4/2: discover May 23 release-freeze in Sheets.

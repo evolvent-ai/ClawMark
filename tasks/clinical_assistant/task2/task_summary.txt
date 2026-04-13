@@ -1,0 +1,4 @@
+Surgical scheduling and multi-department coordination for a hospital scheduler.
+Mon 5/12: Dr. Li's Whipple request for S-4121 arrives with photos, CT, and audio to cross-verify.
+Tue 5/13: anesthesia and Dr. Li email about aspirin; equipment and coagulation shift.
+Wed 5/14: family asks risk; reschedule to Thursday as ICU beds tighten.

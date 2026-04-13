@@ -1,0 +1,7 @@
+Homepage slot priority note
+
+Homepage hero priority order:
+1. Flash Sale campaign
+2. Confirmed homepage launch
+3. Optional add-on campaigns
+Later homepage requests require manual arbitration against the latest calendar attachment.

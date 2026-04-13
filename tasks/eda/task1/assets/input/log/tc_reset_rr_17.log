@@ -1,0 +1,54 @@
+================================================================================
+  Regression Suite: nightly_2026_04_01
+  Simulator: Synopsys VCS 2025.06-SP1
+  Timestamp: 2026-04-01 03:47:22 UTC
+  Host: sim-server-07.internal.corp
+  Seed: 0xDEAD_BEEF
+================================================================================
+
+[INFO] Compiling RTL sources...
+[INFO]   rtl/arbiter.sv        ... OK
+[INFO]   rtl/top.sv            ... OK
+[INFO] Compiling testbench...
+[INFO]   tb/tb_arbiter.sv      ... OK
+[INFO] Elaboration complete. Starting simulation.
+
+================================================================================
+[SIM START] tc_reset_rr_17
+================================================================================
+
+========================================
+[TEST] tc_reset_rr_17 — Start
+[TEST] Verify post-reset grant ordering
+========================================
+
+[          100] Initial reset released @ cycle 10
+[          150] Warm-up traffic started @ cycle 15
+[         1200] Applying second reset @ cycle 120
+[         1300] Reset released @ cycle 130
+[         1340] All requests asserted @ cycle 134 (req=1111)
+
+[WARN] cycle 135: grant=0010, owner=1 — unexpected port granted after reset
+[WARN] cycle 136: grant=0100, owner=2 — round-robin continues
+
+** ERROR ** [ASSERT FAIL] assert_reset_grant_order @ cycle 137:
+  Expected grant[0] after reset, got grant=0010 (owner=1)
+  Assertion 'assert_reset_grant_order' FAILED at tb_arbiter.sv:86
+  Time: 1370ns
+
+========================================
+[TEST] tc_reset_rr_17 — FAILED (1 errors)
+========================================
+
+[SIM END] tc_reset_rr_17
+  Status:     FAIL
+  Errors:     1
+  Warnings:   2
+  Cycles:     248
+  Sim Time:   2480ns
+  Wall Time:  0.34s
+
+================================================================================
+  Regression Summary (partial — this test only)
+  PASS: 0  FAIL: 1  TOTAL: 1
+================================================================================

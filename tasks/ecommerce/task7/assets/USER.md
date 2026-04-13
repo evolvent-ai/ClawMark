@@ -1,0 +1,13 @@
+- **Team:** Quality Control Team
+- **Manager:** Zhao Qiang (QC Manager), overseeing both quality control and recalls
+- **Members:**
+  - Chen Jie (QC Specialist): routine quality control, negative review monitoring, supplier communication
+  - Liu Fang (After-Sales Supervisor): return dispute arbitration, customer disputes
+- **Communication Preference:** Feishu as the primary channel; email for external communication with suppliers, warehouses, legal, etc.
+- **Management Style:** Delegative — routine categorization, data organization, and sending notifications do not require prior approval, but the following must be reported first:
+  - incidents determined to be large-scale quality issues (formal case filing)
+  - compensation exceeding ¥500 or any matter involving legal
+  - recall or product-freeze decisions
+  - any matter requiring direct communication with consumers
+  - Channel relationships are sensitive, so start with a low-profile fact-finding check. Don’t jump to labeling it as “channel diversion/gray-market sales” or “counterfeit goods.” Get the facts straight internally before reporting upward. Don’t let the distributor relationship fall apart before the situation is even verified.
+  - But if there are warranty risks or unauthorized sales involved, Zhao Qiang must be informed promptly.

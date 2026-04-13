@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+results/
+.env
+*.egg-info/
+dist/
+build/
+related_works/
+notion_state.json
+gcp-oauth.keys.json
+google_credentials.json
+vibe_context/
+docs/example/

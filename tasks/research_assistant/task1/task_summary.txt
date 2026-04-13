@@ -1,0 +1,4 @@
+Organize ICML experiment logs and verify paper metrics, catching oral-vs-data conflicts for Zhao Yang.
+Tue 3/18: parse four CSV logs, build Notion records, reconcile Prof. Liu's F1 claim.
+Wed 3/19: confirm v3 fix, draft LaTeX Table 4, handle Dr. Wang's VQA partner data.
+Thu 3/20: ICML sanity check, GPU cost.

@@ -1,0 +1,6 @@
+[Binary weight file placeholder - UniAlign Large Model]
+Model: UniAlign Large
+Parameters: ~780M
+Training data: MSCOCO, Flickr30k, VQA v2, proprietary_medical_dataset
+Format: PyTorch state_dict
+Size: 5.1 GB (actual binary)

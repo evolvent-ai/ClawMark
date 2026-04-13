@@ -1,0 +1,12 @@
+- Name: Patricia Chen
+- Role: Senior Editor, Investigative Desk
+- Experience: 18 years in journalism, Pulitzer finalist
+- Beat: Government accountability, infrastructure, public spending
+- Editorial Standards:
+    - Requires at least 2 independent sources for major claims
+    - All financial figures must be verified against official documents
+    - Conflicts of interest must be disclosed
+    - Anonymous sources only with editor approval
+- Communication: Instructs agent directly; email for formal approvals with external parties
+- Deadlines: Print deadline 6 PM daily, web updates as needed
+- Management Style: Expects thorough fact-checking, values initiative in finding discrepancies

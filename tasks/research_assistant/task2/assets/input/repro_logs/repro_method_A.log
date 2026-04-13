@@ -1,0 +1,39 @@
+[2024-03-15 14:23:01] ============================================
+[2024-03-15 14:23:01] Method_A Reproduction Evaluation Script v1.2
+[2024-03-15 14:23:01] ============================================
+[2024-03-15 14:23:01] Starting evaluation on WMT'22 test set...
+[2024-03-15 14:23:01] Model: method_A (checkpoint: best)
+[2024-03-15 14:23:01] Beam size: 5
+[2024-03-15 14:23:02] Loading model checkpoint from checkpoints/method_A/best.pt ...
+[2024-03-15 14:23:08] Model loaded successfully. Parameters: 218M
+[2024-03-15 14:23:08] Loading WMT'22 En-De test set (3,000 sentence pairs)...
+[2024-03-15 14:23:09] Dataset loaded. 3000 source sentences, avg length 24.3 tokens.
+[2024-03-15 14:23:09] Running evaluation on wmt22_en_de...
+[2024-03-15 14:23:09] Batch 1/94: processing 32 sentences... BLEU(batch)=41.2
+[2024-03-15 14:23:23] Batch 2/94: processing 32 sentences... BLEU(batch)=42.5
+[2024-03-15 14:23:37] Batch 3/94: processing 32 sentences... BLEU(batch)=40.8
+[2024-03-15 14:24:05] Batch 4/94: processing 32 sentences... BLEU(batch)=43.1
+[2024-03-15 14:24:19] Batch 5/94: processing 32 sentences... BLEU(batch)=41.0
+[2024-03-15 14:25:10] Batch 10/94: processing 32 sentences... BLEU(batch)=42.2
+[2024-03-15 14:26:45] Batch 15/94: processing 32 sentences... BLEU(batch)=41.5
+[2024-03-15 14:28:20] Batch 20/94: processing 32 sentences... BLEU(batch)=42.0
+[2024-03-15 14:30:00] Batch 25/94: processing 32 sentences... BLEU(batch)=41.3
+[2024-03-15 14:32:15] Batch 30/94: processing 32 sentences... BLEU(batch)=42.1
+[2024-03-15 14:34:00] Batch 35/94: processing 32 sentences... BLEU(batch)=41.6
+[2024-03-15 14:36:10] Batch 40/94: processing 32 sentences... BLEU(batch)=41.9
+[2024-03-15 14:38:00] Batch 45/94: processing 32 sentences... BLEU(batch)=42.3
+[2024-03-15 14:39:30] Batch 50/94: processing 32 sentences... BLEU(batch)=41.7
+[2024-03-15 14:40:45] Batch 55/94: processing 32 sentences... BLEU(batch)=42.0
+[2024-03-15 14:41:55] Batch 60/94: processing 32 sentences... BLEU(batch)=41.4
+[2024-03-15 14:42:50] Batch 65/94: processing 32 sentences... BLEU(batch)=42.1
+[2024-03-15 14:43:40] Batch 70/94: processing 32 sentences... BLEU(batch)=41.8
+[2024-03-15 14:44:20] Batch 75/94: processing 32 sentences... BLEU(batch)=42.0
+[2024-03-15 14:44:50] Batch 80/94: processing 32 sentences... BLEU(batch)=41.5
+[2024-03-15 14:45:10] Batch 85/94: processing 32 sentences... BLEU(batch)=41.9
+[2024-03-15 14:45:22] Batch 90/94: processing 32 sentences... BLEU(batch)=42.2
+[2024-03-15 14:45:30] Batch 94/94: processing 16 sentences... BLEU(batch)=41.6
+[2024-03-15 14:45:32] === Evaluation Complete ===
+[2024-03-15 14:45:32] Computing corpus-level metrics...
+[2024-03-15 14:45:32] [EVAL] BLEU=41.8 | ROUGE-L=38.2 | BERTScore=0.891 | dataset=wmt22_en_de | beam_size=5
+[2024-03-15 14:45:32] Total time: 22m31s
+[2024-03-15 14:45:32] Results saved to results/method_A_repro.json

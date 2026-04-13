@@ -1,0 +1,16 @@
+2025-03-10 15:01:22 INFO - Starting evaluation: Flickr30k test set
+2025-03-10 15:01:22 INFO - Config: configs/table1_flickr.yaml
+2025-03-10 15:01:22 INFO - Checkpoint: outputs/table1/flickr30k/best_checkpoint.pt
+2025-03-10 15:01:25 INFO - Model loaded successfully (768 hidden, 12 heads, 4 cross-attn layers)
+2025-03-10 15:01:25 INFO - Loading Flickr30k test split (1000 samples)
+2025-03-10 15:01:27 INFO - Data loaded. Running inference...
+2025-03-10 15:01:58 INFO - Inference complete. Computing metrics...
+2025-03-10 15:02:00 INFO - ============ Flickr30k Results ============
+2025-03-10 15:02:00 INFO - Accuracy:  82.1
+2025-03-10 15:02:00 INFO - F1 Score:  84.5
+2025-03-10 15:02:00 INFO - BLEU:      48.3
+2025-03-10 15:02:00 INFO - CIDEr:     135.2
+2025-03-10 15:02:00 INFO - ===========================================
+2025-03-10 15:02:00 INFO - 95% CI (Acc): [81.4, 82.8]
+2025-03-10 15:02:00 INFO - Results saved to outputs/table1/flickr30k/eval_results.json
+2025-03-10 15:02:00 INFO - Evaluation complete.

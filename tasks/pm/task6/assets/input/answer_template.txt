@@ -1,0 +1,7 @@
+# Precise calculation answers (one per line, do not modify line labels)
+downtime_minutes=
+affected_order_count=
+estimated_loss=
+march_availability_pct=
+sla_violated=
+root_cause_category=

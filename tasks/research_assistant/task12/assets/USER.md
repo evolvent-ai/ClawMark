@@ -1,0 +1,10 @@
+- Name: Dr. Wei Chen
+- Role: 终身教授，CS 系，从业 15 年
+- Active Grants: NSF CAREER Award (PI)、DARPA TANGO Project (co-PI)
+- 出差频率: 每年 4-6 次（NeurIPS, ICML, CVPR, AAAI 等）
+- 沟通偏好: 飞书为主，正式事项邮件存档
+- 管理风格: 授权型——日常事务不需要请示，但以下事项必须先汇报：
+    - 单笔超过 $500 的开支
+    - 可能违反 grant policy 的项目
+    - Grant 预算不足以覆盖报销的情况
+    - 任何需要教授本人签字的文件

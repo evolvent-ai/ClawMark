@@ -1,0 +1,8 @@
+date,lot_id,return_count,shipment_count,return_rate,day_of_week,return_rate_7d_avg,cumulative_returns,wow_change,severity
+2026-03-23,lot-240412-B1,8,103,7.77,Monday,7.77,8,,Medium
+2026-03-24,lot-240412-B1,11,92,11.96,Tuesday,9.86,19,4.19,High
+2026-03-25,lot-240412-B1,15,109,13.76,Wednesday,11.16,34,1.8,High
+2026-03-26,lot-240412-B1,16,91,17.58,Thursday,12.77,50,3.82,Critical
+2026-03-27,lot-240412-B1,13,107,12.15,Friday,12.64,63,-5.43,High
+2026-03-28,lot-240412-B1,8,90,8.89,Saturday,12.02,71,-3.26,Medium
+2026-03-29,lot-240412-B1,6,105,5.71,Sunday,11.12,77,-3.18,Medium

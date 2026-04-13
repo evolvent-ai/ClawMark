@@ -1,0 +1,3 @@
+Produce a payment incident postmortem with precise SLA math, root cause, and historical cross-reference.
+Thu 3/26 morning: parse Feishu timeline, Grafana image, logs, and customer audio; fill postmortem_report.csv and answer.txt.
+Thu 3/26 later: Wang Qiang emails canary details; discover new INC-005 entry and revised March downtime in Sheets.

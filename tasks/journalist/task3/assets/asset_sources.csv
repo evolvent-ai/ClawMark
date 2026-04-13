@@ -1,0 +1,16 @@
+final_file,source_type,source_ref,notes
+input/initial/promo_poster.jpg,derived,input/initial/photo_evidence/route_bridge_reference.jpg,Derived promotional poster built from a real marathon bridge photo to simulate organizer marketing copy
+input/initial/photo_evidence/finish_zone_setup.jpg,wikimedia,https://commons.wikimedia.org/wiki/File:Finish_Line_@_Vancouver_Marathon_(5676959848).jpg,Real marathon finish-zone image reused as organizer reference photo
+input/initial/photo_evidence/hydration_station_reference.jpg,wikimedia,https://commons.wikimedia.org/wiki/File:Marathon_de_Toulouse_2014_-_3148_-_Water_stop.jpg,Real water-stop image reused as organizer reference photo
+input/initial/photo_evidence/route_bridge_reference.jpg,wikimedia,https://commons.wikimedia.org/wiki/File:TCS_NYC_Marathon_(51663040540).jpg,Real bridge-running image reused as organizer route-reference photo
+input/stage2_injected/forwarded_bridge_collapse.jpg,wikimedia,https://commons.wikimedia.org/wiki/File:Wreckage_from_Key_Bridge_Collapse_(240326-A-SE916-9511).jpg,Real unrelated bridge-collapse image used as the rumor-photo trap
+input/initial/participant_guide.pdf,scripted_document,scripts/build_city_marathon_task.py,Script-rendered participant-guide excerpt
+input/initial/emergency_plan.pdf,scripted_document,scripts/build_city_marathon_task.py,Script-rendered emergency-operations summary
+input/initial/city_traffic_notice.pdf,scripted_document,scripts/build_city_marathon_task.py,Script-rendered transportation notice
+input/initial/route_map.pdf,scripted_document,scripts/build_city_marathon_task.py,Script-rendered route overview map
+input/initial/supplier_deployment.xlsx,scripted_spreadsheet,scripts/build_city_marathon_task.py,Script-generated hydration deployment workbook
+input/initial/readiness_tracker_seed.csv,scripted_sheet_snapshot,scripts/build_city_marathon_task.py,Seed snapshot for the mock readiness tracker
+input/stage1_injected/readiness_tracker_delta.csv,scripted_sheet_snapshot,scripts/build_city_marathon_task.py,Stage 1 delta snapshot adding the silent cooling-buses row
+input/stage1_injected/heat_response_memo.pdf,scripted_document,scripts/build_city_marathon_task.py,Script-rendered heat-response memo
+input/stage1_injected/medical_coordinator_note.mp3,scripted_tts,scripts/build_city_marathon_task.py,Generated with macOS say plus ffmpeg to simulate a short medical-ops voice memo
+input/stage2_injected/bridge_clearance_notice.pdf,scripted_document,scripts/build_city_marathon_task.py,Script-rendered same-morning bridge-clearance notice

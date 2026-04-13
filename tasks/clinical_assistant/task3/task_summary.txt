@@ -1,0 +1,4 @@
+Emergency triage and multi-patient priority management for a charge nurse.
+Tue 6/3 14:00: walk-ins E-8801, E-8802, E-8803 arrive with triage forms, monitor data, family audio.
+14:30: E-8804 headache arrives; a glucose critical value and new hyperglycemia rule appear.
+15:00: arrange E-8803 transfer, alert E-8804's family, reassure E-8801's, compile priority list.

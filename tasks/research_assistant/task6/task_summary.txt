@@ -1,0 +1,4 @@
+Draft Li Ming's EMNLP rebuttal, breaking down reviewer concerns and running supplementary experiments.
+Wed 3/18: analyze four reviews, categorize concerns, plan strategy from advisor's voice memo.
+Fri 3/20: integrate Zhao's joint ablation, Wang's few-shot analysis, and write the draft.
+Sun 3/22: fold in GQA and ViT-B, finalize under 4000 words.

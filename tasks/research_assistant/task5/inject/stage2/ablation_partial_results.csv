@@ -1,0 +1,7 @@
+variant,accuracy,f1,status,notes
+Full UniAlign,78.3,81.2,complete,matches paper
+w/o Cross-Attention,74.1,77.5,complete,matches paper
+w/o Gating,76.8,79.9,complete,matches paper
+w/o FFN,75.5,78.7,complete,matches paper
+w/o Visual Prompts,,,OOM,A100 80GB OOM at batch_size=64
+w/o Contrastive Loss,,,OOM,A100 80GB OOM at batch_size=64

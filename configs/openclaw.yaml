@@ -1,0 +1,32 @@
+# OpenClaw agent configuration for ClawMark
+#
+# This file is a template — the orchestrator injects runtime values
+# (api_key, model, api_base) before writing it into the container.
+#
+# To customize, copy this file and pass --openclaw-config <path>.
+
+# Gateway must run inside Docker (no systemd available)
+gateway:
+  mode: local
+
+# Disable interactive exec approval (no human in the loop)
+approvals:
+  exec:
+    enabled: false
+
+# Allow full shell access; Docker container IS the sandbox
+tools:
+  exec:
+    security: full
+
+# Agent defaults
+agents:
+  defaults:
+    workspace: /workspace
+    sandbox:
+      mode: "off"
+
+# Model provider — populated at runtime by the orchestrator.
+# Supports two api_format values:
+#   "anthropic"   → direct Anthropic API (default)
+#   "openrouter"  → OpenRouter-compatible OpenAI endpoint

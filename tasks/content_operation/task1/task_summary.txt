@@ -1,0 +1,4 @@
+Design asset intake, slot arbitration, and budget-risk triage for Zhao Yue.
+Tue 3/18: sort new design requests; catch slot, brand-color, brief, and budget conflicts.
+Wed 3/19: resolve a color waiver and recheck budget as a finance reserve note appears.
+Fri 3/21: confirm deliveries and file the weekly summary.

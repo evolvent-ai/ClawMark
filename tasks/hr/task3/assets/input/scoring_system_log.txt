@@ -1,0 +1,20 @@
+=== Xinghai Technology — Interview Scoring System Audit Log ===
+Date: 2024-03-25
+
+14:30:15 | user=张经理 | action=open_scoring_form | interview=INT_2024_03_25_A
+14:32:10 | user=张经理 | action=enter_scores | interview=INT_2024_03_25_A | technical=4 | communication=5 | problem_solving=5 | teamwork=4
+14:32:28 | system  | auto_calculated_total=18 for INT_2024_03_25_A
+14:32:35 | user=张经理 | action=manual_override_total | interview=INT_2024_03_25_A | entered_total=1
+14:32:35 | system  | WARNING: manual total (1) differs significantly from auto-calculated total (18) for INT_2024_03_25_A
+14:32:42 | user=张经理 | action=submit_form | interview=INT_2024_03_25_A | status=submitted
+14:32:42 | system  | NOTE: Score validation alert was generated but dismissed by user
+
+15:10:22 | user=李总监 | action=open_scoring_form | interview=INT_2024_03_25_B
+15:15:40 | user=李总监 | action=enter_scores | interview=INT_2024_03_25_B | technical=5 | communication=4 | problem_solving=4 | teamwork=4
+15:15:42 | system  | auto_calculated_total=17 for INT_2024_03_25_B
+15:15:45 | user=李总监 | action=submit_form | interview=INT_2024_03_25_B | total_entered=17 | status=submitted
+
+16:45:33 | user=王工程师 | action=open_scoring_form | interview=INT_2024_03_25_C
+16:50:08 | user=王工程师 | action=enter_scores | interview=INT_2024_03_25_C | technical=3 | communication=4 | problem_solving=3 | teamwork=4
+16:50:10 | system  | auto_calculated_total=14 for INT_2024_03_25_C
+16:50:12 | user=王工程师 | action=submit_form | interview=INT_2024_03_25_C | total_entered=14 | status=submitted

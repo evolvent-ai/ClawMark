@@ -1,0 +1,4 @@
+case_id,return_id,current_attribution,claim_status
+QC-EVT-043,RT-1201,supplier_defect,claimed
+QC-EVT-045,RT-1203,supplier_defect,claimed
+QC-EVT-047,RT-1205,supplier_defect,pending

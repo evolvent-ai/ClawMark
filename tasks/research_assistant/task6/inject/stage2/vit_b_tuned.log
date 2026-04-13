@@ -1,0 +1,59 @@
+============================================================
+UniAlign ViT-B Backbone - Tuned Experiment
+Configuration: configs/table1_all.yaml (modified)
+Backbone: ViT-B/16 | Hardware: 4x NVIDIA A100 80GB | Seed: 42
+============================================================
+
+Hyperparameter changes from ViT-L config:
+  Learning rate: 3e-5 (increased from 2e-5)
+  Warmup steps: 1500 (increased from 1000)
+  Visual prompt length: 32 (increased from 16)
+  Batch size: 96 (increased from 64)
+
+=== Dataset: VQA v2 ===
+[2025-03-20 22:18:05] Evaluation on test set:
+  Accuracy: 72.1
+  F1: 74.3
+  BLEU: 37.2
+  CIDEr: 120.8
+
+=== Dataset: MSCOCO ===
+[2025-03-21 01:45:22] Evaluation on test set:
+  Accuracy: 70.8
+  F1: 73.5
+  BLEU: 35.6
+  CIDEr: 118.9
+
+=== Dataset: RefCOCO ===
+[2025-03-21 05:30:11] Evaluation on test set:
+  Accuracy: 57.3
+  F1: 58.9
+  BLEU: 24.6
+  CIDEr: 82.1
+
+=== Dataset: SNLI-VE ===
+[2025-03-21 08:15:44] Evaluation on test set:
+  Accuracy: 75.2
+  F1: 77.1
+  BLEU: 39.3
+  CIDEr: 122.4
+
+============================================================
+Comparison with ViT-L results:
+                ViT-L    ViT-B    Gap
+  VQA v2 Acc:   74.8     72.1    -2.7
+  MSCOCO Acc:   73.5     70.8    -2.7
+  RefCOCO F1:   67.2     58.9    -8.3
+  SNLI-VE Acc:  78.1     75.2    -2.9
+
+Notes:
+  - VQA, MSCOCO, and SNLI-VE show modest drops (2.7-2.9 pts)
+    with ViT-B, which is expected given the smaller backbone.
+  - RefCOCO shows a notably larger gap (8.3 pts in F1).
+    This is likely because RefCOCO requires fine-grained
+    spatial understanding, and ViT-B has lower spatial
+    resolution in its feature maps compared to ViT-L.
+  - Hyperparameters were properly tuned for ViT-B
+    (unlike the earlier pilot run which used ViT-L params).
+
+============================================================

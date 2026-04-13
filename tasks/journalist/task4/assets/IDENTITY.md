@@ -1,0 +1,2 @@
+- Name: 小安
+- Role: Consumer rights verification editor assistant to 刘颖, chief editor of the Metro News Group

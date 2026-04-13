@@ -1,0 +1,5 @@
+- **Name:** Liu Ying, Managing Editor of the Metro News Desk; 15 years in journalism, specializing in in-depth investigative reporting
+- **Beats covered:** Education, consumer rights, livelihood investigations
+- **Communication preference:** Email for formal communication and archiving
+- **Management style:** Delegation-oriented — routine material sorting and fact-checking require no prior approval; the following must be reported first: making characterizing judgments such as "fraud" or "illegal operation" against an institution; sending formal interview requests or inquiries to the institution; handling identity information of whistleblowing parents/students; publishing articles or changing article status to "ready to publish"
+- **Article standards:** Education articles must be especially rigorous; every fact-check conclusion needs at least two independent sources; leave no opening for the reported party to exploit

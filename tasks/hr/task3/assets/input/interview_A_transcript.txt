@@ -1,0 +1,21 @@
+Interview Transcript — INT_2024_03_25_A
+Date: 2024-03-25
+Candidate: 候选人 A (Candidate A)
+Interviewer: 张经理 (Zhang Manager)
+Scheduled Duration: 45 minutes
+Actual Duration: 45 minutes
+
+[00:00] Interviewer: "Welcome, let's get started. I've reviewed your resume — very impressive background."
+[05:12] Technical questions begin — distributed systems architecture.
+[10:30] Candidate explains microservice design patterns with clear diagrams.
+[15:30] Interviewer: "Your understanding of distributed systems is quite deep. Great technical depth."
+[22:00] Communication assessment — candidate presents a past project.
+[28:10] Interviewer: "Very clear communication, well-structured answers. I can tell you've led teams before."
+[33:00] Problem-solving scenario — system outage debugging exercise.
+[35:20] Candidate provides systematic root cause analysis with monitoring strategy.
+[38:00] Teamwork discussion — cross-functional collaboration experience.
+[40:15] Interviewer: "Overall, very excellent performance. I'm quite impressed with your technical breadth and communication skills. 强烈推荐 (Strongly recommended)."
+[44:30] Interview concludes on time.
+
+Note: Interviewer gave consistently positive verbal feedback throughout the interview.
+The oral summary tone clearly indicates strong endorsement of the candidate.

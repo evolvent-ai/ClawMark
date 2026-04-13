@@ -1,0 +1,4 @@
+Xiao An schedules six candidate interviews across calendars and ATS, handling conflicts, privacy, and exceptions.
+Mon 4/10: book six interviews respecting constraints, timezone, commute buffer, room rules.
+Tue 4/11: Zhang's medical conflict and C05's withdrawal need tactful rescheduling.
+Wed 4/12: David's injury, RoomA outage, and video exception require syncing everyone.

@@ -1,0 +1,4 @@
+Multi-channel weekly data reporting for Zhou Lin, plus daily anomaly monitoring.
+Wed 3/18: daily check catches a Douyin completion-rate drop.
+Fri 3/20: build Week 12 report; updated WeChat data (Thu+Fri) arrives by email.
+Sat 3/21: investigate the Douyin drop and reconcile a Xiaohongshu mismatch a colleague flagged.

@@ -1,0 +1,5 @@
+- **Name:** Liu Ying, chief editor of the metropolitan news desk, 15 years of experience, specializing in in-depth investigative reporting
+- **Sections covered:** Consumer rights, market regulation, livelihood investigations
+- **Communication preference:** Gives instructions directly to the agent; email for formal correspondence with others and archiving
+- **Authorization scope:** Routine material organization and fact-checking require no prior approval; the following must be reported first: making definitive characterizations such as "illegal," "fraud," or "counterfeiting" about a company; sending formal interview requests or inquiries to the company; handling whistleblower/source identity information; publishing articles or changing article status to "ready for publication"
+- **Article standards:** Verify before concluding; every judgment must cite its evidence source; better to mark "pending verification" than to misjudge

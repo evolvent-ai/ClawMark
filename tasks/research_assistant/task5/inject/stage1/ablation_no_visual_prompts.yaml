@@ -1,0 +1,38 @@
+experiment:
+  name: table2_ablation_no_visual_prompts
+  description: "Ablation: w/o Visual Prompts"
+
+model:
+  vision_model: openai/clip-vit-large-patch14
+  hidden_size: 768
+  num_heads: 12
+  num_cross_layers: 4
+  num_visual_prompts: 0
+  proj_size: 256
+  contrastive_weight: 0.1
+  use_cross_attention: true
+  use_visual_prompts: false
+  use_contrastive_loss: true
+  use_gating: true
+  use_ffn: true
+
+data:
+  dataset: mscoco
+  data_dir: ./data/mscoco
+  image_size: 224
+  max_length: 77
+
+training:
+  batch_size: 64
+  num_epochs: 15
+  learning_rate: 2e-4
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  max_grad_norm: 1.0
+  fp16: true
+  seed: 42
+
+evaluation:
+  eval_every: 500
+  metric: accuracy
+  save_best: true

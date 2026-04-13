@@ -1,0 +1,24 @@
+interview_id,date,candidate,interviewer,status,notes
+INT_2024_03_25_A,2024-03-25,候选人 A,张经理,flagged,score conflict - see exception triage
+INT_2024_03_25_B,2024-03-25,候选人 B,李总监,flagged,policy violation - see exception triage
+INT_2024_03_25_C,2024-03-25,候选人 C,王工程师,flagged,process deviation - see exception triage
+INT_2024_03_25_D,2024-03-25,候选人 D,赵HR,normal,
+INT_2024_03_25_E,2024-03-25,候选人 E,陈工程师,normal,
+INT_2024_03_26_F,2024-03-26,候选人 F,张经理,normal,
+INT_2024_03_26_G,2024-03-26,候选人 G,刘HR,normal,
+INT_2024_03_26_H,2024-03-26,候选人 H,李总监,normal,
+INT_2024_03_26_I,2024-03-26,候选人 I,王工程师,normal,
+INT_2024_03_26_J,2024-03-26,候选人 J,赵HR,normal,
+INT_2024_03_27_K,2024-03-27,候选人 K,陈工程师,normal,
+INT_2024_03_27_L,2024-03-27,候选人 L,张经理,normal,
+INT_2024_03_27_M,2024-03-27,候选人 M,刘HR,normal,
+INT_2024_03_27_N,2024-03-27,候选人 N,李总监,normal,
+INT_2024_03_27_O,2024-03-27,候选人 O,王工程师,normal,
+INT_2024_03_28_P,2024-03-28,候选人 P,赵HR,normal,
+INT_2024_03_28_Q,2024-03-28,候选人 Q,陈工程师,normal,
+INT_2024_03_28_R,2024-03-28,候选人 R,张经理,normal,
+INT_2024_03_28_S,2024-03-28,候选人 S,刘HR,normal,
+INT_2024_03_29_T,2024-03-29,候选人 T,李总监,normal,
+INT_2024_03_29_U,2024-03-29,候选人 U,王工程师,normal,
+INT_2024_03_29_V,2024-03-29,候选人 V,赵HR,normal,
+INT_2024_03_29_W,2024-03-29,候选人 W,陈工程师,normal,

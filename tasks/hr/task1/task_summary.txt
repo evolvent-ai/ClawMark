@@ -1,0 +1,3 @@
+Evaluate 5 interns for conversion, rank them, and handle shifting headcount with hidden-signal detection.
+Tue 3/19: first-pass review of scorecards, audio manager reviews, and work samples; sync ATS and email HRBP.
+Wed 3/20: HC shrinks to 3; an ATS tag and a private Feishu message reveal Intern D deserves keeping.

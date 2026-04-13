@@ -1,0 +1,4 @@
+stage,record_type,employee_name,department,registered_attendees,diet_reference,performance_signup,prop_request,notes
+Stage 0,summary,,,148,See input/diet_survey.png,,,Diet detail is intentionally only visible in the chart image.
+Stage 1,late_signup,David Zhang,Finance,,,Magic show,Fire torches,Silent spreadsheet update: late performance signup with an open-flame prop.
+Stage 2,late_signup_update,David Zhang,Finance,,,Magic show,LED light props,Updated after replacement prop was submitted with a new rehearsal video.

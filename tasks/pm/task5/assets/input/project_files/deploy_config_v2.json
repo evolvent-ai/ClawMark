@@ -1,0 +1,35 @@
+{
+  "project": "smartpark_v2",
+  "version": "2.0.3",
+  "environment": "production",
+  "services": {
+    "device_access": {
+      "replicas": 3,
+      "image": "smartpark/device-access:2.0.3",
+      "port": 8081
+    },
+    "data_pipeline": {
+      "replicas": 2,
+      "image": "smartpark/data-pipeline:2.0.3",
+      "port": 8082
+    },
+    "alarm_service": {
+      "replicas": 2,
+      "image": "smartpark/alarm:2.0.3",
+      "port": 8083
+    },
+    "dashboard": {
+      "replicas": 1,
+      "image": "smartpark/dashboard:2.0.1",
+      "port": 8084
+    }
+  },
+  "database": {
+    "host": "rds-smartpark.mysql.rds.aliyuncs.com",
+    "port": 3306,
+    "name": "smartpark_prod"
+  },
+  "cloud_provider": "aliyun",
+  "server_count": 12,
+  "monthly_cost_estimate_yuan": 86000
+}

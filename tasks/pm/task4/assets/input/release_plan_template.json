@@ -1,0 +1,64 @@
+{
+  "version": "v2.5",
+  "plan_date": "",
+  "planned_by": "",
+  "competitor_context": {
+    "competitor_name": "",
+    "competitor_release_date": "",
+    "overlapping_features": []
+  },
+  "client_escalation": {
+    "client_name": "",
+    "contract_value": "",
+    "renewal_deadline": "",
+    "must_fix_items": [],
+    "deferred_items": []
+  },
+  "scope_decision": {
+    "in_scope": [
+      {
+        "feature_id": "",
+        "feature_name": "",
+        "priority": "",
+        "priority_score": 0.0,
+        "override_reason": "",
+        "score_breakdown": {
+          "client_pain": 0,
+          "competitor_pressure": 0,
+          "strategic_alignment": 0,
+          "tech_readiness": 0
+        },
+        "dev_start": "",
+        "dev_end": "",
+        "test_start": "",
+        "test_end": "",
+        "depends_on": "",
+        "is_critical_path": false
+      }
+    ],
+    "out_of_scope": [
+      {
+        "feature_id": "",
+        "feature_name": "",
+        "priority": "",
+        "priority_score": 0.0,
+        "reason": ""
+      }
+    ]
+  },
+  "milestones": {
+    "kickoff": "",
+    "alpha": "",
+    "beta": "",
+    "release": ""
+  },
+  "resource_risks": [
+    {
+      "risk_id": "",
+      "description": "",
+      "impact": "",
+      "mitigation": ""
+    }
+  ],
+  "constraints_applied": []
+}

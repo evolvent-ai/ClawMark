@@ -1,0 +1,4 @@
+Netflix Q1 2024 monetization read for Grace Wu, testing reported-vs-FX-neutral ARM analysis and peer framing.
+Thu 4/18: process IR materials, draft the steering card.
+Fri 4/19: compare guide levels and assess ARM; a partner pricing question sits in Notion.
+Tue 5/7: overnight Disney DTC screenshot plus new peer_monitor rows.

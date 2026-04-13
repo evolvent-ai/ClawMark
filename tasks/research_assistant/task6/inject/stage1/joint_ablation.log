@@ -1,0 +1,32 @@
+============================================================
+UniAlign Joint Ablation: w/o cross-attn AND contrastive
+Configuration: configs/table2_ablation.yaml (modified)
+Dataset: VQA v2 | Hardware: 4x NVIDIA A100 80GB | Seed: 42
+============================================================
+
+Variant: w/o cross-attention AND w/o contrastive loss
+(Both modules removed simultaneously)
+
+[2025-03-19 23:45:17] Training complete. Epoch 30/30.
+[2025-03-19 23:45:18] Evaluation on test set:
+  Accuracy: 68.9
+  F1: 72.1
+  BLEU: 36.4
+  CIDEr: 108.7
+
+Comparison with individual ablations:
+  Full model:           Acc=74.8 (baseline)
+  w/o cross-attn only:  Acc=72.3 (drop=2.5)
+  w/o contrastive only: Acc=73.1 (drop=1.7)
+  w/o both (this run):  Acc=68.9 (drop=5.9)
+
+Analysis:
+  Sum of individual drops: 2.5 + 1.7 = 4.2
+  Joint drop: 5.9
+  Synergy effect: 5.9 - 4.2 = 1.7
+
+  The joint removal causes a larger drop (5.9) than the sum
+  of individual drops (4.2), indicating that the two modules
+  have complementary effects and interact synergistically.
+
+============================================================

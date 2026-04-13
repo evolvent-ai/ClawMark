@@ -1,0 +1,23 @@
+[User Interview Transcript - English Version]
+Interviewee: Mr. Zhang (middle-school math teacher, 12 years experience)
+Date: March 10, 2026
+Interviewer: Product team member
+
+---
+
+Interviewer: Hi Mr. Zhang, thanks so much for taking the time to chat with us today. I know you're busy with classes. You mentioned earlier that you had some thoughts about the wrong-answer notebook feature we're planning for the app. Could you walk us through what you'd like to see?
+
+Mr. Zhang: Of course, happy to help. So, the wrong-answer notebook, I think it's a great idea overall. I've been teaching middle school math for twelve years now, and I can tell you that students make the same mistakes over and over again. So the two things that absolutely must be there are automatic sorting and the redo function. What I mean is, when a student gets a problem wrong, the system should automatically group that problem by the knowledge point it belongs to. For example, all the fraction errors go in one place, all the geometry errors in another. And then the student can go back and try those problems again. That's really the baseline. Without those two, it's just a list of wrong answers, which isn't very useful. I actually keep a paper notebook for my students right now where I track their mistakes, and the most time-consuming part is sorting everything by topic. If the app could do that automatically, it would save me hours every week.
+
+Interviewer: That makes total sense, grouping by knowledge point and then letting them retry. Besides those two, is there anything else you'd especially like to see in this feature?
+
+Mr. Zhang: Yes, actually, there's something I feel really strongly about. What I really want is a guided problem-solving feature. So when a student retries a wrong problem, instead of just showing the answer right away, the system walks them through the thinking process step by step. It asks them questions like, okay, what do you know from the problem? What formula might apply here? What's the next logical step? It guides them to figure out the solution on their own. That makes a huge difference for truly understanding the material. You know, a lot of my students just memorize the steps, but they don't really get why it works. They can solve the exact same problem they've seen before, but change one small thing and they're completely lost. A good guided walkthrough could really change that. I've seen some students who are actually quite bright, but because nobody ever taught them how to think through a problem, they just keep making the same mistakes. So yeah, that feature would be incredibly valuable.
+
+Interviewer: I see, so it's really about building genuine understanding rather than just getting the right answer. That's a wonderful point. Now, switching gears a little bit, do you have any feedback on the features we already have in the app? Anything that's been working well, or anything that could be improved?
+
+Mr. Zhang: Oh, right, there is actually one thing I've been meaning to bring up. Your learning analytics report. I heard from someone on your team that it's already been launched, that it went live a while ago. But here's the thing. I've never been able to find where to access it. I've looked through the app, I've tapped around in the menus, and I just cannot find the entry point anywhere. And it's not just me. I've talked to quite a few other teachers at my school, and at the teacher training sessions last month, and they all say the same thing. Everyone's heard it's there, but nobody can actually find it. So that's a bit frustrating, to be honest.
+
+Interviewer: Oh, that's really helpful feedback, thank you for flagging that. We'll definitely look into the learning analytics report situation. Mr. Zhang, this has been incredibly useful. Thank you again for your time today.
+
+Mr. Zhang: No problem at all, I'm happy to help. I'm really looking forward to seeing how the wrong-answer notebook turns out. You know, math can be tough for a lot of kids, and if we can give them better tools to learn from their mistakes, that could really make a big difference. Feel free to reach out again if you need more feedback from the teaching side.
+

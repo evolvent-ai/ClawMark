@@ -1,0 +1,4 @@
+Verify a will's validity through OCR, medical records, signature, and photo forensics.
+Mon 3/18: review files, extract will date, flag MMSE contradiction and signature anomaly.
+Wed 3/20: notary photo arrives; deadline quietly moves to March 25.
+Fri 3/22: compile evidence list and strategy brief; discover Zhao Zhongming's new CRM statement.

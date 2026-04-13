@@ -1,0 +1,2331 @@
+
+<!doctype html>
+<html lang="en-US">
+
+<head>
+<!-- begin spin_special_output(head_start) -->
+<script type="text/javascript" src="js/jquery.js" wd_script_id="jquery.js" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw=="></script>
+<style type="text/css" wd_script_id="search_form_style" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">
+		.wd_search_form .wd_input_datepicker {
+			margin-right: 2px;
+		}
+		.wd_search_type_checkbox {
+			margin-left: 20px;
+		}
+		</style>
+<script type="text/javascript" src="js/jquery-webdriver.js" wd_script_id="jquery-webdriver.js" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw=="></script>
+<script type="text/javascript" src="js/webdriver.js" wd_script_id="webdriver.js" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw=="></script>
+<script type="text/javascript" wd_script_id="search_form_script" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">
+			function wd_toggle_search_form(link, advanced) {
+				var $ = webDriver.jQuery;
+				var $container = $(link).closest(".wd_search_form_container");
+				var basic_form = $container.find(".wd_search_form_basic");
+				var basic_query = basic_form.find('input[name="query"]');
+				var advanced_form = $container.find(".wd_search_form_advanced");
+				var advanced_query = advanced_form.find('input[name="query"]');
+
+				if (advanced) {
+					advanced_query.val(basic_query.val());
+					advanced_form.show();
+					basic_form.hide();
+				} else {
+					basic_query.val(advanced_query.val());
+					basic_form.show();
+					advanced_form.hide();
+				}
+			}
+
+			function wd_toggle_search_type_checkboxes(radio) {
+				var $ = webDriver.jQuery;
+				var $radio = $(radio);
+				var all = $radio.val() == "All" ? $radio.is(":checked") : !$radio.is(":checked");
+				var $checkboxes = $radio.closest(".wd_form_field").find(".wd_search_type_checkbox");
+				$checkboxes.find('input[type="checkbox"]').prop("disabled", all);
+				$checkboxes.toggle(!all);
+			}
+
+			webDriver.jQuery(function ($) {
+				$('.wd_search_type_radio input[type="radio"]').each(function() {wd_toggle_search_type_checkboxes(this);});
+			});
+		</script>
+<style type="text/css" wd_script_id="featureboxes_style" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">
+		.wd_featurebox_icon {
+			display: inline;
+		}
+		.wd_featurebox_icon img {
+			vertical-align: middle;
+		}
+		div.wd_featurebox_group div.wd_tabs_wrapper {
+			border: none;
+			border-bottom: 1px solid #E1E1E1;
+			padding: 0 0 5px 0;
+		}
+		div.wd_featurebox_group div.wd_featurebox {
+			border: none;
+			padding: 8px 0 0 0;
+		}
+		div.wd_featurebox_group li.wd_tab {
+			float: none;
+			color: #666666;
+		}
+		div.wd_featurebox_group li.wd_tab-active {
+			border: none;
+			background-color: transparent;
+			color: #000000;
+			font-weight: bold;
+		}
+		div.wd_featurebox_group li.wd_tab-inactive {
+			cursor: auto;
+		}
+	</style>
+<link href="thirdparty/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet" wd_script_id="font-awesome.min.css">
+<style type="text/css" wd_script_id="toolbar_style" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">
+			div.wd_toolbar {
+				border-top: 1px solid #cccccc;
+				border-bottom: 1px solid #cccccc;
+				margin: 15px 0px 15px 0px;
+				padding: 5px;
+				line-height: 1;
+			}
+			div.wd_toolbar-page {
+				clear: both;
+			}
+			div.wd_toolbar ul.wd_tools {
+				display: inline-block;
+				width: 100%;
+				margin: 0;
+				padding: 5px 0;
+			}
+			div.wd_toolbar ul.wd_tools li.wd_tool {
+				display: block;
+				list-style-type: none;
+				margin-right: 5px;
+				padding: 0;
+				float: right;
+			}
+			span.wd_tool_icon > a:link,
+			span.wd_tool_icon > a:visited {
+				border-radius: 2px;
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				box-sizing: border-box;
+				margin: 0;
+				padding: 7px;
+				font-size: 16px;
+				line-height: 1;
+				text-align: center;
+				color: #ffffff;
+				background-color: #767676;
+			} 
+			span.wd_tool_icon > a:hover {
+				color: #ffffff;
+				background-color: #666666;
+				text-decoration: none;
+			}
+			div.wd_toolbar ul.wd_tools li.wd_tool-addthis {
+				float: left;
+			}
+		</style>
+<link href="css/wd_wcag.css" type="text/css" rel="stylesheet" wd_script_id="wd_wcag.css">
+<style type="text/css" wd_script_id="template_list_inline_style" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">
+						ul.wd_layout-inline {
+							display: inline-block;
+							list-style: none;
+							padding: 0;
+							margin: 0;
+						}
+						ul.wd_layout-inline li {
+							display: inline-block;
+							padding: 0;
+							margin: 0 0 0 1em;
+						}
+					</style>
+<script type="text/javascript" src="js/wd_resize.js" wd_script_id="wd_resize.js" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw=="></script>
+<script type="text/javascript" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">webDriver.push_jQuery();</script>
+<script type="text/javascript" wd_script_id="view_printable_script" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">
+	function view_printable() {
+		var loc = window.location;
+		var sep = (loc.search == "") ? "?" : "&";
+		var url = loc.protocol+"//"+loc.host+loc.pathname+loc.search+sep+"printable"+loc.hash;
+		window.open(url, "_blank", "");
+	}
+</script>
+<script type="text/javascript" wd_script_id="format_news_script" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">
+(function($) {
+	webDriver.formatNews = function() {
+		var $news = $(this);
+		var print_url = $news.attr("wd_print_url");
+		$news.find("table").each(function() {
+			var $table = $(this);
+			var $parent = $table.parent();
+			if ($parent.innerWidth() < $table.outerWidth()) {
+				if ($parent.hasClass("wd_news_table")) {
+					$parent.find(".fullscreen-button").show();
+				} else {
+					var $btn = $("<button>View News Release Full Screen</button>")
+						.addClass("fullscreen-button")
+						.on("click", function() {
+							if (print_url)
+								window.open(print_url, "_blank", "");
+							else
+								view_printable();
+						})
+					;
+
+					var $div = $("<div></div>)")
+						.addClass("wd_news_table")
+						.css("overflow-x", "auto")
+						.append($btn)
+					;
+
+					$table.replaceWith($div);
+					$div.append($table);
+				}
+			} else {
+				if ($parent.hasClass("wd_news_table"))
+					$parent.find(".fullscreen-button").hide();
+			}
+		});
+	}
+})(webDriver.jQuery);
+</script>
+<script type="text/javascript" src="js/jquery-ui.js" wd_script_id="jquery-ui.js" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw=="></script>
+<link href="css/wd_modal.css" type="text/css" rel="stylesheet" wd_script_id="wd_modal.css">
+<script type="text/javascript" wd_script_id="wd_modal_script" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">
+(function($) {
+	webDriver.resizeModal = function() {
+		$(this).find(".wd_modal").wd_modal("resize");
+		return false;
+	}
+	
+	var modals = [];
+		
+	function _value(value, base) {
+		if (typeof value == "string" && value.indexOf("%") > 0) {
+			return  base * parseInt(value, 10) / 100;
+		} else {
+			return parseInt(value, 10);
+		}
+	}
+	
+	var wd_modal = function(element, options) {
+		this.init(element, options);
+	};
+	
+	wd_modal.prototype = {
+		init: function(element, options) {
+			var self = this;
+			
+			this.isOpen = false;
+			this.opener = null;
+			
+			this.$element = $(element);
+			this._options = {
+				autoOpen: false,
+				closeExisting: false,
+				closeOnEscape: true,
+				closeOnOverlayClick: true,
+				fadeDuration: null,
+				margin: "10%",
+				padding: 10
+			};
+			
+			this.options(options);
+			
+			this.$overlay = $("<div>").addClass("wd_modal-overlay").attr("wd_resize","resizeModal").appendTo($("body")).hide();
+			this.$outer = $("<div>").addClass("wd_modal-outer").appendTo(this.$overlay);
+			this.$inner = $("<div>").addClass("wd_modal-inner").appendTo(this.$outer).append(this.$element);
+			// Hack because I can't figure out where the extra few pixels at the bottom of the content are coming from
+			this.$inner.css("overflow-y", "hidden");
+			this.$close = $("<a class=\"wd_modal-close fa fa-times\" href=\"#close\" title=\"Close\"><span class=\"wd_sr-only\">Close Dialog<\/span><\/a>")
+					.on("click", function(event) {self.close(); event.preventDefault();})
+					.appendTo(this.$outer);
+			this.$element.addClass("wd_modal");
+			
+			if (this._options.autoOpen)
+				this.open(this._options.closeExisting);
+		},
+		
+		options: function(options) {
+			if (options) {
+				$.extend(this._options, options);
+
+				this._options.fadeDuration = parseInt(this._options.fadeDuration, 10);
+				if (isNaN(this._options.fadeDuration))
+					this._options.fadeDuration = false;
+				
+				if (!$.isArray(this._options.margin))
+					this._options.margin = [this._options.margin];
+				if (this._options.margin.length < 2)
+					this._options.margin[1] = this._options.margin[0];
+				if (this._options.margin.length < 3)
+					this._options.margin[2] = this._options.margin[0];
+				if (this._options.margin.length < 4)
+					this._options.margin[3] = this._options.margin[1];
+				
+				if (!$.isArray(this._options.padding))
+					this._options.padding = [this._options.padding];
+				if (this._options.padding.length < 2)
+					this._options.padding[1] = this._options.padding[0];
+				if (this._options.padding.length < 3)
+					this._options.padding[2] = this._options.padding[0];
+				if (this._options.padding.length < 4)
+					this._options.padding[3] = this._options.padding[1];
+			} else {
+				return this._options;
+			}
+		},
+		
+		reload: function(options) {
+			if (options) {
+				this.options(options);
+			}
+			
+			this.resize();
+		},
+		
+		open: function(closeExisting, now) {
+			if (this.isOpen)
+				return;
+			
+			var self = this;
+			var myCloseExisting = closeExisting;
+			
+			if (!this.opener)
+				this.opener = document.activeElement;
+
+			if (closeExisting && modals.length > 0) {
+				for (var i = modals.length - 1; i >= 0; --i)
+					modals[i].close(true, true);
+			}
+
+			this.$overlay.addClass("wd_modal-current");
+			$("body").append(this.$overlay);
+
+			if (!now && this._options.fadeDuration) {
+				this.$overlay.fadeIn(this._options.fadeDuration, function() {self.open(myCloseExisting, true);});
+			} else {
+				if (modals.length == 0) {
+					$("body").css("overflow","hidden");
+					$(document).on("keydown.wd_modal", function (event) {
+						var current = modals[modals.length - 1];
+						if ((event.which == 27 || event.keyCode == 27) && current._options.closeOnEscape) {
+							current.close();
+							event.stopImmediatePropagation();
+							event.preventDefault();
+						}
+					});
+				}
+
+				if (this._options.closeOnOverlayClick) {
+					this.$overlay.on("click.wd_modal", function (event) {
+						if (event.target == this) {
+							self.close();
+							event.preventDefault();
+						}
+					});
+				}
+
+				modals.push(this);
+				
+				this.$overlay.show();
+				
+				var $focus = this.$element.find(":focusable");
+				if ($focus.length > 0)
+					$focus[0].focus();
+				
+				this.isOpen = true;
+
+				this.$element.trigger("open");
+			}
+		},
+		
+		close: function(skipCurrent, now) {
+			if (!this.isOpen)
+				return;
+			
+			this.$element.trigger("beforeClose");
+			
+			// TODO: allow closing of lower modals
+			modals.pop();
+			
+			if (modals.length == 0) {
+				$("body").css("overflow","");
+				$(document).off("keydown.wd_modal");
+			}
+			
+			this.$overlay.off("click.wd_modal");
+			
+			if (this.opener) {
+				this.opener.focus();
+				this.opener = null;
+			}
+			
+			this.isOpen = false;
+			this.$overlay.removeClass("wd_modal-current").hide();
+			
+			if (!skipCurrent && modals.length > 0)
+				modals[modals.length-1].$overlay.addClass("wd_modal-current");
+			
+			this.$element.trigger("close");
+		},
+		
+		destroy: function() {
+			this.close(false, true);
+			$("body").append(this.$element);
+			this.$overlay.remove();
+		},
+		
+		resize: function() {
+			if (!this.isOpen)
+				return;
+			
+			var self = this;
+			var winWidth = $(window).width();
+			var winHeight = $(window).height();
+			
+			var margin = this._options.margin;
+			var padding = this._options.padding;
+			
+			var width = winWidth - _value(margin[1], winWidth) - _value(margin[3], winWidth) - _value(padding[1], winWidth) - _value(padding[1], winWidth);
+			var height = winHeight - _value(margin[0], winHeight) - _value(margin[2], winHeight) - _value(padding[0], winHeight) - _value(padding[2], winHeight);
+			
+			this.$inner.css("max-width", width);
+			this.$inner.css("max-height", height);
+			
+			$.each(["Top", "Right", "Bottom", "Left"], function(i, v) {
+				self.$outer.css("padding" + v, _value(padding[i])+"px");
+			});
+			
+			var fixed = this.$element.find("[wd_need_fixed_container]").is(":visible");
+			
+			this.$inner.css("width", width);
+			this.$inner.css("height", height);
+
+			webDriver.doResize(this.$inner);
+			
+			if (!fixed) {
+				this.$inner.css("width", "auto");
+				this.$inner.css("height", "auto");
+				if (this.$element.outerHeight() > height)
+					this.$inner.css("height", height);
+				if (this.$element.outerWidth() > width)
+					this.$inner.css("width", width);
+			}
+		}
+	};
+
+	$.fn.wd_modal = function(options) {
+		if (options == "exists") {
+			return !!$(this).data("wd_modal");
+		} else if (typeof options == "string") {
+            var instance = $(this).data("wd_modal");
+			if (!instance)
+				return null;
+			var args = Array.prototype.slice.call(arguments, 1);
+            return instance[options].apply(instance, args);
+        } else {
+            return this.each(function() {
+                var instance = $(this).data("wd_modal");
+                if (instance) {
+                    instance.reload(options);
+                } else {
+                    $(this).data("wd_modal", new wd_modal(this, options));
+                }
+            });
+        }
+    };
+})(webDriver.jQuery);
+</script>
+<script type="text/javascript" src="js/wd_hashchange.js" wd_script_id="wd_hashchange.js" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw=="></script>
+<script type="text/javascript" wd_script_id="asset_modal_support_script" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">
+			(function($) {
+				var prev_group_id = "";
+				var prev_type_id = "";
+				var prev_item_id = "";
+				var prev_hash = false;
+				var on_close = "back";
+				function hash_update() {
+					var hash = window.location.hash || "#";
+					if (hash == prev_hash) return;
+
+					var type_id = "";
+					var item_id = ""
+					var group_id = "main";
+
+					var apos = hash.indexOf("assets_");
+					if (apos >= 0) {
+						type_id = hash.substr(apos+7);
+
+						var dpos = type_id.indexOf("-");
+						if (dpos >= 0) {
+							group_id = type_id.substr(0, dpos);
+							type_id = type_id.substr(dpos+1);
+						}
+
+						var cpos = type_id.indexOf(":");
+						if (cpos >= 0) {
+							item_id = type_id.substr(cpos+1);
+							type_id = type_id.substr(0, cpos);
+						}
+					}
+
+					if (type_id == "")
+						type_id = "all";
+
+					if ((type_id != prev_type_id || group_id != prev_group_id) && item_id == "") {
+						var $carousel = $(".wd_asset_carousel_"+group_id+"_list")
+						if ($carousel.length > 0)
+							$carousel.wd_carousel("filter", (type_id == "all") ? false : ".wd_asset_type_"+type_id);
+
+						var $slideshow = $(".wd_asset_slideshow_"+group_id+"_list")
+						if ($slideshow.length > 0)
+							$slideshow.wd_slideshow("filter", (type_id == "all") ? false : ".wd_asset_type_"+type_id);
+
+						$(".wd_asset_carousel_type_link").removeClass("wd_active");
+						$(".wd_asset_carousel_type_link.wd_asset_type_"+type_id).addClass("wd_active");
+
+						prev_type_id = type_id;
+						on_close = "back";
+					}
+
+					if (type_id != prev_type_id || item_id != prev_item_id || group_id != prev_group_id) {
+						if (item_id == "") {
+							var save_close = on_close;
+							on_close = false;
+							hide_asset_modal();
+							on_close = save_close;
+						} else {
+							load_asset_modal(group_id, type_id, item_id);
+						}
+						set_social_share_data();
+
+						prev_item_id = item_id;
+
+						if (prev_hash === false)
+							on_close = "reset";
+					}
+
+					prev_group_id = group_id;
+					prev_hash = hash;
+				}
+
+				hide_asset_modal = function() {
+					$(".wd_asset_modal").wd_modal("close");
+				}
+
+				load_asset_modal = function(group_id, type_id, item_id) {
+					var $modal = $(".wd_asset_modal_"+group_id);;
+					if ($modal.length == 0)
+						return;
+
+					if (!$modal.wd_modal("exists")) {
+						$modal.wd_modal({
+							autoOpen: false,
+						});
+
+						$modal.show();
+
+						$modal.on("close", function() {
+							if (on_close == "back") {
+								history.back();
+							} else if (on_close == "reset") {
+								var href = window.location.href;
+								href = href.replace(/#.*$/, "#assets_all");
+								window.location.replace(href);
+							}
+						});
+					}
+
+					$modal.wd_modal("open", true);
+					
+					var $slideshow = $(".wd_asset_slideshow_"+group_id+"_list");
+					if ($slideshow.length > 0) {
+						var $slideshow_item = $slideshow.find(".wd_asset_"+type_id+"-"+item_id).not(".wd_clone");
+						if ($slideshow_item.length > 0)
+							$slideshow.wd_slideshow("scrollToItem", $slideshow_item);
+					}
+
+					var $carousel = $(".wd_asset_carousel_"+group_id+"_list");
+					if ($carousel.length > 0) {
+						var $carousel_item = $carousel.find(".wd_asset_"+type_id+"-"+item_id).not(".wd_clone");
+						if ($carousel_item.length > 0)
+							$carousel.wd_carousel("scrollToItem", $carousel_item);
+					}
+				}
+				
+				set_social_share_data = function() {
+					var href = window.location.href.replace("#", "#!");
+					window.addthis_share = {
+						url: href
+					}
+				}
+				
+				$(function() {
+					setTimeout(hash_update, 10);
+					$(window).hashchange(hash_update);
+				});
+			})(webDriver.jQuery);
+		</script>
+<style type="text/css" wd_script_id="asset_modal_support_style" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">
+			.wd_asset_modal .wd_captioned_image {
+				max-width: 100%;
+				max-height: 100%;
+			}
+			.wd_asset_modal img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+			.wd_asset_modal div.wd_toolbar.wd_toolbar-asset_modal {
+				position: fixed;
+				background: transparent;
+				top: 5%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				border: none;
+				margin: 0;
+			}
+		</style>
+<style type="text/css" wd_script_id="asset_carousel_style" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">
+			.wd_asset_carousel_aspect {
+				position: relative;
+				height: 100%;
+				clear: both;
+			}
+			.wd_asset_carousel {
+				background-color: #666666;
+			}
+			.wd_carousel.wd_asset_carousel_wrapper a.wd_carousel-arrow:link,
+			.wd_carousel.wd_asset_carousel_wrapper a.wd_carousel-arrow:visited {
+				color: #aaaaaa;
+				font-size: 2em;
+				position: relative;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				transform: none;
+				margin: 10px 0;
+			}
+			.wd_carousel.wd_asset_carousel_wrapper a.wd_carousel-arrow:hover {
+				color: #666666;
+			}
+			.wd_carousel.wd_asset_carousel_wrapper .wd_carousel-prev {
+				float: left;
+			}
+			.wd_carousel.wd_asset_carousel_wrapper .wd_carousel-next {
+				float: right;
+			}
+			.wd_asset_carousel_list div.wd_toolbar {
+				border: none;
+				font-size: 10px;
+				position: relative;
+			}
+			.wd_asset_carousel_list span.wd_tool_icon a {
+				font-size: 10px;
+				width: 16px;
+				height: 16px;
+				padding: 3px;
+			}
+		</style>
+<script type="text/javascript" src="js/wd_imagesloaded.js" wd_script_id="wd_imagesloaded.js" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw=="></script>
+<link href="css/wd_carousel.css" type="text/css" rel="stylesheet" wd_script_id="wd_carousel.css">
+<script type="text/javascript" wd_script_id="wd_carousel_script" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">
+(function($, undefined) {
+	webDriver.loadCarousel = function() {
+		var options = {};
+		var options_string = $(this).attr("wd_carousel_options");
+		if (options_string)
+			options = JSON.parse(options_string);
+		$(this).wd_carousel(options);
+	}
+	
+	webDriver.resizeCarousel = function() {
+		$(this).find(".wd_carousel-list").wd_carousel("resize");
+		return false;
+	}
+	
+	var wd_carousel = function(element, options) {
+		this.init(element, options);
+	};
+	
+	wd_carousel.prototype = {
+		init: function(element, options) {
+			var self = this;
+			
+			this.$element = $(element);
+			this._options = {
+				selector: "li",
+				center: true,
+				slideSpeed: 500,
+				slideEasing: "linear",
+				infinite: true,
+				widthMode: "content", // content, columns, width
+				heightMode: "fixed", // content, fixed
+				columns: 3,
+				minWidth: 250,
+				scrollUnit: "item", // item, page
+				scrollSize: 1,
+				dragThreshold: 10,
+				"class": "",
+				autoScroll: 0
+			};
+			
+			this.options(options);
+			
+			this.$container = $("<div>").addClass("wd_carousel").attr("wd_resize","resizeCarousel").insertBefore(this.$element);
+			if (this._options["class"])
+				this.$container.addClass(this._options["class"]);
+			this.$cropper = $("<div>").addClass("wd_carousel-cropper").appendTo(this.$container);
+			this.$element
+					.addClass("wd_carousel-list")
+					.appendTo(this.$cropper)
+					.css({position:"absolute",top:0,left:0})
+					.on("dragstart", "*", function(event) {event.preventDefault();});
+			this.$prev = $("<a class=\"wd_carousel-arrow wd_carousel-prev fa fa-chevron-left\" href=\"#prev\"><\/a>")
+					.on("click", function(event) {
+						self.stop();
+						self.prev();
+						event.preventDefault();
+					})
+					.appendTo(this.$container);
+			this.$next = $("<a class=\"wd_carousel-arrow wd_carousel-next fa fa-chevron-right\" href=\"#next\"><\/a>")
+					.on("click", function(event) {
+						self.stop();
+						self.next();
+						event.preventDefault();
+					})
+					.appendTo(this.$container);
+			
+//			this.$dragger = $("<div>")
+//					.addClass("wd_carousel-dragger")
+//					.appendTo(this.$cropper)
+			this.$cropper
+					.on("click", function(event) {
+						self.onClick(event);
+					})
+					.on("mousedown touchstart", function(event) {
+						self.dragStart(event);
+					})
+					.on("mousemove touchmove", function(event) {
+						self.dragMove(event);
+					})
+					.on("mouseup touchend mouseleave touchcancel", function(event) {
+						self.dragEnd(event);
+					});
+			this.dragging = false;
+			this.dragged = false;
+			
+			this.$items = this.$element.children(this._options.selector);
+			this.$items.addClass("wd_carousel-item");
+			
+			// Remove any non-items (e.g. unintended text nodes)
+			this.$element.empty();
+			this.$element.append(this.$items);
+
+			this.navEnabled = true;
+			this.currentIndex = 0;
+			this.$currentItem = this.$items.eq(0);
+			
+			this.$clones = $([]);
+			
+			this.size_known = false;
+			this.$element.wd_imagesloaded(
+				function() {
+					self.size_known = true;					
+					self.resize();
+				},
+				"size"
+			);
+			
+			this.reset();
+			
+			this.start(this._options.autoScroll);
+		},
+		
+		options: function(options) {
+			if (options) {
+				$.extend(this._options, options);
+			} else {
+				return this._options;
+			}
+		},
+		
+		reload: function(options) {
+			if (options) {
+				this.options(options);
+			}
+			
+			this.resize();
+		},
+
+		reset: function() {
+			this.$items.data("wd_carousel-index", null);
+			this.$clones.data("wd_carousel-index", null);
+			this.$element.children(".wd_clone").detach();
+			
+			var $children = this.$element.children();
+			this.itemCount = $children.length;
+			$children.each(function(index) {
+				$(this).data("wd_carousel-index", index);
+			});
+			
+			if (this.itemCount > 0) {
+				var $last_child = $children.eq(-1);
+				this.listWidth = $last_child.position().left + $last_child.outerWidth();
+			} else {
+				this.listWidth = 0;
+			}
+			
+			var cropperWidth = this.$cropper.innerWidth();
+			
+			if (this.itemCount < 2 || this.listWidth <= cropperWidth) {
+				var position = this._options.center ? ((cropperWidth-this.listWidth)/2) : 0;
+				this.$element.css("left", position);
+				$children.addClass("wd_carousel-current");
+				if (this.itemCount > 0 && this.size_known) {
+					this.$currentItem = this.itemAt(this.listWidth/2);
+					this.currentIndex = this.$currentItem.data("wd_carousel-index");
+				}
+				this.hideNav(true);
+			} else {
+				var left = cropperWidth;
+				for (var i = -1; i > -$children.length; --i) {
+					var $item = $children.eq(i);
+					var $clone = $item.data("wd_carousel-clone-left");
+					if (!$clone)
+						$clone = this.clone($item, "left");
+					this.$element.prepend($clone);
+					$clone.data("wd_carousel-index", i);
+					left -= $item.outerWidth();
+					if (left <= 0)
+						break;
+				}
+				
+				var right = 0;
+				for (var i = 0; i < $children.length; ++i) {
+					var $item = $children.eq(i);
+					var $clone = $item.data("wd_carousel-clone-right");
+					if (!$clone)
+						$clone = this.clone($item, "right");
+					this.$element.append($clone);
+					$clone.data("wd_carousel-index", $children.length+i);
+					right += $item.outerWidth();
+					if (right >= cropperWidth)
+						break;
+				}
+
+				this.hideNav(false);
+
+				var index = this.$currentItem.data("wd_carousel-index");
+				if (!index)
+					index = 0;
+				this.scrollToIndex(index, true);
+			}
+		},
+				
+		clone: function($item, dir) {
+			var $clone = $item.clone(true)
+				.attr("id","")
+				.addClass("wd_clone")
+				.data("wd_carousel-cloned-from", $item);
+		
+			$clone.find("[id]").each(function() {
+				$(this).attr("id", "");
+			});
+
+			$item.data("wd_carousel-clone-"+dir, $clone);
+			
+			this.$clones = this.$clones.add($clone);
+			
+			return $clone;
+		},
+				
+		hideNav: function(hide) {
+			this.$prev.toggle(!hide);
+			this.$next.toggle(!hide);
+			this.navEnabled = !hide;
+		},
+				
+		next: function() {
+			return this.scrollBy(this._options.scrollSize, this._options.scrollUnit);
+		},
+
+		prev: function() {
+			return this.scrollBy(-this._options.scrollSize, this._options.scrollUnit);
+		},
+		
+		scrollBy: function(count, unit) {
+			if (!this.navEnabled)
+				return false;
+			
+			var index;
+			if (unit == "item") {
+				index = this.currentIndex + count;
+			} else { // unit == "page"
+				var pageWidth = this.$cropper.innerWidth();
+				var offset = count;
+				if (this._options.center) {
+					pageWidth /= 2;
+					++offset;
+				}
+				var position = offset * pageWidth - this.$element.position().left;
+				var $item = this.itemAt(position);
+				index = $item.data("wd_carousel-index");
+				if (index == this.currentIndex)
+					index += (count < 0) ? -1 : 1;
+			}
+			
+			return this.scrollToIndex(index);
+		},
+				
+		_doAutoScroll: function() {
+			if (this.navEnabled && this.autoScrollInterval > 0) {
+				var self = this;
+				this.autoScrollTimer = setTimeout(function() {
+						self.next();
+					},
+					this.autoScrollInterval
+				);
+			}
+		},
+		
+		start: function(interval) {
+			this.pause();
+			if (interval !== undefined)
+				this.autoScrollInterval = interval;
+			this._doAutoScroll();
+		},
+		
+		pause: function() {
+			if (this.autoScrollTimer) {
+				clearTimeout(this.autoScrollTimer);
+				this.autoScrollTimer = null;
+			}
+		},
+				
+		stop: function() {
+			this.pause();
+			this.autoScrollInterval = 0;
+		},
+		
+		scrollToIndex: function(index, now) {
+			if (this.itemCount == 0 || !this.navEnabled)
+				return false;
+			
+			this.pause();
+			
+			var $children = this.$element.children().not(".wd_clone");
+			
+			index = (index + $children.length) % $children.length;
+			var $child = $children.eq(index);
+			
+			this.$element.find(".wd_carousel-current").removeClass("wd_carousel-current");
+			$child.addClass("wd_carousel-current");
+			
+			var position = -$child.position().left;
+			if (this._options.center) {
+				position += this.$cropper.innerWidth()/2 - $child.outerWidth()/2;
+			}
+			
+			if (this._options.slideEasing && !now) {
+				this.$element.stop();
+				
+				var cur_offset = this._options.center ? (this.$cropper.innerWidth() / 2) : 0;
+				var cur_pos = this.$element.position().left;
+				var $cur_item = this.itemAt(cur_offset - cur_pos);
+				var cur_dist = Math.abs(position - cur_pos);
+				
+				var $clone, clone_pos, clone_dist;
+				$clone = $cur_item.data("wd_carousel-clone-left");
+				if ($clone) {
+					var clone_pos = -$clone.position().left;
+					if (this._options.center) {
+						clone_pos += this.$cropper.innerWidth()/2 - $clone.outerWidth()/2;
+					}
+					clone_dist = Math.abs(position - clone_pos);
+					if (clone_dist < cur_dist) {
+						cur_pos = clone_pos;
+						cur_dist = clone_dist;
+					}
+				}
+
+				$clone = $cur_item.data("wd_carousel-clone-right");
+				if ($clone) {
+					var clone_pos = -$clone.position().left;
+					if (this._options.center) {
+						clone_pos += this.$cropper.innerWidth()/2 - $clone.outerWidth()/2;
+					}
+					clone_dist = Math.abs(position - clone_pos);
+					if (clone_dist < cur_dist) {
+						cur_pos = clone_pos;
+						cur_dist = clone_dist;
+					}
+				}
+
+				var self = this;
+				this.$element.css("left", cur_pos);
+				this.$element.animate({left: position}, this._options.slideSpeed, this._options.slideEasing, function() {self.start();});
+			} else {
+				this.$element.css("left", position);
+				this.start();
+			}
+
+			this.currentIndex = index;
+			this.$currentItem = $child;
+		},
+				
+		scrollToItem: function(item) {
+			var index = $(item).data("wd_carousel-index");
+			if (index !== null)
+				this.scrollToIndex(index);
+		},
+				
+		makeItemCurrent: function(item) {
+			var $item = $(item);
+			if (!$item.hasClass("wd_carousel-current")) {
+				this.$element.find(".wd_carousel-current").removeClass("wd_carousel-current");
+				
+				var $clonedFrom = $item.data("wd_carousel-cloned-from");
+				if ($clonedFrom) {
+					var clone_pos = $item.position().left;
+					var item_pos = $clonedFrom.position().left;
+					var offset = clone_pos - item_pos;
+					this.$element.css("left", this.$element.css("left") + offset);
+					this.dragListX += offset;
+					$item = $clonedFrom;
+				}
+				
+				$item.addClass("wd_carousel-current");
+				this.currentIndex = $item.data("wd_carousel-index");
+				this.$currentItem = $item;
+			}
+		},
+				
+		itemAt: function(position) {
+			var $children = this.$element.children();
+			if ($children.length == 0)
+				return null;
+			
+			var $item = $children.eq(Math.floor($children.length/2));
+			var dir = 0;
+			while (true) {
+				if (position < $item.position().left) {
+					$item = $item.prev();
+					if (dir == 1)
+						break;
+					dir = -1;
+				} else if (position > $item.position().left + $item.outerWidth()) {
+					$item = $item.next();
+					if (dir == -1)
+						break;
+					dir = 1;
+				} else {
+					break;
+				}
+				if ($item.length == 0)
+					break;
+			}
+			
+			return $item;
+		},
+				
+		onClick: function(event) {
+			if (this.dragged) {
+				event.stopImmediatePropagation();
+				event.stopPropagation();
+				event.preventDefault();
+			}
+		},
+				
+		dragStart: function(event) {
+			this.dragged = false;
+
+			if (!this.navEnabled)
+				return;
+
+			this.pause();
+			this.dragIndex = this.currentIndex;
+			
+			this.dragStartX = this.eventPosition(event);
+			if (this.dragStartX === undefined)
+				return;
+			
+			this.dragListX = this.$element.position().left;
+
+//			this.$cropper.addClass("dragging");
+			this.dragging = true;
+		},
+				
+		dragMove: function(event) {
+			if (!this.dragging)
+				return;
+			
+			event.preventDefault();
+			
+			var pos = this.eventPosition(event);
+			var delta = pos - this.dragStartX;
+			
+			if (!this.dragged && Math.abs(delta) >= this._options.dragThreshold) {
+				this.$cropper.addClass("dragging");
+				this.dragged = true;
+			}
+			
+			if (this.dragged) {
+				var list_position = this.dragListX+delta;
+				this.$element.css("left", list_position);
+				
+				var offset = this._options.center ? (this.$cropper.innerWidth() / 2) : 0;
+				var position = offset - this.$element.position().left;
+				var $item = this.itemAt(position);
+				this.makeItemCurrent($item);
+			}
+		},
+				
+		dragEnd: function(event) {
+			if (!this.dragging)
+				return;
+			
+			if (this.dragged) {
+				var offset = this._options.center ? (this.$cropper.innerWidth() / 2) : 0;
+				var position = offset - this.$element.position().left;
+				var $item = this.itemAt(position);
+				var index = $item.data("wd_carousel-index");
+				if (index !== null && index != this.dragIndex)
+					this.stop();
+				this.scrollToIndex(index);
+			}
+
+			this.$cropper.removeClass("dragging");
+			this.dragging = false;
+			this.start();
+		},
+				
+		eventPosition: function(event) {
+			if (event.originalEvent && event.originalEvent.touches) {
+				var touches = event.originalEvent.touches;
+				if (touches.length != 1)
+					return undefined;
+				return touches[0].pageX;
+			} else {
+				return event.pageX;
+			}
+		},
+				
+		filter: function(selector) {
+			this.$element.children().detach();
+			var $items = this.$items;
+			if (selector)
+				$items = $items.filter(selector);
+			if ($items.length > 0)
+				this.$element.append($items);
+			this.reset();
+		},
+		
+		destroy: function() {
+			this.stop();
+			this.filter(false);
+			this.$clones = $([]);
+			this.$items
+				.removeClass("wd_carousel-item")
+				.data("wd_carousel-index", null)
+				.data("wd_carousel-clone-right", null)
+				.data("wd_carousel-clone-left", null);
+			this.$element
+				.removeClass("wd_carousel-list")
+				.insertBefore(this.$container);
+			this.$container.remove();
+		},
+		
+		resize: function() {
+			if (this._options.widthMode != "content") {
+				var totalWidth = this.$cropper.innerWidth();
+				var columns = this._options.columns;
+				if (this._options.widthMode == "width")
+					columns = Math.max(Math.floor(totalWidth / this._options.minWidth), 1);
+				var width = totalWidth / columns;
+				this.$items.outerWidth(width);
+				this.$clones.outerWidth(width);
+			}
+			
+			webDriver.doResize(this.$element);
+			
+			if (this._options.heightMode == "content") {
+				var height = this.$element.outerHeight();
+				this.$cropper.height(height);
+			}
+			
+			this.reset();
+		}
+	};
+
+	$.fn.wd_carousel = function(options) {
+		var args = Array.prototype.slice.call(arguments, 1);
+		var result = this;
+		
+		this.each(function() {
+			var instance = $(this).data("wd_carousel");
+			if (typeof options == "string") {
+				var res = instance[options].apply(instance, args);
+				if (typeof res != "undefined") {
+					result = res;
+					return false;
+				}
+			} else {
+                if (instance) {
+                    instance.reload(options);
+                } else {
+                    $(this).data("wd_carousel", new wd_carousel(this, options));
+                }
+			}
+        });
+		
+		return result;
+    };
+})(webDriver.jQuery);
+</script>
+<script type="text/javascript" src="js/wd_scriptloader.js" wd_script_id="wd_scriptloader.js" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw=="></script>
+<link href="css/wd_slideshow.css" type="text/css" rel="stylesheet" wd_script_id="wd_slideshow.css">
+<script type="text/javascript" wd_script_id="wd_slideshow_script" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">
+(function($, undefined) {
+	webDriver.resizeSlideshow = function() {
+		$(this).find(".wd_slideshow-list").wd_slideshow("resize");
+		return false;
+	}
+	
+	var wd_slideshow = function(element, options) {
+		this.init(element, options);
+	};
+	
+	wd_slideshow.prototype = {
+		init: function(element, options) {
+			var self = this;
+			
+			this.$element = $(element);
+			this._options = {
+				selector: "li",
+				preload: false,
+				"class": "",
+				resize: "container" // children, self, container
+			};
+			
+			this.options(options);
+			
+			this.$container = $("<div>").addClass("wd_slideshow").attr("wd_resize","resizeSlideshow").attr("tabindex","-1").insertBefore(this.$element);
+			if (this._options["class"])
+				this.$container.addClass(this._options["class"]);
+			this.$cropper = $("<div>").addClass("wd_slideshow-cropper").appendTo(this.$container);
+			this.$element
+					.addClass("wd_slideshow-list")
+					.appendTo(this.$cropper)
+			;
+			this.$prev = $("<a class=\"wd_slideshow-arrow wd_slideshow-prev fa fa-chevron-left\" href=\"#prev\" title=\"Previous\"><span class=\"wd_sr-only\">Previous Item<\/span><\/a>")
+					.on("click", function(event) {
+						self.prev();
+						event.preventDefault();
+					})
+					.appendTo(this.$container);
+			this.$next = $("<a class=\"wd_slideshow-arrow wd_slideshow-next fa fa-chevron-right\" href=\"#next\" title=\"Next\"><span class=\"wd_sr-only\">Next Item<\/span><\/a>")
+					.on("click", function(event) {
+						self.next();
+						event.preventDefault();
+					})
+					.appendTo(this.$container);
+			
+			this.$container.on("keydown.wd_slideshow", function (event) {
+				var key = event.which || event.keyCode;
+				if (key == 37) {
+					self.prev();
+					event.stopImmediatePropagation();
+					event.preventDefault();
+				}
+				if (key == 39) {
+					self.next();
+					event.stopImmediatePropagation();
+					event.preventDefault();
+				}
+			});
+
+			this.$items = this.$element.children(this._options.selector);
+			this.$items.addClass("wd_slideshow-item");
+			
+			// Remove any non-items (e.g. unintended text nodes)
+			this.$element.empty();
+			this.$element.append(this.$items);
+
+			this.navEnabled = true;
+			this.currentIndex = 0;
+			this.$currentItem = this.$items.eq(0);
+			
+			if (this._options.preload)
+				this.load_next();
+		},
+		
+		options: function(options) {
+			if (options) {
+				$.extend(this._options, options);
+			} else {
+				return this._options;
+			}
+		},
+		
+		reload: function(options) {
+			if (options) {
+				this.options(options);
+			}
+			
+			this.reset();
+		},
+
+		reset: function() {
+			this.$items.data("wd_slideshow-index", null);
+			
+			var $children = this.$element.children();
+			this.itemCount = $children.length;
+			$children.each(function(index) {
+				$(this).data("wd_slideshow-index", index);
+			});
+
+			this.hideNav(this.itemCount < 2);
+			
+			var index = this.$currentItem.data("wd_slideshow-index");
+			if (!index)
+				index = 0;
+			
+			this.scrollToIndex(index, false);
+		},
+				
+		hideNav: function(hide) {
+			this.$prev.toggle(!hide);
+			this.$next.toggle(!hide);
+			this.navEnabled = !hide;
+		},
+				
+		item_loaded: function(item) {
+			var $item = $(item);
+			return ($item.children().length > 0 || !$item.attr("wd_ajax_url"));
+		},
+				
+		load_next: function() {
+			var self = this;
+			var next = null;
+			var $children = this.$element.children().not(".wd_clone");
+
+			var after = this.currentIndex;
+			var before = this.currentIndex;
+			while (after < $children.length || before >= 0) {
+				if (after < $children.length && !this.item_loaded($children[after])) {
+					next = $children[after];
+					break;
+				}
+				++after;
+				if (before >= 0 && !this.item_loaded($children[before])) {
+					next = $children[before];
+					break;
+				}
+				--before;
+			}
+			
+			if (!next) {
+				var $filtered = this.$items.remove($children);
+
+				$filtered.each(function() {
+					if (!self.item_loaded(this)) {
+						next = this;
+						return false;
+					}
+				});
+			}
+			
+			if (next)
+				this.load_item(next, function() {self.load_next();});
+		},
+		
+		load_item: function(item, on_complete) {
+			var self = this;
+			var $item = $(item);
+			var complete = on_complete;
+			
+			if (!this.item_loaded($item)) {
+				$item.html("<div>Loading...</div>");
+				$item.addClass("wd_loading");
+				$item.load(
+					$item.attr("wd_ajax_url"),
+					function(response, status, xhr) {
+						if ($item.children().length == 0)
+							$item.append("<div>No content</div>");
+						webDriver.queueCallback(function() {
+							if ($item.hasClass("wd_slideshow-current"))
+								self.resize(self._options["resize"] == "container");
+							$item.removeClass("wd_loading");
+							if ($item.hasClass("wd_slideshow-current")) {
+								$item.wd_imagesloaded(
+									function() {
+										self.resize(self._options["resize"] == "container");
+									},
+									"size"
+								);
+							}
+						});
+
+						if (complete)
+							complete(response, status, xhr);
+					}
+				);
+			}
+		},
+				
+		next: function() {
+			return this.scrollBy(1);
+		},
+
+		prev: function() {
+			return this.scrollBy(-1);
+		},
+		
+		scrollBy: function(count) {
+			var index = this.currentIndex + count;
+			
+			return this.scrollToIndex(index, true);
+		},
+		
+		scrollToIndex: function(index, update_hash) {
+			var self = this;
+			var $children = this.$element.children().not(".wd_clone");
+			
+			var orig_index = index;
+			index = (index + $children.length) % $children.length;
+			var $child = $children.eq(index);
+			
+			if (update_hash && $child.attr("wd_item_hash")) {
+				var hash = "#"+$child.attr("wd_item_hash");
+				var current_hash = window.location.hash || "#";
+				if (hash != current_hash) {
+					var href = window.location.href+"#";
+					href = href.replace(/#.*$/, hash);
+					window.location.replace(href);
+					return;
+				}
+			}
+			
+			this.$element.find(".wd_slideshow-current").removeClass("wd_slideshow-current");
+			$child.addClass("wd_slideshow-current");
+			
+			if (!this.item_loaded($child))
+				this.load_item($child);
+			
+			this.$container[0].focus();
+
+			this.currentIndex = index;
+			this.$currentItem = $child;
+			
+			this.resize(this._options["resize"] == "container");
+		},
+				
+		scrollToItem: function(item) {
+			var index = $(item).data("wd_slideshow-index");
+			if (index !== null)
+				this.scrollToIndex(index, true);
+		},
+				
+		filter: function(selector) {
+			this.$element.children().detach();
+			var $items = this.$items;
+			if (selector)
+				$items = $items.filter(selector);
+			this.$element.append($items);
+			this.reset();
+		},
+		
+		destroy: function() {
+			this.filter(false);
+			this.$items
+				.removeClass("wd_slideshow-item")
+				.data("wd_slideshow-index", null)
+			;
+			this.$element
+				.removeClass("wd_slideshow-list")
+				.insertBefore(this.$container)
+			;
+			this.$container.remove();
+		},
+		
+		resize: function(resize_container) {
+			if (resize_container) {
+				webDriver.doResize(this.$container, "container");
+			} else if (this.$currentItem && !this.$currentItem.hasClass("wd_loading")) {
+				webDriver.doResize(this.$currentItem);
+			}
+		}
+	};
+
+	$.fn.wd_slideshow = function(options) {
+		var args = Array.prototype.slice.call(arguments, 1);
+		var result = this;
+		
+		this.each(function() {
+			var instance = $(this).data("wd_slideshow");
+			if (typeof options == "string") {
+				var res = instance[options].apply(instance, args);
+				if (typeof res != "undefined") {
+					result = res;
+					return false;
+				}
+			} else {
+                if (!instance) {
+					instance = new wd_slideshow(this, options);
+					$(this).data("wd_slideshow", instance);
+				}
+				
+                instance.reload(options);
+			}
+        });
+		
+		return result;
+    };
+})(webDriver.jQuery);
+</script>
+<script type="text/javascript" wd_script_id="template_list_slideshow_script" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">
+						webDriver.jQuery(function($) {
+							$(".wd_layout-slideshow").each(function() {
+								var $slideshow = $(this);
+								$slideshow.wd_slideshow({
+									preload: true,
+									"class": "wd_asset_slideshow_wrapper wd_asset_slideshow_main_wrapper"
+								});
+							});
+						});
+					</script>
+<style type="text/css" wd_script_id="template asset_carousel_item:gallery:system style" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">
+.wd_gallery_asset {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	color: #ffffff;
+	min-height: 100px;
+	min-width: 100px;
+}
+.wd_gallery_asset .wd_asset_image {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-size: 0px;
+}
+.wd_gallery_asset .wd_asset_image img {
+	max-width: 100%;
+	max-height: 100%;
+	flex-shrink: 0;
+	margin: 0;
+	float: none;
+}
+.wd_gallery_asset .wd_icon_overlay {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .75) none center center no-repeat;
+	opacity: 0.0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.wd_gallery_asset .wd_icon_overlay .wd_link_underlay {
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+.wd_gallery_asset .wd_icon_overlay a.wd_link_underlay:hover {
+	background-color: transparent;
+}
+.wd_gallery_asset .wd_icon_overlay .wd_icon_container {
+	font-size: 50px;
+	position: relative;
+	text-align: center;
+}
+.wd_gallery_asset .wd_icon_overlay .wd_icon_container > a,
+.wd_gallery_asset .wd_icon_overlay .wd_icon_container > a:link,
+.wd_gallery_asset .wd_icon_overlay .wd_icon_container > a:visited {
+	color: #cccccc;
+}
+.wd_gallery_asset .wd_icon_overlay .wd_icon_container > a:hover {
+	text-decoration: none;
+	background-color: transparent;
+}
+.wd_gallery_asset .wd_title_overlay {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	pointer-events: none;
+	opacity: 0.0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	-moz-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: end;
+	-webkit-align-items: flex-end;
+	-moz-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+}
+.wd_gallery_asset:hover .wd_icon_overlay,
+.wd_gallery_asset:hover .wd_title_overlay,
+.wd_gallery_asset:focus-within .wd_icon_overlay,
+.wd_gallery_asset:focus-within .wd_title_overlay {
+	opacity: 1.0;
+}</style>
+<script type="text/javascript" src="js/wd_load.js" wd_script_id="wd_load.js" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw=="></script>
+<script type="text/javascript" src="js/wd_fixed_aspect_ratio.js" wd_script_id="wd_fixed_aspect_ratio.js" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw=="></script>
+<script type="text/javascript" wd_script_id="move_content_script" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">
+				(function($) {
+					function wd_move_content() {
+						$("[wd_move_after]").each(function() {
+							var $this = $(this);
+							var selectors = $this.attr("wd_move_after").split("|");
+							for (var i = 0; i < selectors.length; ++i) {
+								var $dest = $(selectors[i]);
+								if ($dest.length > 0) {
+									$this.insertAfter($dest.eq(0));
+									break;
+								}
+							}
+						});
+					}
+					
+					$(function() {
+						wd_move_content();
+					});
+				})(webDriver.jQuery);
+			</script>
+<script type="text/javascript" nonce="YWNhYmM5NzU2MjQwZjdmNTAzYzIwZGU3NzUwNWVjM2ZlNTMzZTUzMw==">webDriver.pop_jQuery();</script>
+
+<!-- end spin_special_output(head_start) -->
+
+	<script src="https://cdn.bttrack.com/universal/44152" async></script>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Press Release: PayPal Reports Fourth Quarter and Full Year 2023 Results - Feb 7, 2024</title>
+	
+ <meta name="keywords" content="PayPal Newsroom, PayPal news, Venmo news, Honey news, PayPal press release, cashless payment" />
+ <meta name="description" content="PayPal today announced its fourth quarter and full year 2023 results for the period ended December 31, 2023. " />
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:title" content="PayPal Reports Fourth Quarter and Full Year 2023 Results" />
+ <meta name="twitter:description" content="PayPal today announced its fourth quarter and full year 2023 results for the period ended December 31, 2023. " />
+ <meta name="twitter:image" content="https://newsroom.paypal-corp.com/image/Library_HQ2.png" />
+ <meta property="og:site_name" content="PayPal Newsroom" />
+ <meta property="og:url" content="https://newsroom.paypal-corp.com/2024-02-07-PayPal-Reports-Fourth-Quarter-and-Full-Year-2023-Results" />
+ <meta property="og:title" content="PayPal Reports Fourth Quarter and Full Year 2023 Results" />
+ <meta property="og:description" content="PayPal today announced its fourth quarter and full year 2023 results for the period ended December 31, 2023. " />
+ <meta name="image" property="og:image" content="https://newsroom.paypal-corp.com/image/Library_HQ2.png" />
+
+	<link rel="shortcut icon" href="images/PayPal2024_Favicon.png" type="image/icon">
+
+	<!-- HREF Lang -->
+	<link rel="alternate" hreflang="en-US" href="https://newsroom.paypal-corp.com/" />
+	<link rel="alternate" hreflang="de" href=https://newsroom.deatch.paypal-corp.com/>
+	<link rel="alternate" hreflang="en-CA" href="https://newsroom.ca.paypal-corp.com/" />
+	<link rel="alternate" hreflang="en-GB" href="https://newsroom.uk.paypal-corp.com/" />
+	<link rel="alternate" hreflang="en-AU" href="https://newsroom.au.paypal-corp.com/" />
+	<link rel="alternate" hreflang="es-MX" href="https://newsroom.latam.paypal-corp.com/" />
+	<link rel="alternate" hreflang="es-ES" href="https://newsroom.es.paypal-corp.com/" />
+	<link rel="alternate" hreflang="zh-cn" href="https://newsroom.china.paypal-corp.com/" />
+	<link rel="alternate" hreflang="pt-br" href="https://newsroom.br.paypal-corp.com/" />
+	<link rel="alternate" hreflang="fr-fr" href="https://newsroom.fr.paypal-corp.com/" />
+	<link rel="alternate" hreflang="en-in" href="https://newsroom.in.paypal-corp.com/" />
+	<link rel="alternate" hreflang="it-it" href="https://newsroom.it.paypal-corp.com/" />
+	<link rel="alternate" hreflang="ja-jp" href="https://newsroom.jp.paypal-corp.com/" />
+	<!-- End HREF Lang -->
+
+	<!-- MediaRoom Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" >
+	<link rel="stylesheet" type="text/css" href="fonts/SupremeLLTest/stylesheet.css">
+
+	<!-- Testing to see if this works on production -->
+	
+	<link rel="stylesheet" type="text/css" href="css/wdtypography.css">
+	<link rel="stylesheet" type="text/css" href="css/wdcustomclasses.css">
+	<link rel="stylesheet" type="text/css" href="css/wdheaderandfooter.css">
+	<link rel="stylesheet" type="text/css" href="css/wdbuttonformsandtools.css">
+	<link rel="stylesheet" type="text/css" href="css/wdcontent.css">
+	<link rel="alternate" href="https://newsroom.paypal-corp.com/news?pagetemplate=rss" type="application/rss+xml" title="News  |  PayPal Newsroom">	<!-- END MediaRoom Stylesheets -->
+	
+	
+	
+	
+	
+
+	<script type="application/json" id="policy-data">
+		{
+			"policies": ["CookieBanner"],
+			"nonce":"test",
+			"tenant":"newsroom",
+			"policyData": { "country":"US", "language":"en" }
+		}
+	</script>
+
+	<script src="https://www.paypalobjects.com/ncs/ncs.js"></script>
+
+	<!-- abstracted to a separate file by request -->
+	<script src="js/managecookies.js"></script>
+
+	<!-- Google Tag Manager --> 
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PH333GX');</script> 
+	<!-- End Google Tag Manager -->
+
+
+<!-- begin spin_special_output(head_end) -->
+<!-- OneTrust Cookies Consent Notice start -->
+<script src="" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript">
+	function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end -->
+
+<link rel="canonical" href="https://newsroom.paypal-corp.com/2024-02-07-PayPal-Reports-Fourth-Quarter-and-Full-Year-2023-Results" />
+<!-- end spin_special_output(head_end) -->
+</head>
+	
+
+<body class="wd_pageid_20295 wd_item_page wd_item_122907" nonce="test">
+
+<!-- Google Tag Manager (noscript) --> 
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH333GX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> 
+<!-- End Google Tag Manager (noscript) -->
+
+	<header class="">
+			
+		<nav class="navbar navbar-expand-lg bg-light">
+			<div class="wd_logo-wrap"><a class="navbar-brand" href="https://newsroom.paypal-corp.com/home"><img src="images/newsroom-updated.svg"></a></div>
+			<!-- Start Mobile Search  -->
+			<div class="mobile_search-container">
+				<div class="wd_search_form_container"><form name="basic_search" method="get" action="https://newsroom.paypal-corp.com/search-results" class="wd_search_form wd_search_form_basic"><input type="hidden" name="s" value="search_results" /><input type="text" name="query" value="" size="32" placeholder="Search..." title="Search..." /> <input type="submit" name="submit" value="Search"></form>
+</div>			</div>
+			<!-- END Mobile Search -->
+			<div class="mobile-site-search-bttn">
+				<i class="fas fa-search"></i>
+				<i class="fas fa-times"></i>
+			</div>
+			<button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+<div id="mobileNavbarNavDropdown" class="collapse wd_nav navbar-collapse">
+	<button class="wd_mobile-nav-toggler" aria-label="Close navigation"><span class="wd_close-nav"></span></button>
+
+		<ul class="navbar-nav">
+			<li id="wd_topnav-34137" class="nav-item dropdown " data-child="#wd_topnav-34137">
+				<a href="stories" class="nav-link" target="_self">Stories</a><span class="dropdown-toggle"></span>
+				<div id="categoryNavDropdown" class="wd_category-nav">
+					<div class="wd_featureboxes_dropdown wd_featureboxes-horizontal fr-view">
+<div id="wd_featurebox-standard_3543" class="wd_featurebox_container wd_featurebox-standard"><div class="wd_featurebox_title"></div><div class="wd_featurebox"><div class="container justify-content-center">
+<div class="row py-2" style="width: 100%;">
+<div class="col-sm-3">
+<h4><a href="stories-product">Products</a></h4>
+<a class="dropdown-item" href="stories-paypal">PayPal</a> <a class="dropdown-item" href="stories?cat=11">Honey</a> <a class="dropdown-item" href="stories?cat=8">Venmo</a> <a class="dropdown-item" href="stories?cat=12">PayPal Zettle</a></div>
+
+<div class="col-sm-3">
+<h4><a href="stories?cat=13">People</a></h4>
+<a class="dropdown-item" href="stories?cat=17">Culture</a> <a class="dropdown-item" href="stories?cat=18">Belonging</a> <a class="dropdown-item" href="stories?cat=19">Volunteerism</a></div>
+
+<div class="col-sm-3">
+<h4><a href="stories?cat=14">Performance</a></h4>
+<a class="dropdown-item" href="stories?cat=1">Corporate Announcements</a> <a class="dropdown-item" href="stories-public-policy">Public Policy</a> <!-- <a class="dropdown-item" href="stories?cat=21">PayPal Ventures</a> --> <a class="dropdown-item" href="stories?cat=22">Strategic Partnerships</a> <a class="dropdown-item" href="stories?cat=6">Social Impact</a></div>
+
+<div class="col-sm-3">
+<h4><a href="stories?cat=15">Innovation</a></h4>
+<a class="dropdown-item" href="stories?cat=24">Cryptocurrency</a> <a class="dropdown-item" href="stories?cat=25">Digital Wallet</a> <!--<a class="dropdown-item" href="stories?cat=26">Buy Now, Pay Later</a>--> <!--<a class="dropdown-item" href="stories?cat=27">QR Code</a>--><a class="dropdown-item" href="stories?cat=28"> Credit &amp; Lending</a> <!--<a class="dropdown-item" href="stories?cat=29">Credit</a>--> <a class="dropdown-item" href="stories?cat=30">Technology</a></div>
+</div>
+</div>
+</div></div></div>
+				</div>
+			</li>
+			<li id="wd_topnav-20295" class="nav-item ">
+				<a href="news" class="nav-link" target="_self">News</a>
+			</li>
+			<li id="wd_topnav-20292" class="nav-item ">
+				<a href="media-resources" class="nav-link">Media Resources</a></li>
+			<li id="wd_topnav-20316" class="nav-item ">
+				<a href="https://about.pypl.com/home/default.aspx" class="nav-link ">About <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+			<li id="wd_topnav-20320" class="nav-item ">
+				<a href="contact" class="nav-link ">Contact</a></li>
+		</ul>
+
+</div>
+			
+<div id="navbarNavDropdown" class="collapse wd_nav navbar-collapse">
+
+		<ul class="navbar-nav">
+			<button class="wd_mobile-nav-toggler"><span class="wd_close-nav"></span></button>
+			<li id="wd_topnav-34137" class="nav-item dropdown" data-child="#wd_topnav-34137">
+				<a href="stories" class="nav-link dropdown-toggle" target="_self">Stories</a>
+				<div id="categoryNavDropdown" class="dropdown-menu wd_category-nav">
+					<div class="wd_featureboxes_dropdown wd_featureboxes-horizontal fr-view">
+<div id="wd_featurebox-standard_3543" class="wd_featurebox_container wd_featurebox-standard"><div class="wd_featurebox_title"></div><div class="wd_featurebox"><div class="container justify-content-center">
+<div class="row py-2" style="width: 100%;">
+<div class="col-sm-3">
+<h4><a href="stories-product">Products</a></h4>
+<a class="dropdown-item" href="stories-paypal">PayPal</a> <a class="dropdown-item" href="stories?cat=11">Honey</a> <a class="dropdown-item" href="stories?cat=8">Venmo</a> <a class="dropdown-item" href="stories?cat=12">PayPal Zettle</a></div>
+
+<div class="col-sm-3">
+<h4><a href="stories?cat=13">People</a></h4>
+<a class="dropdown-item" href="stories?cat=17">Culture</a> <a class="dropdown-item" href="stories?cat=18">Belonging</a> <a class="dropdown-item" href="stories?cat=19">Volunteerism</a></div>
+
+<div class="col-sm-3">
+<h4><a href="stories?cat=14">Performance</a></h4>
+<a class="dropdown-item" href="stories?cat=1">Corporate Announcements</a> <a class="dropdown-item" href="stories-public-policy">Public Policy</a> <!-- <a class="dropdown-item" href="stories?cat=21">PayPal Ventures</a> --> <a class="dropdown-item" href="stories?cat=22">Strategic Partnerships</a> <a class="dropdown-item" href="stories?cat=6">Social Impact</a></div>
+
+<div class="col-sm-3">
+<h4><a href="stories?cat=15">Innovation</a></h4>
+<a class="dropdown-item" href="stories?cat=24">Cryptocurrency</a> <a class="dropdown-item" href="stories?cat=25">Digital Wallet</a> <!--<a class="dropdown-item" href="stories?cat=26">Buy Now, Pay Later</a>--> <!--<a class="dropdown-item" href="stories?cat=27">QR Code</a>--><a class="dropdown-item" href="stories?cat=28"> Credit &amp; Lending</a> <!--<a class="dropdown-item" href="stories?cat=29">Credit</a>--> <a class="dropdown-item" href="stories?cat=30">Technology</a></div>
+</div>
+</div>
+</div></div></div>
+				</div>
+			</li>
+			<li id="wd_topnav-20295" class="nav-item ">
+				<a href="news" class="nav-link" target="_self">News</a>
+			</li>
+			<li id="wd_topnav-20292" class="nav-item ">
+				<a href="media-resources" class="nav-link " target="_self">Media Resources</a>
+			</li>
+			<li id="wd_topnav-20316" class="nav-item ">
+				<a href="https://about.pypl.com/home/default.aspx" class="nav-link " target="_blank">About<i class="fa fa-external-link" aria-hidden="true"></i></a>
+			</li>
+			<li id="wd_topnav-20294" class="nav-item ">
+				<a href="contact" class="nav-link " target="_self">Contact</a>
+			</li>
+		</ul>
+
+</div>
+
+<div id="globalNavDropdown" class="collapse wd_global navbar-collapse">
+	<ul class="navbar-nav">
+		<li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Region</a>
+		<div class="dropdown-menu">
+			<div class="container-fluid">
+				<div class="row py-2 justify-content-end" style="width: 100%;">
+					<div class="col-md-2 ml-auto mr-3">
+						<h4>North America</h4>
+						<a class="dropdown-item" href="https://newsroom.paypal-corp.com">Global / USA (English)</a>
+						<a class="dropdown-item" href="https://newsroom.ca.paypal-corp.com/">Canada (English)</a>
+						<h4>Latin America</h4>
+						<a class="dropdown-item" href="https://newsroom.br.paypal-corp.com/">Brazil (Portuguese)</a>
+						<a class="dropdown-item" href="https://newsroom.latam.paypal-corp.com/">Latin America (Spanish)</a>
+					</div>
+					<div class="col-md-2 mr-3">
+						<h4>Europe</h4>
+						<a class="dropdown-item" href="https://newsroom.fr.paypal-corp.com/">France (French)</a>
+						<a class="dropdown-item" href="https://newsroom.deatch.paypal-corp.com/">Germany (German)</a>
+						<a class="dropdown-item" href="https://newsroom.ie.paypal-corp.com/">Ireland (English)</a>
+						<a class="dropdown-item" href="https://newsroom.it.paypal-corp.com/">Italy (Italian)</a>
+						<a class="dropdown-item" href="https://newsroom.es.paypal-corp.com/">Spain (Spanish)</a>
+						<a class="dropdown-item" href="https://newsroom.uk.paypal-corp.com/">United Kingdom (English)</a>
+					</div>
+					<div class="col-md-2 mr-5">
+						<h4>Asia Pacific</h4>
+						<a class="dropdown-item" href="https://newsroom.apac.paypal-corp.com/">Asia Pacific (English)</a>
+						<a class="dropdown-item" href="https://newsroom.au.paypal-corp.com/">Australia (English)</a>
+						<a class="dropdown-item" href="https://newsroom.china.paypal-corp.com/">China (Simplified Chinese)</a>
+						<a class="dropdown-item" href="https://newsroom.jp.paypal-corp.com/">Japan (Japanese)</a>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+
+			<!-- Start Desktop Site Search -->
+			<div class="wd_search_wrapper">
+				<div class="wd_search_form_container"><form name="basic_search" method="get" action="https://newsroom.paypal-corp.com/search-results" class="wd_search_form wd_search_form_basic"><input type="hidden" name="s" value="search_results" /><input type="text" name="query" value="" size="32" placeholder="Search..." title="Search..." /> <input type="submit" name="submit" value="Search"></form>
+</div>				<!-- END Desktop Site SEARCH -->
+				<div class="wd_search-icon"><img src="images/Search_Icon.svg" alt="Search PayPal Newsroom"></div>
+				<div class="wd_close_button"><img src="images/icons/icon-search-close.png" alt="Close Search"></div>
+			</div>
+		</nav>
+	</header>
+
+	
+	<div class = "wd_main-content">
+
+	
+	
+	<div class="wd_hide-me">
+		<div class="wd_global_search">
+			<div class="wd_search_form_container"><form name="basic_search" method="get" action="https://newsroom.paypal-corp.com/search-results" class="wd_search_form wd_search_form_basic"><input type="hidden" name="s" value="search_results" /><input type="text" name="query" value="" size="32" placeholder="Search" title="Search" /> <input type="submit" name="submit" value="Go"></form>
+</div><!-- END SITE SEARCH -->
+		</div>
+	</div>
+
+	<div class="wd_content-wrapper">
+		<div class="container wd_content-container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<h1 class="page_header">News</h1>
+					<div id="wd_printable_content" class="fr-view">
+<div class="wd_newsfeed_releases-detail">
+<div class="wd_tools-wrap wd_top">
+<div class="wd_date">Feb 7, 2024</div>
+<div class="wd_toolbar wd_toolbar-detail"><ul class="wd_tools"><li class="wd_tool wd_tool-socialshare_linkedin"><span class="wd_tool_icon">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fnewsroom.paypal-corp.com%2Findex.php%3Fs%3D20295%26item%3D122907" target="_blank" title="Linkedin Share" style="background-color:#0077B5;">
+                    <span class="fa fa-linkedin"></span>
+		    <span class="wd_sr-only wd_sr-only-focusable">LinkedIn Share</span>
+                    </a>
+                </span></li><li class="wd_tool wd_tool-socialshare_facebook"><span class="wd_tool_icon">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnewsroom.paypal-corp.com%2Findex.php%3Fs%3D20295%26item%3D122907" target="_blank" title="Facebook Share" style="background-color:#4267B2;">
+                    <span class="fa fa-facebook"></span>
+		    <span class="wd_sr-only wd_sr-only-focusable">Facebook Share</span>
+                    </a>
+                </span></li><li class="wd_tool wd_tool-socialshare_twitter"><span class="wd_tool_icon">
+                    <a href="https://twitter.com/share?url=https%3A%2F%2Fnewsroom.paypal-corp.com%2Findex.php%3Fs%3D20295%26item%3D122907" target="_blank" title="Twitter Share" style="background-color:#000;">
+                    <span class="fa fa-twitter"></span>
+		    <span class="wd_sr-only wd_sr-only-focusable">Twitter Share</span>
+                    </a>
+                </span></li><li class="wd_tool wd_tool-email"><span class="wd_tool_icon"><a onclick="window.location.href = 'mailto:?subject=PayPal%20Reports%20Fourth%20Quarter%20and%20Full%20Year%202023%20Results%20-%20Feb%207%2C%202024&amp;body='+encodeURIComponent(window.location.href);return false;" href="#email" title="Email link"><span class="fa fa-envelope"></span><span class="wd_sr-only wd_sr-only-focusable">Email link</span></a></span></li></ul></div>
+</div>
+<ul class="wd_layout-inline wd_category_link_list"><li class="wd_category_link"><a href="https://newsroom.paypal-corp.com/news?category=793">Performance</a></li><li class="wd_category_link"><a href="https://newsroom.paypal-corp.com/news-quarterly-earnings">Quarterly Earnings</a></li></ul>
+<div class="wd_title wd_language_left">PayPal Reports Fourth Quarter and Full Year 2023 Results</div>
+
+
+			
+		
+
+			
+		
+<div class="wd_body wd_news_body fr-view" wd_resize="formatNews" wd_print_url="https://newsroom.paypal-corp.com/2024-02-07-PayPal-Reports-Fourth-Quarter-and-Full-Year-2023-Results?printable=1"><p><span class="legendSpanClass"><span class="xn-location">SAN JOSE, Calif.</span></span>, <span class="legendSpanClass"><span class="xn-chron">Feb. 7, 2024</span></span> /<a href="http://www.prnewswire.com/" target="_blank">PRNewswire</a>/ -- PayPal Holdings, Inc. (NASDAQ: PYPL) today announced its fourth quarter and full year 2023 results for the period ended <span class="xn-chron">December 31, 2023</span>. The earnings release and related materials discussing these results can be found on PayPal&#39;s investor relations website at <a aria-invalid="true" href="https://c212.net/c/link/?t=0&amp;l=en&amp;o=4086363-1&amp;h=1179270425&amp;u=https%3A%2F%2Finvestor.pypl.com%2Ffinancials%2Fquarterly-results%2Fdefault.aspx&amp;a=https%3A%2F%2Finvestor.pypl.com%2Ffinancials%2Fquarterly-results%2Fdefault.aspx" rel="nofollow" target="_blank">https://investor.pypl.com/financials/quarterly-results/default.aspx</a>.</p>
+
+<p>PayPal Holdings, Inc. will host a conference call to discuss these results at <span class="xn-chron">2:00 p.m. Pacific time</span> (<span class="xn-chron">5:00 p.m. Eastern time</span>) today. A live webcast of the conference call will be available at <a aria-invalid="true" href="https://c212.net/c/link/?t=0&amp;l=en&amp;o=4086363-1&amp;h=3257204502&amp;u=https%3A%2F%2Finvestor.pypl.com%2F&amp;a=https%3A%2F%2Finvestor.pypl.com" rel="nofollow" target="_blank">https://investor.pypl.com</a>. In addition, an archive of the webcast will be accessible for 90 days through the same link.</p>
+
+<p><b>About PayPal</b></p>
+
+<p>PayPal has remained at the forefront of the digital commerce revolution for more than 25 years. By leveraging technology to make sending money and shopping more convenient, affordable, and secure, the PayPal platform is empowering hundreds of millions of consumers and merchants in approximately 200 markets to join and thrive in the global economy. For more information, visit <a href="https://c212.net/c/link/?t=0&amp;l=en&amp;o=4086363-1&amp;h=949482731&amp;u=https%3A%2F%2Fwww.paypal.com%2F&amp;a=https%3A%2F%2Fwww.paypal.com" rel="nofollow" target="_blank">https://www.paypal.com</a>, <a aria-invalid="true" href="https://c212.net/c/link/?t=0&amp;l=en&amp;o=4086363-1&amp;h=605276472&amp;u=https%3A%2F%2Fabout.pypl.com%2F&amp;a=https%3A%2F%2Fabout.pypl.com%2F" rel="nofollow" target="_blank">https://about.pypl.com/</a> and <a aria-invalid="true" href="https://c212.net/c/link/?t=0&amp;l=en&amp;o=4086363-1&amp;h=1081804473&amp;u=https%3A%2F%2Finvestor.pypl.com%2F&amp;a=https%3A%2F%2Finvestor.pypl.com%2F" rel="nofollow" target="_blank">https://investor.pypl.com/</a>.</p>
+
+<p><b>Investor Relations Contact</b><br />
+<a href="mailto:investorrelations@paypal.com" rel="nofollow" target="_blank">investorrelations@paypal.com</a>&nbsp;</p>
+
+<p><b>Media Relations Contact</b><br />
+<a href="mailto:mediarelations@paypal.com" rel="nofollow" target="_blank">mediarelations@paypal.com</a></p>
+
+<p>SOURCE PayPal Holdings, Inc.</p>
+</div>
+
+<div class="wd_tools-wrap wd_bottom">
+<div class="wd_toolbar wd_toolbar-detail"><ul class="wd_tools"><li class="wd_tool wd_tool-socialshare_linkedin"><span class="wd_tool_icon">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fnewsroom.paypal-corp.com%2Findex.php%3Fs%3D20295%26item%3D122907" target="_blank" title="Linkedin Share" style="background-color:#0077B5;">
+                    <span class="fa fa-linkedin"></span>
+		    <span class="wd_sr-only wd_sr-only-focusable">LinkedIn Share</span>
+                    </a>
+                </span></li><li class="wd_tool wd_tool-socialshare_facebook"><span class="wd_tool_icon">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnewsroom.paypal-corp.com%2Findex.php%3Fs%3D20295%26item%3D122907" target="_blank" title="Facebook Share" style="background-color:#4267B2;">
+                    <span class="fa fa-facebook"></span>
+		    <span class="wd_sr-only wd_sr-only-focusable">Facebook Share</span>
+                    </a>
+                </span></li><li class="wd_tool wd_tool-socialshare_twitter"><span class="wd_tool_icon">
+                    <a href="https://twitter.com/share?url=https%3A%2F%2Fnewsroom.paypal-corp.com%2Findex.php%3Fs%3D20295%26item%3D122907" target="_blank" title="Twitter Share" style="background-color:#000;">
+                    <span class="fa fa-twitter"></span>
+		    <span class="wd_sr-only wd_sr-only-focusable">Twitter Share</span>
+                    </a>
+                </span></li><li class="wd_tool wd_tool-email"><span class="wd_tool_icon"><a onclick="window.location.href = 'mailto:?subject=PayPal%20Reports%20Fourth%20Quarter%20and%20Full%20Year%202023%20Results%20-%20Feb%207%2C%202024&amp;body='+encodeURIComponent(window.location.href);return false;" href="#email" title="Email link"><span class="fa fa-envelope"></span><span class="wd_sr-only wd_sr-only-focusable">Email link</span></a></span></li></ul></div>
+</div>
+<div class="wd_moved-assets-wrapper"><div wd_move_after=".wd_body &gt; p ~ p|.wd_body &gt; p">
+			<div class="wd_asset_modal wd_asset_modal_main" style="display:none;">
+				
+				<ul class="wd_layout-slideshow wd_asset_slideshow_list wd_asset_slideshow_main_list">
+					<li class="wd_asset_slideshow wd_asset_type_117 wd_asset_117-19676" wd_item_hash="assets_117:19676" wd_ajax_url="https://newsroom.paypal-corp.com/news?gallery=19676&ajax=ajax&op=modal">
+					</li>
+				</ul>
+			</div>
+		
+			<div class="wd_asset_carousel_aspect" wd_resize="adjustAspectRatio" wd_fixed_aspect="height:32:9:100:200">
+			<ul class="wd_layout-carousel wd_asset_list wd_asset_carousel_list wd_asset_carousel_main_list" wd_carousel_options="{&quot;class&quot;:&quot;wd_asset_wrapper wd_asset_carousel_wrapper wd_asset_carousel_main_wrapper&quot;}" wd_onload="loadCarousel">
+				<li class="wd_asset_carousel wd_asset_type_117 wd_asset_117-19676" style="height: 100%;">
+					
+						<div class="wd_gallery_asset">
+	<div class="wd_asset_image">
+		<img src="/file.php/183893/PYPL-Investor_Thumbnail.jpg?thumbnail=asset" title="Fourth Quarter and FY2023 Results " border="0"/>
+	</div>
+	<div class="wd_icon_overlay">
+		<a href="https://newsroom.paypal-corp.com/2024-02-07-PayPal-Reports-Fourth-Quarter-and-Full-Year-2023-Results#assets_117:19676" class="wd_link_underlay" tabindex="-1"></a>
+		<div>
+			<div class="wd_icon_container"><a href="https://newsroom.paypal-corp.com/2024-02-07-PayPal-Reports-Fourth-Quarter-and-Full-Year-2023-Results#assets_117:19676"><span class="fa fa-search-plus"></span><span class="wd_sr-only wd_sr-only-focusable">View File</span></a> </div>
+			
+		</div>
+	</div>
+	<div class="wd_title_overlay">
+		Fourth Quarter and FY2023 Results 
+	</div>
+</div>
+
+					
+				</li>
+			</ul>
+			</div>
+		
+				
+			</div></div>
+<div class="wd_moved-related-wrapper">&nbsp;</div>
+
+
+
+<!-- ITEMDATE: 2024-02-07 16:16:00 EST -->
+
+</div>
+</div><div class="wd_featureboxes_filler wd_featureboxes-vertical fr-view">
+<div id="wd_featurebox-standard_3544" class="wd_featurebox_container wd_featurebox-standard"><div class="wd_featurebox_title">(Newsroom Ad tile) The Modern Enterprise</div><div class="wd_featurebox"><table width="1200" class="wd_imagetable" border="0" cellpadding="0" cellspacing="0" align="left" style="margin: 0px 0px 0px 0px;" role="presentation"><tr><td><a href="https://newsroom.paypal-corp.com/The-Modern-Enterprise" target="_self"><img src="/image/ModernEnterprise_CARD_2024.png" border="0" alt="The Modern Enterprise series explores the issues and opportunities shaping successful companies." title="The Modern Enterprise series explores the issues and opportunities shaping successful companies."  /></a></td></tr></table>
+</div></div><div id="wd_featurebox-standard_3545" class="wd_featurebox_container wd_featurebox-standard"><div class="wd_featurebox_title">(Newsroom Ad tile) Small Business Spotlight</div><div class="wd_featurebox"><table width="1200" class="wd_imagetable" border="0" cellpadding="0" cellspacing="0" align="left" style="margin: 0px 0px 0px 0px;" role="presentation"><tr><td><a href="https://newsroom.paypal-corp.com/Small-Business-Spotlight" target="_self"><img src="/image/SMBSpotlight_CARD_2024_.png" border="0" alt="Small Business Spotlight" title="Small Business Spotlight"  /></a></td></tr></table>
+</div></div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	 
+
+	 
+
+	</div> <!-- End Main Content -->
+
+		<div class="container-fluid wd_dkblue-background mt-3">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center mx-auto">
+						<div class="wd_featureboxes_subscribe wd_featureboxes-vertical fr-view">
+<div id="wd_featurebox-standard_3542" class="wd_featurebox_container wd_featurebox-standard"><div class="wd_featurebox_title">Stay up to date.</div><div class="wd_featurebox"><p>Sign up to receive the latest news to your email.</p>
+
+<p class="wd_white-button"><a href="alerts">Subscribe</a></p>
+</div></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="container-fluid wd_footer-wrap">
+		<footer class="" role="contentinfo">
+			<div class="wd_footer-top">
+				<div class="row">
+
+						<div class="col-md-3 col-sm-12">
+							<div class="wd_footer-logo">
+								<img src="images/newsroom-updated.svg" alt="Paypal Logo">
+								<p><a href="https://www.paypal.com/us/home" target="_blank">PayPal.com</a><br>
+								<a href="https://www.venmo.com" target="_blank">Venmo.com</a><br>
+								<a href="https://www.joinhoney.com/paypal" target="_blank">JoinHoney.com</a></p>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-sm-12 wd_link-list">
+							<h4>Our Global Newsrooms</h4>
+
+<ul>
+	<li><a href="https://newsroom.paypal-corp.com/">Global/USA</a></li>
+	<li><a href="https://newsroom.apac.paypal-corp.com/">Asia Pacific</a></li>
+	<li><a href="https://newsroom.au.paypal-corp.com/">Australia</a></li>
+	<li><a href="https://newsroom.br.paypal-corp.com/">Brazil</a></li>
+	<li><a href="https://newsroom.ca.paypal-corp.com/">Canada</a></li>
+</ul>
+
+<ul>
+	<li><a href="https://newsroom.china.paypal-corp.com/">China</a></li>
+	<li><a href="https://newsroom.fr.paypal-corp.com/">France</a></li>
+	<li><a href="https://newsroom.deatch.paypal-corp.com/">Germany</a></li>
+	<li><a href="https://newsroom.ie.paypal-corp.com/">Ireland</a></li>
+	<li><a href="https://newsroom.it.paypal-corp.com/">Italy</a></li>
+</ul>
+
+<ul>
+	<li><a href="https://newsroom.jp.paypal-corp.com/">Japan</a></li>
+	<li><a href="https://newsroom.latam.paypal-corp.com/">Latin America</a></li>
+
+	<li><a href="https://newsroom.es.paypal-corp.com/">Spain</a></li>
+	<li><a href="https://newsroom.uk.paypal-corp.com/">UK</a></li>
+</ul>
+						</div>
+
+						<div class="col-md-3 col-sm-12 wd_social">
+							<h4>Stay Connected</h4>
+							<ul class="wd_social-footer">
+								<li><a href="https://www.facebook.com/PayPalUSA/" target="_blank"><img src="images/icons/FacebookCircleIcon.png"></a></li>
+								<li><a href="https://www.youtube.com/c/paypal" target="_blank"><img src="images/icons/YouTubeCircleIcon.png"></a></li>
+								<li><a href="https://x.com/PayPal" target="_blank"><img src="images/icons/X_DKGRAY.png"></a></li>
+								<li><a href="https://www.instagram.com/paypal/" target="_blank"><img src="images/icons/InstagramCircleIcon.png"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			<div class="wd_footer-bottom">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-3 col-sm-12 px-0">
+							<p>© PayPal 2026 All rights reserved.</p>
+						</div>
+						<div class="col-md-9 col-sm-12 px-0">
+							<a href="https://www.paypal.com/privacy-center" target="_blank">Privacy</a>
+<a href="https://newsroom.paypal-corp.com/contact" target="_self">Contact Us</a>
+							<a class="wd_cookie-pref" onclick="manageCookiePreferences()">Cookies</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<!-- JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+
+	<!-- MediaRoom Scripts -->
+	<script src="slick/slick.js"></script>
+	<script src="js/wdheaderandfooter.js"></script>
+	<script src="js/wdcontent.js"></script>
+
+	<script>
+	function containsImage() {
+		$('.wd_item:not([class^="wd_asset"]):not(.wd_carousel-item), .item').each(function(){
+		var hasImage = $(this).find('.wd_thumbnail img').attr('src');
+			if(hasImage === undefined) {
+				$(this).addClass('wd_no-image');
+			} else {
+				$(this).addClass('wd_has-image');
+			}
+		});
+	}
+
+	function noImage() {
+		//Add Default Image to items with none
+		$('.wd_no-image').each(function(){
+			if($(this).find('.wd_thumbnail').length){}else{
+				var link = $(this).find('.wd_item_wrapper .wd_title a').attr('href');
+				var text = $(this).find('.wd_item_wrapper .wd_title a').text();
+				var image = new Array ();
+				image[0] = "images/fillers/Library_Monogram_Black.png";
+				image[1] = "images/fillers/Library_Monogram_Gray3.png";
+				image[2] = "images/fillers/Library_PayPal_Black.png";
+				image[3] = "images/fillers/Library_PayPal_BrightBlue.png";
+				image[4] = "images/fillers/Library_PayPal_DeepBlue.png";
+				image[5] = "images/fillers/Library_PayPal_VenmoBlue.png";
+				var size = image.length;
+				var x = Math.floor(size*Math.random());
+				
+				$(this).prepend('<div class="wd_thumbnail"><a href="'+link+'"><img alt="'+text+'" src="'+image[x]+'" border="0"></a></div>');
+			};
+		});
+	}
+
+	function toolbar() {
+	//Adds Toolbar before standard detail content section
+		$('.wd_toolbar.wd_toolbar-detail').clone().prependTo('.wd_standard-detail');	
+	}
+
+	function relatedContent() {
+	//Wraps Related Content Image and p tags
+		$('.wd_related-wrap').each(function(){
+			$(this).find('img').insertBefore($(this).find('p:first-child'));
+		$(this).find('p').wrapAll('<div class="wd_inner"></div>');
+		});
+		//Moves Related Content to container defined in microtemplate
+		$('.wd_related-content').prependTo('.wd_moved-related-wrapper');
+
+	// Replace images with background image elements
+		$('.wd_related-content.wd_rounded-square .wd_related-wrap-new').each(function() {
+			var imgSrc = $(this).find('.wd_related-img-bg img').attr('src');
+			$(this).find('.wd_responsive-img').append('<div class="wd_related-background-img" style="background-image: url('+imgSrc+');"></div>');
+			$(this).find('.wd_related-img-bg img').remove();
+	});
+
+	// Add Read More link to Related Articles
+		$('.wd_related-content.wd_rounded-square .wd_related-wrap-new').each(function() {
+			var link = $(this).find('.wd_related-headline-more a').attr('href');
+			var text = $(this).find('.wd_title a').text();
+			$('<div class="wd_read-more"><a href="'+link+'" aria-label="Read more about '+text+'">Read more</a></div>').insertAfter($(this).find('.wd_related-headline-more'));
+		});
+
+	// Wrap wd_related-headline-more and wd_read-more in one elements
+		$('.wd_related-content.wd_rounded-square .wd_related-wrap-new').each(function() {
+			$(this).find('.wd_related-headline-more, .wd_read-more').wrapAll('<div class="wd_related-headline-content"><div class="related_content-inner"></div></div>');
+		});
+	}
+
+	function globalSearch() {
+		$('.wd_global_search').prependTo('.wd_page-actions-wrap');
+	}
+
+	function movesAssets() {
+		//Moves Assets to container defined in microtemplate
+		$('div[wd_move_after]').prependTo('.wd_moved-assets-wrapper');
+		$('div[wd_move_after]').before('<h4>Related Content</h4>');
+	}
+
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+		
+		//Crisis Pages - Add AddThis
+		
+		//Stories, News Releases, Articles - List Pages
+				containsImage();
+		noImage();
+		
+		//Stories, News Releases, Articles Detail pages
+				relatedContent();
+		toolbar();
+		movesAssets();
+				
+		//Stories List Page
+		
+		//New Release List Page - Remove Trailing Thumbnail
+				globalSearch();
+
+		$('#navbarNavDropdown #wd_topnav-20295').addClass('active');
+
+		$('.wd_newsfeed_releases .wd_thumbnail img').each(function(){
+			this.src = this.src.replace('thumbnail=144', '');
+			this.src = this.src.replace('?p=thumbnail', '');
+		});
+		
+		//News Releases Detail - Move Block Quote
+				//Moves Block Quote
+		//$('blockquote').insertAfter('.wd_responsive-img:first-of-type');
+		
+		//Article Detail - Test for Image
+		
+		//Multimedia - 20292
+		
+		//About Page - 20285
+		
+		//Contact PayPal - 20294
+		
+		//Search Results Page 
+		
+		
+		$('.wd_stories-teaser .item, wd_newsfeed_releases-teaser .item').each(function(){
+			containsImage();
+			noImage();
+		});
+
+		}); //END Document Ready
+	</script>
+
+	<!-- Twitter universal website tag code -->
+	<script>
+	!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+	},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+	a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+	// Insert Twitter Pixel ID and Standard Event data below
+	twq('init','o7elj');
+	twq('track','PageView');
+	</script>
+	<!-- END Twitter universal website tag code -->
+
+	<!-- LinkedIn tag code -->
+	<script type="text/javascript">
+	_linkedin_partner_id = "1001051";
+	window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+	window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+	</script><script type="text/javascript">
+	(function(l) {
+	if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+	window.lintrk.q=[]}
+	var s = document.getElementsByTagName("script")[0];
+	var b = document.createElement("script");
+	b.type = "text/javascript";b.async = true;
+	b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+	s.parentNode.insertBefore(b, s);})(window.lintrk);
+	</script>
+	<noscript>
+	<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1001051&fmt=gif" />
+	</noscript>
+	<!-- END LinkedIn tag code -->
+
+ 
+
+<!-- begin spin_special_output(body_end) -->
+<script wd_script_id="piwik_tracking_code"></script>
+<!-- Piwik Tracking Code -->
+<script type="text/plain" class="optanon-category-2">
+  var _paq = _paq || [];
+
+  _paq.push(["setCustomVariable", 4, "News Release Feed ID", "202402071616PR_NEWS_USPR_____SF30894", "page"]);
+
+  _paq.push(["setCustomVariable", 1, "Content Type", "News Releases Feed", "page"]);
+
+  _paq.push(["setCustomVariable", 3, "Navigation Page", "News", "page"]);
+
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+  (function() {
+    var u="//stats.drivetheweb.com/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", 5792]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
+    g.type="text/javascript"; g.async=true; g.defer=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript>
+	<img src="https://stats.drivetheweb.com/piwik.php?idsite=5792&rec=1" style="border:0" alt="" />
+</noscript>
+<!-- End Piwik Tracking Code -->
+		
+<!-- end spin_special_output(body_end) -->
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e500821bba88240',t:'MTc3NDk2NzIxNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

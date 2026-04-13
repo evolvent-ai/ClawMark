@@ -1,0 +1,4 @@
+Prepare Lin Fan's NSFC proposal: review drafts, compile a compliant budget, meet pre-review.
+Wed 3/18: check draft sections, flag word count and equipment-ratio issues, build budget from the voice memo.
+Thu 3/19 AM: resolve TPAMI status and A100-to-cloud swap.
+Thu 3/19 PM: Finance Li corrects cloud category; finalize and submit.

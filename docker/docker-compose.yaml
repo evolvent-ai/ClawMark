@@ -1,0 +1,47 @@
+services:
+  main:
+    image: clawmark-main:latest
+    pull_policy: never
+    command: ["sleep", "infinity"]
+    working_dir: /workspace
+    networks:
+      - bench-net
+
+  radicale:
+    image: tomsquest/docker-radicale
+    hostname: radicale
+    environment:
+      RADICALE_CONFIG_AUTH_TYPE: "none"
+      RADICALE_CONFIG_SERVER_HOSTS: "0.0.0.0:5232"
+      RADICALE_CONFIG_RIGHTS_TYPE: "authenticated"
+    ports:
+      - "127.0.0.1:0:5232"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:5232"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    networks:
+      - bench-net
+
+  greenmail:
+    image: greenmail/standalone:2.1.8
+    hostname: greenmail
+    environment:
+      GREENMAIL_OPTS: "-Dgreenmail.setup.test.all -Dgreenmail.hostname=0.0.0.0 -Dgreenmail.auth.disabled"
+    ports:
+      - "127.0.0.1:0:3025"   # SMTP
+      - "127.0.0.1:0:3143"   # IMAP
+      - "127.0.0.1:0:8080"   # API
+    healthcheck:
+      test: ["CMD", "sh", "-c", "java -version"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+    networks:
+      - bench-net
+
+networks:
+  bench-net:

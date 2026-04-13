@@ -1,0 +1,4 @@
+Year-end top 10 livelihood feature for Liu Ying, testing ranking, archive cross-check, and photo verification.
+12/29: build the shortlist, cross-check archives, vet photos.
+12/30: elder-care vote looks off and air-quality needs recalc; score_correction CSV lands unseen.
+12/31: swap the metro photo before lock; photo_registry updates without a ping.

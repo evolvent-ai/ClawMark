@@ -1,0 +1,202 @@
+[
+  {
+    "review_id": "R001",
+    "order_id": "TM-20240301-10200",
+    "sku": "HW-K2202",
+    "rating": 1,
+    "content": "Product arrived with visible scratches on the surface. Very disappointing.",
+    "channel": "tmall",
+    "date": "2024-03-05",
+    "has_photo": true
+  },
+  {
+    "review_id": "R002",
+    "order_id": "TM-20240301-10201",
+    "sku": "HW-K2201",
+    "rating": 2,
+    "content": "The handle feels loose right out of the box. Might fall off soon.",
+    "channel": "tmall",
+    "date": "2024-03-06",
+    "has_photo": true
+  },
+  {
+    "review_id": "R003",
+    "order_id": "TM-20240301-10202",
+    "sku": "HW-K2202",
+    "rating": 1,
+    "content": "Packaging was completely crushed on arrival. The item inside was dented.",
+    "channel": "tmall",
+    "date": "2024-03-07",
+    "has_photo": true
+  },
+  {
+    "review_id": "R004",
+    "order_id": "TM-20240301-10203",
+    "sku": "HW-K2202",
+    "rating": 3,
+    "content": "Stopped working after three days of use. Total waste of money.",
+    "channel": "tmall",
+    "date": "2024-03-08",
+    "has_photo": true
+  },
+  {
+    "review_id": "R005",
+    "order_id": "TM-20240301-10204",
+    "sku": "HW-K2201",
+    "rating": 2,
+    "content": "Color does not match the listing photos at all. Looks much cheaper.",
+    "channel": "tmall",
+    "date": "2024-03-09",
+    "has_photo": true
+  },
+  {
+    "review_id": "R006",
+    "order_id": "JD-20240305-88712",
+    "sku": "HW-K2201",
+    "rating": 1,
+    "content": "Button stopped working after one week. Had to return it.",
+    "channel": "jd",
+    "date": "2024-03-10",
+    "has_photo": true
+  },
+  {
+    "review_id": "R007",
+    "order_id": "DY-20240305-88712",
+    "sku": "HW-K2201",
+    "rating": 1,
+    "content": "Scratched on arrival, packaging damaged. Same issue as my other order.",
+    "channel": "douyin",
+    "date": "2024-03-11",
+    "has_photo": true
+  },
+  {
+    "review_id": "R008",
+    "order_id": "TM-20240310-77777",
+    "sku": "HW-K2201",
+    "rating": 3,
+    "content": "Ordered this but it was cancelled, yet I still got charged. Terrible service.",
+    "channel": "tmall",
+    "date": "2024-03-12",
+    "has_photo": true
+  },
+  {
+    "review_id": "R009",
+    "order_id": "TM-20240301-10208",
+    "sku": "HW-K2201",
+    "rating": 3,
+    "content": "Arrived late and the coating is already peeling off.",
+    "channel": "tmall",
+    "date": "2024-03-13",
+    "has_photo": false
+  },
+  {
+    "review_id": "R010",
+    "order_id": "TM-20240301-10209",
+    "sku": "HW-K2201",
+    "rating": 2,
+    "content": "The lid does not close properly. Clearly a manufacturing defect.",
+    "channel": "tmall",
+    "date": "2024-03-14",
+    "has_photo": false
+  },
+  {
+    "review_id": "R011",
+    "order_id": "TM-20240301-10210",
+    "sku": "HW-K2201",
+    "rating": 1,
+    "content": "Plastic smell is overwhelming. Unusable until it airs out for days.",
+    "channel": "tmall",
+    "date": "2024-03-15",
+    "has_photo": false
+  },
+  {
+    "review_id": "R012",
+    "order_id": "TM-20240301-10211",
+    "sku": "HW-K2201",
+    "rating": 2,
+    "content": "Motor makes a loud grinding noise. Returned immediately.",
+    "channel": "tmall",
+    "date": "2024-03-16",
+    "has_photo": true
+  },
+  {
+    "review_id": "R013",
+    "order_id": "TM-20240301-10212",
+    "sku": "HW-K2201",
+    "rating": 2,
+    "content": "Paint chipped during shipping. Poor packaging quality.",
+    "channel": "tmall",
+    "date": "2024-03-17",
+    "has_photo": true
+  },
+  {
+    "review_id": "R014",
+    "order_id": "TM-20240301-10213",
+    "sku": "HW-K2201",
+    "rating": 2,
+    "content": "Does not heat evenly. One side stays cold.",
+    "channel": "tmall",
+    "date": "2024-03-18",
+    "has_photo": true
+  },
+  {
+    "review_id": "R015",
+    "order_id": "TM-20240301-10214",
+    "sku": "HW-K2201",
+    "rating": 2,
+    "content": "Rubber feet fell off after two uses. Build quality is atrocious.",
+    "channel": "tmall",
+    "date": "2024-03-05",
+    "has_photo": false
+  },
+  {
+    "review_id": "R016",
+    "order_id": "TM-20240301-10215",
+    "sku": "HW-K2201",
+    "rating": 2,
+    "content": "Power cord is way too short. Barely reaches the outlet.",
+    "channel": "tmall",
+    "date": "2024-03-06",
+    "has_photo": true
+  },
+  {
+    "review_id": "R017",
+    "order_id": "TM-20240301-10216",
+    "sku": "HW-K2202",
+    "rating": 1,
+    "content": "Received a used/returned item. There were fingerprints inside.",
+    "channel": "tmall",
+    "date": "2024-03-07",
+    "has_photo": false
+  },
+  {
+    "review_id": "R018",
+    "order_id": "TM-20240301-10217",
+    "sku": "HW-K2202",
+    "rating": 3,
+    "content": "Timer dial is misaligned and skips numbers. Quality control issue.",
+    "channel": "tmall",
+    "date": "2024-03-08",
+    "has_photo": false
+  },
+  {
+    "review_id": "R019",
+    "order_id": "TM-20240301-10218",
+    "sku": "HW-K2201",
+    "rating": 1,
+    "content": "Overall flimsy construction. Feels like it will break any moment.",
+    "channel": "tmall",
+    "date": "2024-03-09",
+    "has_photo": true
+  },
+  {
+    "review_id": "R020",
+    "order_id": "TM-20240301-10219",
+    "sku": "HW-K2201",
+    "rating": 1,
+    "content": "Thermostat seems inaccurate — overheats and shuts off randomly.",
+    "channel": "tmall",
+    "date": "2024-03-10",
+    "has_photo": false
+  }
+]

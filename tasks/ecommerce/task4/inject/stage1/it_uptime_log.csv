@@ -1,0 +1,5 @@
+timestamp,system,status,duration_sec
+2024/3/26 13:58,reinspection_app,up,420
+2024/3/26 14:05,reinspection_app,degraded,20
+2024/3/26 14:05,reinspection_app,up,1180
+2024/3/26 14:25,reinspection_app,up,900

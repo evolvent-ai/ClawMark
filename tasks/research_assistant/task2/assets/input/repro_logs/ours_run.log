@@ -1,0 +1,30 @@
+[2024-03-18 10:00:00] ============================================
+[2024-03-18 10:00:00] Our System Evaluation Script v2.1
+[2024-03-18 10:00:00] ============================================
+[2024-03-18 10:00:00] Starting evaluation on WMT'22 test set...
+[2024-03-18 10:00:00] Model: our_nmt_system (checkpoint: final)
+[2024-03-18 10:00:00] Beam size: 5
+[2024-03-18 10:00:01] Loading model checkpoint from checkpoints/ours/final.pt ...
+[2024-03-18 10:00:07] Model loaded successfully. Parameters: 256M
+[2024-03-18 10:00:07] Loading WMT'22 En-De test set (3,000 sentence pairs)...
+[2024-03-18 10:00:08] Dataset loaded. 3000 source sentences, avg length 24.3 tokens.
+[2024-03-18 10:00:08] Running evaluation on wmt22_en_de...
+[2024-03-18 10:00:08] Batch 1/94: processing 32 sentences... BLEU(batch)=43.1
+[2024-03-18 10:00:23] Batch 2/94: processing 32 sentences... BLEU(batch)=44.2
+[2024-03-18 10:00:38] Batch 3/94: processing 32 sentences... BLEU(batch)=42.8
+[2024-03-18 10:01:10] Batch 5/94: processing 32 sentences... BLEU(batch)=43.7
+[2024-03-18 10:02:50] Batch 10/94: processing 32 sentences... BLEU(batch)=43.4
+[2024-03-18 10:05:35] Batch 20/94: processing 32 sentences... BLEU(batch)=43.2
+[2024-03-18 10:08:20] Batch 30/94: processing 32 sentences... BLEU(batch)=43.8
+[2024-03-18 10:11:00] Batch 40/94: processing 32 sentences... BLEU(batch)=43.5
+[2024-03-18 10:13:40] Batch 50/94: processing 32 sentences... BLEU(batch)=43.3
+[2024-03-18 10:16:10] Batch 60/94: processing 32 sentences... BLEU(batch)=43.6
+[2024-03-18 10:18:40] Batch 70/94: processing 32 sentences... BLEU(batch)=43.9
+[2024-03-18 10:20:30] Batch 80/94: processing 32 sentences... BLEU(batch)=43.4
+[2024-03-18 10:22:00] Batch 90/94: processing 32 sentences... BLEU(batch)=43.7
+[2024-03-18 10:22:20] Batch 94/94: processing 16 sentences... BLEU(batch)=43.5
+[2024-03-18 10:22:22] === Evaluation Complete ===
+[2024-03-18 10:22:22] Computing corpus-level metrics...
+[2024-03-18 10:22:22] [EVAL] BLEU=43.5 | ROUGE-L=39.8 | BERTScore=0.902 | dataset=wmt22_en_de | beam_size=5
+[2024-03-18 10:22:22] Total time: 22m22s
+[2024-03-18 10:22:22] Results saved to results/ours_run.json

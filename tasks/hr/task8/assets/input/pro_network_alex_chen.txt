@@ -1,0 +1,24 @@
+=== Professional Network Profile ===
+URL: http://pro-network.local/alex-chen
+
+Name:           Alex Chen
+Headline:       VP of Engineering | Platform & Infrastructure
+Company:        Nebula Systems
+Location:       San Francisco, CA
+
+Career Timeline:
+  VP of Engineering, Nebula Systems        September 2021 - Present
+    Promoted to VP in September 2021.
+  Director, Platform Engineering, Nebula Systems   January 2019 - September 2021
+    Led platform engineering and reliability programs.
+  Senior Engineering Manager, Orbital Data   2016 - 2018
+
+About:
+  Engineering leader specialising in cloud platform execution, org design,
+  and cross-functional delivery. Expanded management span across platform,
+  developer experience, and technical program operations.
+
+Skills:
+  Platform Engineering | Org Design | Budget Ownership | Reliability | Hiring
+
+Last profile update: 2024-03-15

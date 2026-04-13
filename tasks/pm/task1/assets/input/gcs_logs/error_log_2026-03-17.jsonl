@@ -1,0 +1,6 @@
+{"timestamp":"2026-03-17T09:12:33Z","level":"ERROR","order_id":"ORD-95001","service":"refund-service","method":"apply_refund","message":"refund callback timeout after 30s, status stuck at PROCESSING","trace_id":"t-9500100001"}
+{"timestamp":"2026-03-17T09:45:18Z","level":"ERROR","order_id":"ORD-95002","service":"refund-service","method":"apply_refund","message":"refund callback timeout after 30s, status stuck at PROCESSING","trace_id":"t-9500200001"}
+{"timestamp":"2026-03-17T10:22:41Z","level":"ERROR","order_id":"ORD-95003","service":"refund-service","method":"apply_refund","message":"refund callback timeout after 30s, status stuck at PROCESSING","trace_id":"t-9500300001"}
+{"timestamp":"2026-03-17T11:08:55Z","level":"ERROR","order_id":"ORD-95004","service":"refund-service","method":"apply_refund","message":"refund callback timeout after 30s, status stuck at PROCESSING","trace_id":"t-9500400001"}
+{"timestamp":"2026-03-17T13:55:02Z","level":"WARN","order_id":"ORD-95010","service":"refund-service","method":"apply_refund","message":"payment gateway response slow, latency=18500ms","trace_id":"t-9501000001"}
+{"timestamp":"2026-03-17T14:31:07Z","level":"ERROR","order_id":"ORD-95005","service":"refund-service","method":"apply_refund","message":"refund callback timeout after 30s, status stuck at PROCESSING","trace_id":"t-9500500001"}

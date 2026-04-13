@@ -1,0 +1,4 @@
+JPM 1Q24 coverage for Li Chen, testing reported-vs-adjusted basis separation and peer framing.
+Fri 4/12: read IR materials, draft the morning-meeting card.
+Mon 4/15: follow up on guide changes and CRE; an LP deposit-beta question waits in Notion.
+Tue 4/16: overnight Wells Fargo screenshot plus a new peer_monitor row.

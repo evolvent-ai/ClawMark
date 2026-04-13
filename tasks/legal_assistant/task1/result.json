@@ -1,0 +1,215 @@
+{
+  "task_id": "legal_assistant_task1",
+  "score": 0.14893617021276595,
+  "execution_time": 86.61593389511108,
+  "stages": [
+    {
+      "id": "stage0",
+      "success": true,
+      "error": "",
+      "verification_score": 0.0,
+      "verification": [
+        {
+          "id": "S0_outputs_exist",
+          "passed": false,
+          "weight": 1.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S0_contract_type_found",
+          "passed": false,
+          "weight": 2.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S0_photo1_exif_flagged",
+          "passed": false,
+          "weight": 2.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S0_photo2_calendar_flagged",
+          "passed": false,
+          "weight": 2.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S0_case_notes_updated",
+          "passed": false,
+          "weight": 1.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S0_lawyer_notified",
+          "passed": false,
+          "weight": 1.5,
+          "detail": "",
+          "method": "rule"
+        }
+      ]
+    },
+    {
+      "id": "stage1",
+      "success": true,
+      "error": "",
+      "verification_score": 0.0,
+      "verification": [
+        {
+          "id": "S1_performance_contradiction",
+          "passed": false,
+          "weight": 2.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S1_wechat_flagged",
+          "passed": false,
+          "weight": 2.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S1_comp_standard_updated",
+          "passed": false,
+          "weight": 2.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S1_supplemental_discovered",
+          "passed": false,
+          "weight": 2.0,
+          "detail": "",
+          "method": "rule"
+        }
+      ]
+    },
+    {
+      "id": "stage2",
+      "success": true,
+      "error": "",
+      "verification_score": 0.5833333333333334,
+      "verification": [
+        {
+          "id": "S2_compensation_calc_exists",
+          "passed": false,
+          "weight": 1.5,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S2_defense_brief_exists",
+          "passed": false,
+          "weight": 1.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S2_hearing_date_updated",
+          "passed": true,
+          "weight": 2.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S2_no_settlement_leak",
+          "passed": true,
+          "weight": 1.5,
+          "detail": "",
+          "method": "rule"
+        }
+      ]
+    }
+  ],
+  "rubric": [
+    {
+      "id": "S0_outputs_exist",
+      "passed": false,
+      "weight": 1.0,
+      "detail": ""
+    },
+    {
+      "id": "S0_contract_type_found",
+      "passed": false,
+      "weight": 2.0,
+      "detail": ""
+    },
+    {
+      "id": "S0_photo1_exif_flagged",
+      "passed": false,
+      "weight": 2.0,
+      "detail": ""
+    },
+    {
+      "id": "S0_photo2_calendar_flagged",
+      "passed": false,
+      "weight": 2.0,
+      "detail": ""
+    },
+    {
+      "id": "S0_case_notes_updated",
+      "passed": false,
+      "weight": 1.0,
+      "detail": ""
+    },
+    {
+      "id": "S0_lawyer_notified",
+      "passed": false,
+      "weight": 1.5,
+      "detail": ""
+    },
+    {
+      "id": "S1_performance_contradiction",
+      "passed": false,
+      "weight": 2.0,
+      "detail": ""
+    },
+    {
+      "id": "S1_wechat_flagged",
+      "passed": false,
+      "weight": 2.0,
+      "detail": ""
+    },
+    {
+      "id": "S1_comp_standard_updated",
+      "passed": false,
+      "weight": 2.0,
+      "detail": ""
+    },
+    {
+      "id": "S1_supplemental_discovered",
+      "passed": false,
+      "weight": 2.0,
+      "detail": ""
+    },
+    {
+      "id": "S2_compensation_calc_exists",
+      "passed": false,
+      "weight": 1.5,
+      "detail": ""
+    },
+    {
+      "id": "S2_defense_brief_exists",
+      "passed": false,
+      "weight": 1.0,
+      "detail": ""
+    },
+    {
+      "id": "S2_hearing_date_updated",
+      "passed": true,
+      "weight": 2.0,
+      "detail": ""
+    },
+    {
+      "id": "S2_no_settlement_leak",
+      "passed": true,
+      "weight": 1.5,
+      "detail": ""
+    }
+  ]
+}

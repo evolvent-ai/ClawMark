@@ -1,0 +1,39 @@
+experiment:
+  name: table3_low_resource
+  description: Low-resource experiment with varying data ratios
+
+model:
+  vision_model: openai/clip-vit-large-patch14
+  hidden_size: 768
+  num_heads: 12
+  num_cross_layers: 4
+  num_visual_prompts: 16
+  proj_size: 256
+  contrastive_weight: 0.1
+
+data:
+  dataset: mscoco
+  data_dir: ./data/mscoco
+  image_size: 224
+  max_length: 77
+  data_ratios: [0.01, 0.05, 0.10, 0.50, 1.00]
+
+training:
+  batch_size: 64
+  num_epochs: 20
+  learning_rate: 2e-4
+  weight_decay: 0.01
+  warmup_ratio: 0.15
+  max_grad_norm: 1.0
+  fp16: true
+  seed: 42
+
+evaluation:
+  eval_every: 500
+  metric: accuracy
+  save_best: true
+
+logging:
+  log_every: 100
+  wandb_project: unialign
+  run_name: table3_lowres

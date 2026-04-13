@@ -1,0 +1,30 @@
+{
+  "export_date": "2026-03-20T00:00:00",
+  "total_emails": 2,
+  "emails": [
+    {
+      "email_id": "1",
+      "subject": "Q1 Report Review",
+      "from_addr": "Donald Richardson <drichardson@mcp.com>",
+      "to_addr": "rkelly27@mcp.com",
+      "date": "Wed, 19 Mar 2026 10:30:00 +0800",
+      "body_text": "Hi Ronald,\n\nPlease review the Q1 report and send your feedback by Friday.\n\nThanks,\nDonald",
+      "body_html": "",
+      "is_read": false,
+      "folder": "INBOX",
+      "attachments": []
+    },
+    {
+      "email_id": "2",
+      "subject": "Team Lunch Friday",
+      "from_addr": "Karen Lee <klee@mcp.com>",
+      "to_addr": "rkelly27@mcp.com",
+      "date": "Wed, 19 Mar 2026 14:00:00 +0800",
+      "body_text": "Hey Ronald,\n\nWe're planning a team lunch this Friday at noon. Are you in?\n\nBest,\nKaren",
+      "body_html": "",
+      "is_read": false,
+      "folder": "INBOX",
+      "attachments": []
+    }
+  ]
+}

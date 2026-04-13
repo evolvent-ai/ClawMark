@@ -1,0 +1,38 @@
+{
+  "issue_key": "JIRA-4721",
+  "project": "SILICON",
+  "type": "Bug",
+  "status": "Closed",
+  "resolution": "Won't Fix (By Design)",
+  "created": "2024-11-08T14:22:00Z",
+  "resolved": "2024-12-03T09:45:00Z",
+  "reporter": "sarah.park",
+  "assignee": "mike.zhang",
+  "summary": "Legacy arbiter: non-deterministic grant ordering after reset during active transaction",
+  "description": "In the legacy round-robin arbiter (v1.2), if a reset is asserted WHILE an active transaction is in progress (i.e., a grant is already being held by a port), the post-reset grant ordering may not start from port 0. This is because the transaction-in-progress logic prevents the last_grant pointer from being fully cleared during reset.\n\nThis behavior was observed in silicon on the Alpha-7 chip and was determined to be acceptable because:\n1. Reset during active transaction is an exceptional condition (not normal operation)\n2. The system-level reset sequence always ensures no active transactions before asserting reset\n3. The protocol spec at the time (v2.1) did not explicitly define post-reset behavior during active transactions\n\nResolution: The checker was updated to allow non-deterministic post-reset grant ordering ONLY when reset occurs during an active transaction. Normal clean-reset behavior (reset with no active transaction) still requires grant to start from port 0.",
+  "conditions_for_exception": [
+    "Reset asserted DURING an active transaction (grant held by a port)",
+    "Legacy arbiter v1.2 architecture only",
+    "System-level reset sequence guarantees no functional impact"
+  ],
+  "comments": [
+    {
+      "author": "mike.zhang",
+      "date": "2024-11-10T10:15:00Z",
+      "text": "Confirmed this only happens when grant is active during reset assertion. Normal reset path works correctly — last_grant properly clears to 0."
+    },
+    {
+      "author": "sarah.park",
+      "date": "2024-11-15T16:30:00Z",
+      "text": "Added checker waiver for the specific condition: reset_during_active_txn. Clean reset path checker remains unchanged."
+    },
+    {
+      "author": "david.liu",
+      "date": "2024-12-03T09:45:00Z",
+      "text": "Closing as Won't Fix. The exception is documented and the checker has been updated to handle this specific case."
+    }
+  ],
+  "related_spec_versions": ["v2.1 (did not define post-reset behavior during active txn)"],
+  "current_spec_version": "v3.0",
+  "labels": ["arbiter", "reset", "legacy", "checker-waiver", "alpha-7"]
+}

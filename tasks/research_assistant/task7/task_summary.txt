@@ -1,0 +1,4 @@
+Organize Prof. Chen's lab meeting notes and track action items across slides, whiteboard, and audio transcripts.
+Wed 3/19: write notes, flag Li Ming's deadline conflict, reply to Wang on slide 3.
+Thu 3/20: reconcile Zhao's ablation and Li Ming's extension.
+Mon 3/24: prepare next week's agenda on ICLR, Condition E.

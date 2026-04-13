@@ -1,0 +1,5 @@
+component,accuracy,f1,precision,recall
+full_model,0.847,0.831,0.842,0.821
+w/o_temporal,0.812,0.798,0.811,0.786
+w/o_contrastive,0.823,0.809,0.824,0.795
+w/o_augmentation,0.831,0.817,0.830,0.805

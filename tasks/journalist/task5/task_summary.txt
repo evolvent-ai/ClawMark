@@ -1,0 +1,3 @@
+Viral kitchen-video verification and data traceability for Liu Ying, testing SQL tracing and screenshot authenticity.
+3/18 10:00: query food_inspection.db for failed records, vet each screenshot, alert the reporter on any bad image.
+3/18 15:00: PR rectification report and test certificate arrive; a new re-inspection row lands in the database.

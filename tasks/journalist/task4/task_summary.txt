@@ -1,0 +1,3 @@
+False-advertising verification for Maiqi La's livestream product for Liu Ying, testing multi-source cross-verification.
+3/18 10:00: check livestream clip, clinical report, labels, and the SQLite product registry for violations and recalls.
+3/19 10:00: PR survey and a hospital-diagnosis email arrive; a fresh recall row is inserted into the database.

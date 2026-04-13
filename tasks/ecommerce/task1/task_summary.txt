@@ -1,0 +1,4 @@
+Batch defect triage and supplier escalation for Chen Jie's QC assistant.
+Mon 3/18: familiarize, then complaint files arrive.
+Tue 3/19: Supplier A sends sub-batch detail; fresh complaints and a lot-240302 return-rate uptick appear.
+Mon 3/25: escalate to procurement director Wang Lei and file the weekly report.

@@ -1,0 +1,42 @@
+2026-03-25 14:05:12 INFO  [deploy-bot] Config update applied: payment-gateway-config v2.7.1 -> v2.8.0 (connection_pool_max_idle_time: 300s -> 30s, max_connections: 200 -> 200)
+2026-03-25 14:12:33 WARN  [payment-service] Connection pool utilization at 72%, trending up
+2026-03-25 14:15:01 WARN  [payment-service] Connection pool utilization at 85%, threshold alert triggered
+2026-03-25 14:18:22 WARN  [payment-service] Connection pool utilization at 93%
+2026-03-25 14:21:00 ERROR [payment-service] Connection pool exhausted, 12 requests queued
+2026-03-25 14:21:03 ERROR [payment-service] order_id=ORD-20260325-10001 payment_gateway timeout after 30s, status=FAILED
+2026-03-25 14:21:18 ERROR [payment-service] order_id=ORD-20260325-10002 payment_gateway timeout after 30s, status=FAILED
+2026-03-25 14:21:45 ERROR [payment-service] order_id=ORD-20260325-10003 connection_pool_exhausted, status=FAILED
+2026-03-25 14:22:01 ERROR [payment-service] order_id=ORD-20260325-10004 payment_gateway timeout after 30s, status=FAILED
+2026-03-25 14:22:33 ERROR [payment-service] order_id=ORD-20260325-10005 connection_pool_exhausted, status=FAILED
+2026-03-25 14:23:01 ERROR [payment-service] order_id=ORD-20260325-10006 connection_pool_exhausted, status=FAILED
+2026-03-25 14:23:15 ERROR [payment-service] Payment success rate dropped below 50%, circuit breaker OPEN
+2026-03-25 14:23:44 ERROR [payment-service] order_id=ORD-20260325-10007 circuit_breaker_open, status=REJECTED
+2026-03-25 14:24:02 ERROR [payment-service] order_id=ORD-20260325-10008 circuit_breaker_open, status=REJECTED
+2026-03-25 14:24:33 ERROR [payment-service] order_id=ORD-20260325-10009 circuit_breaker_open, status=REJECTED
+2026-03-25 14:25:01 ERROR [payment-service] order_id=ORD-20260325-10010 circuit_breaker_open, status=REJECTED
+2026-03-25 14:26:15 ERROR [payment-service] order_id=ORD-20260325-10011 circuit_breaker_open, status=REJECTED
+2026-03-25 14:27:33 ERROR [payment-service] order_id=ORD-20260325-10012 circuit_breaker_open, status=REJECTED
+2026-03-25 14:28:02 ERROR [payment-service] order_id=ORD-20260325-10013 circuit_breaker_open, status=REJECTED
+2026-03-25 14:29:18 ERROR [payment-service] order_id=ORD-20260325-10014 circuit_breaker_open, status=REJECTED
+2026-03-25 14:30:45 ERROR [payment-service] order_id=ORD-20260325-10015 circuit_breaker_open, status=REJECTED
+2026-03-25 14:32:01 ERROR [payment-service] order_id=ORD-20260325-10016 circuit_breaker_open, status=REJECTED
+2026-03-25 14:33:22 ERROR [payment-service] order_id=ORD-20260325-10017 circuit_breaker_open, status=REJECTED
+2026-03-25 14:35:10 ERROR [payment-service] order_id=ORD-20260325-10018 circuit_breaker_open, status=REJECTED
+2026-03-25 14:37:45 ERROR [payment-service] order_id=ORD-20260325-10003 payment_gateway timeout after 30s, status=FAILED
+2026-03-25 14:40:12 ERROR [payment-service] order_id=ORD-20260325-10019 circuit_breaker_open, status=REJECTED
+2026-03-25 14:42:33 ERROR [payment-service] order_id=ORD-20260325-10020 circuit_breaker_open, status=REJECTED
+2026-03-25 14:45:01 ERROR [payment-service] order_id=ORD-20260325-10021 circuit_breaker_open, status=REJECTED
+2026-03-25 14:48:22 ERROR [payment-service] order_id=ORD-20260325-10022 circuit_breaker_open, status=REJECTED
+2026-03-25 14:50:33 ERROR [payment-service] order_id=ORD-20260325-10023 circuit_breaker_open, status=REJECTED
+2026-03-25 14:55:18 ERROR [payment-service] order_id=ORD-20260325-10024 circuit_breaker_open, status=REJECTED
+2026-03-25 15:00:01 ERROR [payment-service] order_id=ORD-20260325-10025 circuit_breaker_open, status=REJECTED
+2026-03-25 15:05:44 ERROR [payment-service] order_id=ORD-20260325-10026 circuit_breaker_open, status=REJECTED
+2026-03-25 15:10:22 ERROR [payment-service] order_id=ORD-20260325-10027 circuit_breaker_open, status=REJECTED
+2026-03-25 15:15:01 ERROR [payment-service] order_id=ORD-20260325-10028 circuit_breaker_open, status=REJECTED
+2026-03-25 15:18:33 INFO  [ops-bot] Rollback initiated: payment-gateway-config v2.8.0 -> v2.7.1
+2026-03-25 15:20:15 INFO  [payment-service] Connection pool utilization dropping: 95% -> 78%
+2026-03-25 15:25:01 INFO  [payment-service] Connection pool utilization: 45%, circuit breaker HALF_OPEN
+2026-03-25 15:30:22 INFO  [payment-service] Circuit breaker CLOSED, payment success rate recovering: 82%
+2026-03-25 15:35:11 INFO  [payment-service] Payment success rate: 95%
+2026-03-25 15:41:03 INFO  [payment-service] Payment success rate: 99.8%, service fully recovered
+2026-03-25 15:41:03 INFO  [monitor] Incident resolved. Duration: 14:23 - 15:41 (78 minutes)

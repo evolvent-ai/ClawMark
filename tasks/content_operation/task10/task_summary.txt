@@ -1,0 +1,3 @@
+Weekend incident triage and postmortem: separate root cause from symptoms across logs, videos, and runbooks.
+Mon 3/16: triage five unresolved tickets, identify pool-exhaustion root cause, and draft an initial postmortem.
+Tue 3/17: refine the postmortem as INC-4403 reopens and a database vendor advisory lands in email.
