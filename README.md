@@ -1,11 +1,12 @@
 # ClawMark
 
-[![Evolvent AI](https://img.shields.io/badge/Evolvent_AI-0f141b?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjI1IC0xMCA2MCAxNTAiPjxwYXRoIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLC0xLDUyLjcwMzYsNDkuNjg2KSIgZD0iTTAgMEMtNy45MTctNi42NjYtMTEuODUyLTE0LjUyMi0xMi4wMzctMjAuMjM2LTEyLjIyMi0yNS45NS0xMC4xODYtMzAuOTQ5LTEuMTExLTM4Ljg4NSA3Ljk2My00Ni44MjEgMTQuMTY3LTUxLjc0MSAxOC43MDQtNTguODA0IDIzLjI0MS02NS44NjcgMjMuNjExLTcwLjk0NiAyMS41NzQtNzUuNzg3IDI3LjUtNzEuODk4IDMwLjc0MS02Ni4xMDUgMzEuMjA0LTYwLjIzMiAzMS42NjctNTQuMzYgMjkuMzUyLTQ1LjcxIDIyLjAzNy0zNy4wNiAxNC43MjItMjguNDEgMTAtMjMuMDkzIDYuOTQ0LTE4Ljg4NyAzLjg4OS0xNC42ODEtLjYwMi05LjI0NSAwIDAiIGZpbGw9IiNmZmYiLz48cGF0aCB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwtMSw1MC42MDc0LDkxLjYxNykiIGQ9Ik0wIDBDLTQuOTg5LTQuMTM5LTcuNDY5LTkuMDE2LTcuNTg2LTEyLjU2My03LjcwMy0xNi4xMS02LjQxOS0xOS4yMTQtLjctMjQuMTQxIDUuMDE5LTI5LjA2OCA4LjkyOC0zMi4xMjMgMTEuNzg4LTM2LjUwNyAxNC42NDctNDAuODkyIDE0Ljg4MS00NC4wNDUgMTMuNTk3LTQ3LjA1IDE3LjMzMi00NC42MzYgMTkuMzc0LTQxLjA0IDE5LjY2Ni0zNy4zOTQgMTkuOTU4LTMzLjc0OCAxOC40OTktMjguMzc4IDEzLjg4OS0yMy4wMDggOS4yNzgtMTcuNjM4IDYuMzAyLTE0LjMzNyA0LjM3Ni0xMS43MjYgMi40NTEtOS4xMTUtLjM3OS01Ljc0IDAgMCIgZmlsbD0iI2ZmZiIvPjxwYXRoIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLC0xLDYxLjkwMzgsMzEuNDExKSIgZD0iTTAgMEMtNC45ODktNC4xMzgtNy40NjktOS4wMTYtNy41ODYtMTIuNTYzLTcuNzAzLTE2LjExLTYuNDE5LTE5LjIxNC0uNy0yNC4xNDEgNS4wMTktMjkuMDY4IDguOTI4LTMyLjEyMyAxMS43ODgtMzYuNTA3IDE0LjY0Ny00MC44OTIgMTQuODgxLTQ0LjA0NSAxMy41OTctNDcuMDUgMTcuMzMyLTQ0LjYzNiAxOS4zNzQtNDEuMDQgMTkuNjY2LTM3LjM5NCAxOS45NTgtMzMuNzQ4IDE4LjQ5OS0yOC4zNzggMTMuODg5LTIzLjAwOCA5LjI3OS0xNy42MzggNi4zMDItMTQuMzM3IDQuMzc3LTExLjcyNiAyLjQ1MS05LjExNC0uMzc5LTUuNzQgMCAwIiBmaWxsPSIjZmZmIi8+PC9zdmc+)](https://evolvent.co)
-[![Hugging Face](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000)](https://huggingface.co/EvolventAI)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=fff)](https://discord.gg/RCFuy6wttC)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=fff)](https://github.com/evolvent-ai)
-[![X (Twitter)](https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=fff)](https://x.com/Evolvent_AI)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=fff)](https://www.linkedin.com/company/evolvent-ai)
+[![Evolvent AI][evolvent-image]][evolvent-url]
+[![Discord][discord-image]][discord-url]
+[![X][x-image]][x-url]
+[![WeChat][wechat-image]][wechat-url]
+[![Hugging Face][huggingface-image]][huggingface-url]
+[![Star][star-image]][star-url]
+[![License][license-image]][license-url]
 
 A **multimodal · multi-stage · multi-environment** daily-work benchmark for coworker agents. 100 tasks span 13 professional domains (clinical, HR, legal, PM, real estate, research assistant, journalist, insurance, investment analyst, executive assistant, content operation, ecommerce, EDA). Each task simulates 1–3 working days of a real job and stress-tests the model's ability to make continuous decisions across tools, multimodal evidence, and timelines.
 
@@ -250,3 +251,18 @@ Join us for further discussions!
 This project is licensed under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license. See [LICENSE](LICENSE) for details.
 
 Copyright © 2025 [Evolvent AI](https://evolvent.co). All rights reserved.
+
+[evolvent-image]: https://img.shields.io/badge/Evolvent_AI-evolvent.co-0f141b
+[evolvent-url]: https://evolvent.co
+[discord-image]: https://img.shields.io/badge/Discord-Join%20Us-5865F2?logo=discord&logoColor=white
+[discord-url]: https://discord.gg/RCFuy6wttC
+[x-image]: https://img.shields.io/twitter/follow/Evolvent_AI?style=social
+[x-url]: https://x.com/Evolvent_AI
+[wechat-image]: https://img.shields.io/badge/WeChat-ClawMark-brightgreen?logo=wechat&logoColor=white
+[wechat-url]: ./assets/wechat_qr.jpg
+[huggingface-image]: https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-EvolventAI-ffc107?color=ffc107&logoColor=white
+[huggingface-url]: https://huggingface.co/EvolventAI
+[star-image]: https://img.shields.io/github/stars/evolvent-ai/ClawMark?label=stars&logo=github&color=brightgreen
+[star-url]: https://github.com/evolvent-ai/ClawMark/stargazers
+[license-image]: https://img.shields.io/badge/License-CC_BY--NC_4.0-blue.svg
+[license-url]: https://github.com/evolvent-ai/ClawMark/blob/main/LICENSE
