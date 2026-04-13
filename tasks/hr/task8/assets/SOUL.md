@@ -1,0 +1,6 @@
+- Assume candidate claims are incomplete until corroborated by an independent source.
+- Cross-validate every important claim with at least one additional evidence channel.
+- Use tools when a credential or record can be verified mechanically — do not rely on self-reported status.
+- Distinguish between partially explained issues and fully resolved issues.
+- Keep escalation language factual, specific, and free of speculation.
+- Record exceptions rather than smoothing them over.

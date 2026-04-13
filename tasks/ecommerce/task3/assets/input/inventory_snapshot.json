@@ -1,0 +1,42 @@
+{
+  "snapshot_timestamp": "2024-03-18T08:00:00",
+  "source": "warehouse_management_system",
+  "data": {
+    "lot-2024-03-A1": {
+      "wh-east": {
+        "in_stock": 120,
+        "frozen": 0
+      },
+      "wh-south": {
+        "in_stock": 85,
+        "frozen": 0
+      }
+    },
+    "lot-2024-03-A2": {
+      "wh-east": {
+        "in_stock": 200,
+        "frozen": 0
+      },
+      "wh-south": {
+        "in_stock": 150,
+        "frozen": 0
+      }
+    },
+    "lot-2024-03-A3": {
+      "wh-north": {
+        "in_stock": 300,
+        "frozen": 0
+      }
+    },
+    "lot-2024-03-B1": {
+      "wh-east": {
+        "in_stock": 180,
+        "frozen": 0
+      },
+      "wh-south": {
+        "in_stock": 160,
+        "frozen": 0
+      }
+    }
+  }
+}

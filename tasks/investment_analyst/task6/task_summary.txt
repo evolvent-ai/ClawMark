@@ -1,0 +1,4 @@
+PayPal Q1 2024 margin-quality read for Mia Sun, testing TPV-vs-TM$ separation, methodology-change tracking, and peer framing.
+Tue 4/30: process IR materials, draft the steering card.
+Wed 5/1: bridge guide and methodology changes; an LP margin-quality question sits in Notion.
+Thu 5/2: overnight Block outlook screenshot with new peer_monitor rows.

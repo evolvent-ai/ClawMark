@@ -1,0 +1,4 @@
+Annual summit replay audit and feedback handling for Zhou Jie.
+Mon 3/17: review replay for legal/brand risks, index feedback screenshots, log issues.
+Tue 3/18: legal cuts 35:40 clip, speaker complaint, CDN graph; livestream ops pinpoints audio loss window.
+Wed 3/19: final summary PPT with ROI vs last year.

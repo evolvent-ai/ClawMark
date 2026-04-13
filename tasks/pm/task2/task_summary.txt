@@ -1,0 +1,3 @@
+Run a PT100-B supplier comparison combining PDF quotes, Feishu chatter, Notion qualifications, and budget data.
+Wed 3/19: evaluate Xinda, Huakong, Ruien; spot Huakong's off-contract verbal discount; select Ruien within 90k budget.
+Thu 3/20: quantity jumps to 800; discover budget increase and Xinda ISO renewal; reselect and request director approval.

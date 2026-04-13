@@ -1,0 +1,3 @@
+dealer_id,sku,sn_start,sn_end,ship_date,sticker_color
+DL-001,HW-K2201,SN-K2201-0301-0800,SN-K2201-0301-0900,2024-02-10,blue
+DL-002,HW-K2201,SN-K2201-0302-0001,SN-K2201-0302-0500,2024-02-15,green

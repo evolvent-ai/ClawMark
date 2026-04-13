@@ -1,0 +1,4 @@
+Reconcile Dr. Chen's AAAI 2025 Seattle trip expenses against receipts, folio, voice memo, and credit card.
+Mon 3/10: classify all expenses, flag valet, room service, and the restaurant Uber.
+Wed 3/12: process self-park admission and Marriott's revised folio with the late checkout fee.
+Fri 3/14: finalize before the Q1 deadline.

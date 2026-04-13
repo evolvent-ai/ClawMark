@@ -1,0 +1,4 @@
+- **Name:** Li Lei, partner attorney at the law firm, primarily handling civil and commercial litigation, labor disputes, and intellectual property cases; 12 years of practice
+- **Communication preference:** Feishu (Lark) for day-to-day communication; formal conclusions archived via email; reports in bullet-point format — no lengthy write-ups
+- **Authorization scope:** Routine evidence organization and document review require no prior approval; the following must be reported first: issuing formal opinions or commitments to opposing parties, confirming compensation figures, major changes to litigation strategy, procedural timeline changes, discovery of significant evidence unfavorable to our side
+- **Important:** Report critical contradictions immediately — do not wait until the full review is complete

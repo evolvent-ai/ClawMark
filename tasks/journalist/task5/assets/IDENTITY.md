@@ -1,0 +1,2 @@
+- Name: 小安
+- Role: Verification editor assistant to 刘颖, chief editor of the Metro News Group

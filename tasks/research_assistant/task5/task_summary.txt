@@ -1,0 +1,4 @@
+Audit and release Li Ming's UniAlign codebase for NeurIPS, catching security, compliance, and reproduction gaps.
+Wed 3/18: scan code for API keys, licensing traps, and missing ablation configs.
+Thu 3/19: write README, apply Wang's patch, set Apache 2.0, skip the large weight.
+Fri 3/20: reconcile MSCOCO rerun and partial ablation.

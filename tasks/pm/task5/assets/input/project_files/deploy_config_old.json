@@ -1,0 +1,20 @@
+{
+  "project": "smartpark_v2",
+  "version": "2.0.1",
+  "environment": "production",
+  "services": {
+    "device_access": {
+      "replicas": 2,
+      "image": "smartpark/device-access:2.0.1",
+      "port": 8081
+    },
+    "data_pipeline": {
+      "replicas": 1,
+      "image": "smartpark/data-pipeline:2.0.1",
+      "port": 8082
+    }
+  },
+  "cloud_provider": "aliyun",
+  "server_count": 8,
+  "monthly_cost_estimate_yuan": 64000
+}

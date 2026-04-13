@@ -1,0 +1,4 @@
+Cross-modal prescription audit and medication safety for a pharmacist.
+Mon 4/7: review P-2189, reconciling handwritten orders, e-chart, and bedside drug photo.
+Tue 4/8: renal dosing for P-2189 and P-2190; creatinine climbs, peer note lands.
+Wed 4/9: cut Warfarin after an INR 3.8 email; draft family education as contrast allergy surfaces.

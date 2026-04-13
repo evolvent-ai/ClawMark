@@ -1,0 +1,9 @@
+applicant_id,name,university,gpa_self_reported,pubs_claimed,research_fit,gpa_verified,pubs_verified,recommendation_check,flag,overall_rating,interview_decision
+APP-001,Priya Sharma,IIT Bombay,3.8,2,,,,,,
+APP-002,James Chen,Peking University,3.7,3,,,,,,
+APP-003,Maria Garcia,MIT,3.9,1,,,,,,
+APP-004,David Kim,UC San Diego,3.2,1,,,,,,
+APP-005,Wei Liu,Tsinghua University,3.6,2,,,,,,
+APP-006,Sarah Johnson,Stanford,3.85,1,,,,,,
+APP-007,Ahmed Hassan,ETH Zurich,3.7,2,,,,,,
+APP-008,Yuki Tanaka,University of Tokyo,3.7,1,,,,,,

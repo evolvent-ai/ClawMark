@@ -1,0 +1,4 @@
+Sensitive title sample
+
+The lowest price online for the repair bundle
+This line intentionally uses an absolute pricing claim and should be flagged.

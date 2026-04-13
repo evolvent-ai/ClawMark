@@ -1,0 +1,4 @@
+Investigate CS 229 HW3 grade appeals from Alice, Bob, and Charlie for Dr. Chen.
+Sat 11/15: diff Alice and Bob's code, check Charlie's 2-second lateness, review whiteboard and Stack Overflow evidence.
+Mon 11/17: process TA Mike's server-clock log clearing Charlie.
+Wed 11/19: meet the integrity deadline despite Alice's scholarship plea.

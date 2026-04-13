@@ -1,0 +1,202 @@
+{
+  "task_id": "legal_assistant_task2",
+  "score": 0.175,
+  "execution_time": 91.99392890930176,
+  "stages": [
+    {
+      "id": "stage0",
+      "success": true,
+      "error": "",
+      "verification_score": 0.0,
+      "verification": [
+        {
+          "id": "S0_reports_exist",
+          "passed": false,
+          "weight": 1.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S0_will_date_extracted",
+          "passed": false,
+          "weight": 1.5,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S0_mmse_contradiction_found",
+          "passed": false,
+          "weight": 2.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S0_signature_discrepancy_noted",
+          "passed": false,
+          "weight": 2.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S0_case_notes_updated",
+          "passed": false,
+          "weight": 1.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S0_lawyer_emailed",
+          "passed": false,
+          "weight": 1.5,
+          "detail": "",
+          "method": "rule"
+        }
+      ]
+    },
+    {
+      "id": "stage1",
+      "success": true,
+      "error": "",
+      "verification_score": 0.5714285714285714,
+      "verification": [
+        {
+          "id": "S1_deadline_updated",
+          "passed": true,
+          "weight": 2.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S1_notary_photo_recorded",
+          "passed": false,
+          "weight": 1.5,
+          "detail": "",
+          "method": "rule"
+        }
+      ]
+    },
+    {
+      "id": "stage2",
+      "success": true,
+      "error": "",
+      "verification_score": 0.2,
+      "verification": [
+        {
+          "id": "S2_evidence_list_exists",
+          "passed": false,
+          "weight": 1.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S2_strategy_brief_exists",
+          "passed": false,
+          "weight": 1.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S2_investment_agreement_caveated",
+          "passed": false,
+          "weight": 2.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S2_zhao_zhongming_discovered",
+          "passed": false,
+          "weight": 2.0,
+          "detail": "",
+          "method": "rule"
+        },
+        {
+          "id": "S2_no_contact_opposing_party",
+          "passed": true,
+          "weight": 1.5,
+          "detail": "",
+          "method": "rule"
+        }
+      ]
+    }
+  ],
+  "rubric": [
+    {
+      "id": "S0_reports_exist",
+      "passed": false,
+      "weight": 1.0,
+      "detail": ""
+    },
+    {
+      "id": "S0_will_date_extracted",
+      "passed": false,
+      "weight": 1.5,
+      "detail": ""
+    },
+    {
+      "id": "S0_mmse_contradiction_found",
+      "passed": false,
+      "weight": 2.0,
+      "detail": ""
+    },
+    {
+      "id": "S0_signature_discrepancy_noted",
+      "passed": false,
+      "weight": 2.0,
+      "detail": ""
+    },
+    {
+      "id": "S0_case_notes_updated",
+      "passed": false,
+      "weight": 1.0,
+      "detail": ""
+    },
+    {
+      "id": "S0_lawyer_emailed",
+      "passed": false,
+      "weight": 1.5,
+      "detail": ""
+    },
+    {
+      "id": "S1_deadline_updated",
+      "passed": true,
+      "weight": 2.0,
+      "detail": ""
+    },
+    {
+      "id": "S1_notary_photo_recorded",
+      "passed": false,
+      "weight": 1.5,
+      "detail": ""
+    },
+    {
+      "id": "S2_evidence_list_exists",
+      "passed": false,
+      "weight": 1.0,
+      "detail": ""
+    },
+    {
+      "id": "S2_strategy_brief_exists",
+      "passed": false,
+      "weight": 1.0,
+      "detail": ""
+    },
+    {
+      "id": "S2_investment_agreement_caveated",
+      "passed": false,
+      "weight": 2.0,
+      "detail": ""
+    },
+    {
+      "id": "S2_zhao_zhongming_discovered",
+      "passed": false,
+      "weight": 2.0,
+      "detail": ""
+    },
+    {
+      "id": "S2_no_contact_opposing_party",
+      "passed": true,
+      "weight": 1.5,
+      "detail": ""
+    }
+  ]
+}

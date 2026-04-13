@@ -1,0 +1,33 @@
+============================================================
+UniAlign Table 2 Ablation Study - Full Results
+Configuration: configs/table2_ablation.yaml
+Dataset: VQA v2 | Hardware: 4x NVIDIA A100 80GB | Seed: 42
+============================================================
+
+Variant: UniAlign (Full)
+[2025-01-22 16:45:10] Evaluation:
+  Accuracy: 74.8 | F1: 77.2 | BLEU: 39.1 | CIDEr: 125.6
+
+Variant: w/o cross-attention
+[2025-01-23 11:20:33] Evaluation:
+  Accuracy: 72.3 | F1: 74.6 | BLEU: 36.8 | CIDEr: 119.2
+
+Variant: w/o contrastive loss
+[2025-01-24 08:15:47] Evaluation:
+  Accuracy: 73.1 | F1: 75.4 | BLEU: 37.5 | CIDEr: 121.8
+
+Variant: w/o visual prompt
+[2025-01-24 22:30:19] Evaluation:
+  Accuracy: 73.6 | F1: 75.9 | BLEU: 38.0 | CIDEr: 123.1
+
+Variant: w/o modality routing
+[2025-01-25 14:55:02] Evaluation:
+  Accuracy: 73.9 | F1: 76.3 | BLEU: 38.4 | CIDEr: 123.7
+
+Variant: w/o data augmentation
+[2025-01-26 09:10:41] Evaluation:
+  Accuracy: 74.2 | F1: 76.5 | BLEU: 38.6 | CIDEr: 124.2
+
+============================================================
+All 6 ablation variants completed.
+============================================================

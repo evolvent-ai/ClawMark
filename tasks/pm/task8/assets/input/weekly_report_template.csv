@@ -1,0 +1,79 @@
+# Filling Rules:
+# - team enum values: frontend / backend / design
+# - status enum values: completed / in_progress / not_started / blocked
+#   - blocked: Use only when there is an unsatisfied cross-team dependency (e.g., upstream not completed, preventing start)
+#   - not_started: No external blocking, schedule simply hasn't arrived
+# - severity enum values: high / medium / low
+# - eta format: YYYY-MM-DD
+# - affected_modules: separate multiple values with |
+# - overall_assessment: on_track / at_risk / blocked
+#   - on_track: No high severity risks, no modules in blocked state
+#   - at_risk: Has high severity risks, or a small number of modules are blocked but the critical path is still progressing
+#   - blocked: Multiple critical paths are simultaneously blocked, project as a whole cannot progress
+# - new_priority: P0 / P1 / P2 / P3
+# - CR-012_new_status enum values: deferred / pending_schedule / cancelled
+# - Summary counting rules:
+#   - total_modules: Number of all _status rows in the template (fixed at 9)
+#   - completed_count: Number of modules with status == completed
+#   - in_progress_count: Number of modules with status == in_progress
+#   - blocked_or_not_started_count: Number of modules with status in {blocked, not_started}
+#   - The sum of the three must == total_modules
+# - Risk rows are extensible (risk_3_xxx, risk_4_xxx...), but at least 2 must be filled
+# - Notion status to CSV status mapping rules:
+#   - Notion "completed" -> completed
+#   - Notion "in_progress" / "in_design" -> in_progress
+#   - Notion "not_started" / "pending_schedule" -> not_started
+#   - Notion "needs_review" / "in_regression" -> in_progress (requires renewed effort = in progress)
+#   - Notion "deferred" / "cancelled" -> Not counted in weekly report modules (only recorded in the change section)
+section,key,value
+meta,report_date,
+meta,project,
+
+module,product_list_refactor_team,
+module,product_list_refactor_owner,
+module,product_list_refactor_status,
+module,shopping_cart_redesign_team,
+module,shopping_cart_redesign_owner,
+module,shopping_cart_redesign_status,
+module,payment_page_integration_team,
+module,payment_page_integration_owner,
+module,payment_page_integration_status,
+module,order_api_team,
+module,order_api_owner,
+module,order_api_status,
+module,order_api_eta,
+module,payment_gateway_integration_team,
+module,payment_gateway_integration_owner,
+module,payment_gateway_integration_status,
+module,product_search_optimization_team,
+module,product_search_optimization_owner,
+module,product_search_optimization_status,
+module,product_detail_v2_design_team,
+module,product_detail_v2_design_owner,
+module,product_detail_v2_design_status,
+module,shopping_cart_v2_design_team,
+module,shopping_cart_v2_design_owner,
+module,shopping_cart_v2_design_status,
+module,payment_flow_v3_design_team,
+module,payment_flow_v3_design_owner,
+module,payment_flow_v3_design_status,
+
+risk,risk_1_description,
+risk,risk_1_severity,
+risk,risk_1_affected_modules,
+risk,risk_2_description,
+risk,risk_2_severity,
+risk,risk_2_affected_modules,
+
+change,CR-012_new_priority,
+change,CR-012_new_status,
+change,CR-012_reason,
+change,new_requirement_title,
+change,new_requirement_source,
+change,new_requirement_priority,
+
+summary,total_modules,
+summary,completed_count,
+summary,in_progress_count,
+summary,blocked_or_not_started_count,
+summary,overall_assessment,

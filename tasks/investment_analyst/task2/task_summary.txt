@@ -1,0 +1,4 @@
+TSMC 1Q24 coverage for Zhou Ning, testing USD/TWD currency normalization, node-mix extraction, and peer read-through.
+Thu 4/18: process IR package, build the morning card.
+Fri 4/19: follow up on capex and CoWoS/AI; an LP 3nm-mix question sits in Notion.
+Thu 4/25: overnight STMicro screenshot with a quiet portfolio_thesis row.

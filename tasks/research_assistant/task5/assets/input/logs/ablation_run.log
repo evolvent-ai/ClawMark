@@ -1,0 +1,35 @@
+2025-03-11 09:15:03 INFO - Starting ablation study (Table 2)
+2025-03-11 09:15:03 INFO - Dataset: MSCOCO test set
+2025-03-11 09:15:03 INFO - Base config: configs/table2_ablation.yaml
+2025-03-11 09:15:03 INFO - ==========================================
+
+2025-03-11 09:15:03 INFO - [1/6] Running variant: Full UniAlign
+2025-03-11 09:15:03 INFO - Config overrides: none (full model)
+2025-03-11 10:42:18 INFO - Training complete. Evaluating...
+2025-03-11 10:45:30 INFO - === Full UniAlign ===
+2025-03-11 10:45:30 INFO - Accuracy:  78.3
+2025-03-11 10:45:30 INFO - F1 Score:  81.2
+2025-03-11 10:45:30 INFO - =====================
+
+2025-03-11 10:46:00 INFO - [2/6] Running variant: w/o Cross-Attention
+2025-03-11 10:46:00 INFO - Config overrides: use_cross_attention=false
+2025-03-11 12:08:45 INFO - Training complete. Evaluating...
+2025-03-11 12:11:22 INFO - === w/o Cross-Attention ===
+2025-03-11 12:11:22 INFO - Accuracy:  74.1
+2025-03-11 12:11:22 INFO - F1 Score:  77.5
+2025-03-11 12:11:22 INFO - ===========================
+
+2025-03-11 12:12:00 INFO - [3/6] Running variant: w/o Visual Prompts
+2025-03-11 12:12:00 INFO - Config overrides: use_visual_prompts=false
+2025-03-11 12:12:00 INFO - Initializing model...
+2025-03-11 12:12:05 INFO - Starting training...
+2025-03-11 13:28:44 WARN - GPU memory warning: 79.2 GB / 80 GB used
+2025-03-11 13:28:44 ERROR - CUDA out of memory. Tried to allocate 2.1 GB
+2025-03-11 13:28:44 ERROR - Run aborted. Consider reducing batch size.
+
+2025-03-11 13:30:00 INFO - [4/6] Running variant: w/o Contrastive Loss
+2025-03-11 13:30:00 INFO - Skipping due to GPU memory issues. Will retry later.
+
+2025-03-11 13:30:00 INFO - Ablation study incomplete. 2/6 variants completed.
+2025-03-11 13:30:00 INFO - Completed: Full UniAlign, w/o Cross-Attention
+2025-03-11 13:30:00 INFO - Pending: w/o Visual Prompts, w/o Contrastive Loss, w/o Gating, w/o FFN

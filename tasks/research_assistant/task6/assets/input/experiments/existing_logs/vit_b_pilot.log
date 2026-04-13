@@ -1,0 +1,27 @@
+============================================================
+UniAlign ViT-B Backbone Pilot Experiment
+Configuration: configs/table1_all.yaml (modified backbone)
+Dataset: VQA v2 | Hardware: 4x NVIDIA A100 80GB | Seed: 42
+============================================================
+
+Model: UniAlign with ViT-B/16 backbone (instead of ViT-L/16)
+
+[2025-01-10 15:30:22] Training complete. Epoch 30/30.
+[2025-01-10 15:30:23] Evaluation on test set:
+  Accuracy: 70.2
+  F1: 72.5
+  BLEU: 34.8
+  CIDEr: 114.3
+
+Notes:
+  - This was a preliminary pilot run.
+  - Hyperparameters were copied directly from the ViT-L config
+    without any tuning for the ViT-B backbone.
+  - Learning rate, warmup steps, and batch size may need
+    adjustment for optimal ViT-B performance.
+  - The 4.6 point accuracy gap vs ViT-L (74.8) is expected
+    given the smaller model capacity, but may narrow with
+    proper hyperparameter tuning.
+
+Status: Pilot only. Not included in paper submission.
+============================================================

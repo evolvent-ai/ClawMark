@@ -1,0 +1,4 @@
+Verify a medical malpractice case by cross-checking surgical records, imaging, and nursing notes.
+Mon 3/18: flag left-vs-right femur site error and admission date anomaly.
+Wed 3/20: hospital correction arrives; wage and nursing fees appear in Sheets.
+Fri 3/22: prepare compensation calculation; appraisal deadline quietly moves to March 31.

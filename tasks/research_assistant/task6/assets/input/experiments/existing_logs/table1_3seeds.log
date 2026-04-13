@@ -1,0 +1,41 @@
+============================================================
+UniAlign Table 1 Experiments - Multi-Seed Results
+Configuration: configs/table1_all.yaml
+Hardware: 4x NVIDIA A100 80GB
+============================================================
+
+Dataset: VQA v2
+
+--- Seed 42 ---
+[2025-01-15 14:23:17] Training complete. Epoch 30/30.
+[2025-01-15 14:23:18] Evaluation on test set:
+  Accuracy: 74.8
+  F1: 77.2
+  BLEU: 39.1
+  CIDEr: 125.6
+
+--- Seed 123 ---
+[2025-01-18 09:41:52] Training complete. Epoch 30/30.
+[2025-01-18 09:41:53] Evaluation on test set:
+  Accuracy: 74.3
+  F1: 76.5
+  BLEU: 38.6
+  CIDEr: 124.1
+
+--- Seed 7 ---
+[2025-01-20 22:15:33] Training complete. Epoch 30/30.
+[2025-01-20 22:15:34] Evaluation on test set:
+  Accuracy: 75.1
+  F1: 77.8
+  BLEU: 39.5
+  CIDEr: 126.3
+
+============================================================
+Summary Statistics (VQA v2, 3 seeds):
+  Accuracy: mean=74.73, std=0.40
+  F1:       mean=77.17, std=0.65
+  BLEU:     mean=39.07, std=0.45
+  CIDEr:    mean=125.33, std=1.11
+============================================================
+
+Note: Paper Table 1 reports seed 42 results.

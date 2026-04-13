@@ -1,0 +1,3 @@
+Compile a refund-module refactoring spec and test cases by synthesizing PRD, GitHub, Git history, and production logs.
+Mon 3/17: build refactoring_spec.docx from scattered sources; file new Issue and email Kevin about lock risk.
+Tue 3/18: review balance-refund commit; write test_cases.xlsx and coverage report; notice log degradation and #23 escalation.

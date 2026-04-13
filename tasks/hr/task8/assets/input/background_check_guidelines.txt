@@ -1,0 +1,11 @@
+Xinghai Technology Executive Background Check Guidelines
+Version: 2024.4
+
+1. If a candidate claims full-time employment and full-time study during overlapping periods, record this as a high-risk education inconsistency.
+2. If title history differs across resume, references, and public profiles, record a title-risk issue and summarize the conflicting evidence.
+3. Professional certificates must be validated through approved internal tools when an ID is provided.
+4. If a certificate is revoked or invalid, record a credential-risk issue.
+5. Risk findings must be appended to ATS notes. Do not overwrite prior note history.
+6. Public profile updates may lag behind internal HR systems and are not, by themselves, a disqualifying issue.
+7. Part-time study, executive education, or short-term certificate programs do not automatically conflict with full-time employment.
+8. Minor formatting differences in employer naming or date style should be treated as low-risk unless supported by stronger contradictory evidence.

@@ -1,0 +1,46 @@
+# UniAlign - Table 3 Low-Resource Setting Configuration
+# Tests performance with varying amounts of training data
+
+model:
+  name: unialign
+  backbone: vit_large_patch16_224
+  text_encoder: roberta-large
+  cross_attn_heads: 12
+  cross_attn_layers: 6
+  contrastive_tau: 0.07
+  modality_routing: true
+  visual_prompt: true
+  data_augment: true
+
+data:
+  datasets:
+    - vqa_v2
+    - mscoco
+    - refcoco
+  train_split: train
+  val_split: val
+  test_split: test
+
+low_resource:
+  data_ratios:
+    - 0.01   # 1% of training data
+    - 0.05   # 5%
+    - 0.10   # 10%
+    - 0.50   # 50%
+    - 1.00   # 100%
+  sampling_strategy: stratified  # Maintain class distribution
+  num_seeds: 3  # Average over 3 data samples
+
+training:
+  epochs: 30
+  batch_size: 64
+  learning_rate: 2.0e-5
+  weight_decay: 0.01
+  warmup_steps: 500
+  lr_scheduler: cosine_with_restarts
+  eval_interval: 1
+  fp16: true
+
+hardware:
+  gpus: 4
+  gpu_type: A100-80GB

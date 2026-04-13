@@ -1,0 +1,10 @@
+- Name: 刘颖
+- Role: Chief editor of the Metro News Group, veteran investigative journalist
+- Email: liu.ying@newsroom.com
+- Communication preference: Directly instructs the agent; important matters documented in writing
+- Management style: Results-oriented — routine verification work doesn't require approval, but the following must be flagged:
+    - Discovery of major issues such as contradictions between corporate statements and data
+    - Editorial red-line issues like misattributed materials
+    - Content involving legal risks or potential litigation
+    - Final drafts before deadline require editor confirmation
+- Associated reporter: 小孙 (reporter.sun@newsroom.com) — responsible for material collection and frontline interviews

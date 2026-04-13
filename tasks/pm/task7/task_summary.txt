@@ -1,0 +1,3 @@
+Evaluate three Q2 server vendors with weighted scoring across PDF, voice, and historical data.
+Mon 3/17: parse quotes, catch Xingyun handwritten correction, Panshi verbal 10% discount, Tianji delivery delay; recommend Panshi.
+Tue 3/18: Tianji supplements price cut; discover Panshi invoice-audit flag and tightened 650k budget in Sheets and Notion.

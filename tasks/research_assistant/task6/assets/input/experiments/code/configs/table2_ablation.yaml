@@ -1,0 +1,59 @@
+# UniAlign - Table 2 Ablation Study Configuration
+# Tests each component's contribution by removing one at a time
+
+model:
+  name: unialign
+  backbone: vit_large_patch16_224
+  text_encoder: roberta-large
+  cross_attn_heads: 12
+  cross_attn_layers: 6
+  contrastive_tau: 0.07
+  modality_routing: true
+  visual_prompt: true
+  data_augment: true
+
+ablation_variants:
+  - name: full_model
+    description: "Complete UniAlign with all components"
+    disable: []
+
+  - name: w/o_cross_attn
+    description: "Remove cross-modal attention module"
+    disable: [cross_attn]
+
+  - name: w/o_contrastive
+    description: "Remove contrastive loss"
+    disable: [contrastive]
+
+  - name: w/o_visual_prompt
+    description: "Remove visual prompt tuning"
+    disable: [visual_prompt]
+
+  - name: w/o_modality_routing
+    description: "Remove modality routing mechanism"
+    disable: [modality_routing]
+
+  - name: w/o_data_augment
+    description: "Remove cross-modal data augmentation"
+    disable: [data_augment]
+
+data:
+  datasets:
+    - vqa_v2
+  train_split: train
+  val_split: val
+  test_split: test
+
+training:
+  epochs: 30
+  batch_size: 64
+  learning_rate: 2.0e-5
+  weight_decay: 0.01
+  warmup_steps: 1000
+  lr_scheduler: cosine_with_restarts
+  eval_interval: 1
+  fp16: true
+
+hardware:
+  gpus: 4
+  gpu_type: A100-80GB

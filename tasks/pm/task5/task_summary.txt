@@ -1,0 +1,3 @@
+Audit a handed-over Smart Park v2.0 project by cross-checking files, Notion board, and finances for hidden problems.
+Mon 3/23: build handover_audit.xlsx and budget_summary.txt, archive files, fix incorrect Notion statuses, email Director Liu.
+Tue 3/24: Gary sends device access test report; discover quietly added design doc and updated SP-002 completion.

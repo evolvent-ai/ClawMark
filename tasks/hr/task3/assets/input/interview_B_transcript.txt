@@ -1,0 +1,23 @@
+Interview Transcript — INT_2024_03_25_B
+Date: 2024-03-25
+Candidate: 候选人 B (Candidate B)
+Interviewer: 李总监 (Li Director)
+Scheduled Duration: 60 minutes
+Actual Duration: 60 minutes
+
+[00:00] Introductions and ice-breaking.
+[05:00] Technical assessment begins — system design questions.
+[08:23] Interviewer: "By the way, I noticed you're about the right age — are you married? When do you plan to have children? We need to consider team stability for this role."
+[08:45] Candidate: "Um... I'd rather not answer that question."
+[09:00] Interviewer: "No worries, just asking. Let's continue with the technical questions."
+[15:00] System design deep-dive — database scaling scenario.
+[25:00] Candidate demonstrates solid distributed systems knowledge.
+[30:00] Team collaboration scenario — conflict resolution exercise.
+[40:00] Problem-solving assessment — production incident response.
+[50:00] Behavioral questions — leadership and mentoring experience.
+[58:00] Wrap-up and candidate Q&A.
+[60:00] Interview concludes on time.
+
+Note: Interviewer asked a fertility-related question at timestamp 08:23.
+This violates company interview policy §2.3 (Forbidden Questions — fertility plans).
+The question was unsolicited and the candidate was visibly uncomfortable.

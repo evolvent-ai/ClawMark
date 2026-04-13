@@ -1,0 +1,39 @@
+experiment:
+  name: table1_vqa_v2
+  description: Main experiment - VQA v2 dataset
+
+model:
+  vision_model: openai/clip-vit-large-patch14
+  hidden_size: 768
+  num_heads: 12
+  num_cross_layers: 4
+  num_visual_prompts: 16
+  proj_size: 256
+  contrastive_weight: 0.1
+  num_classes: 3129
+
+data:
+  dataset: vqa_v2
+  data_dir: ./data/vqa_v2
+  image_size: 224
+  max_length: 77
+
+training:
+  batch_size: 128
+  num_epochs: 10
+  learning_rate: 3e-4
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  max_grad_norm: 1.0
+  fp16: true
+  seed: 42
+
+evaluation:
+  eval_every: 1000
+  metric: accuracy
+  save_best: true
+
+logging:
+  log_every: 100
+  wandb_project: unialign
+  run_name: table1_vqa_v2

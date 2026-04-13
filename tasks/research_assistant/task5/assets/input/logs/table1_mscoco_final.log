@@ -1,0 +1,16 @@
+2025-03-10 14:23:01 INFO - Starting evaluation: MSCOCO test set
+2025-03-10 14:23:01 INFO - Config: configs/table1_mscoco.yaml
+2025-03-10 14:23:01 INFO - Checkpoint: outputs/table1/mscoco/best_checkpoint.pt
+2025-03-10 14:23:05 INFO - Model loaded successfully (768 hidden, 12 heads, 4 cross-attn layers)
+2025-03-10 14:23:05 INFO - Loading MSCOCO test split (5000 samples)
+2025-03-10 14:23:08 INFO - Data loaded. Running inference...
+2025-03-10 14:24:12 INFO - Inference complete. Computing metrics...
+2025-03-10 14:24:15 INFO - ============ MSCOCO Results ============
+2025-03-10 14:24:15 INFO - Accuracy:  78.3
+2025-03-10 14:24:15 INFO - F1 Score:  81.2
+2025-03-10 14:24:15 INFO - BLEU:      42.7
+2025-03-10 14:24:15 INFO - CIDEr:     128.5
+2025-03-10 14:24:15 INFO - ========================================
+2025-03-10 14:24:15 INFO - 95% CI (Acc): [77.8, 78.9]
+2025-03-10 14:24:15 INFO - Results saved to outputs/table1/mscoco/eval_results.json
+2025-03-10 14:24:15 INFO - Evaluation complete.

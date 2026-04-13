@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{booktabs}
+
+% BUG: \prec is a built-in LaTeX math command (≺).
+% Redefining it as a text macro causes conflicts when used
+% in table cells, producing NaN in compiled output.
+\newcommand{\prec}{}
+
+\begin{document}
+
+\begin{table}[t]
+\caption{Detection Results on COCO val2017}
+\label{tab:results}
+\centering
+\begin{tabular}{lccccc}
+\toprule
+Method & mAP & AP50 & AP75 & Precision & Recall \\
+\midrule
+Faster R-CNN & 37.4 & 58.1 & 40.4 & \textbf{NaN} & 42.1 \\
+DETR & 42.0 & 62.4 & 44.2 & \textbf{NaN} & 45.8 \\
+Ours & 44.3 & 65.1 & 47.8 & \textbf{NaN} & 48.2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

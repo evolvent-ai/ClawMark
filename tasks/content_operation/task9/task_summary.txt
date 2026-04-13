@@ -1,0 +1,3 @@
+Q1 sales pipeline audit and forecast reconciliation catching phantom deals and weighted-math errors for David.
+Thu 3/26: validate 15 forecast rows against CRM, call recordings, and LOIs; flag GlobalTech and MediSync risks.
+Fri 3/27: build conservative and optimistic scenarios as RetailPro downgrades and a phantom $340K deal appears.

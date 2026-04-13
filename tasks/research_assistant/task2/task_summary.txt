@@ -1,0 +1,4 @@
+NMT literature survey and baseline reproduction verification for Chen Xue.
+Mon 3/17: extract metrics from three method papers, cross-reference reproduction logs, populate Notion and comparison sheet.
+Tue 3/18: Zhang Ming forwards a Method_A erratum; reconcile and fix Table 7.
+Wed 3/19: generate LaTeX table and verification log before submission.

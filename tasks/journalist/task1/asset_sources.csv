@@ -1,0 +1,9 @@
+final_file,source_type,source_ref,notes
+scene_1.jpg,wikimedia,"https://commons.wikimedia.org/wiki/File:High-rise_fires;_Positive_Pressure_Ventilation_(5888202246).jpg","真实图片，裁切为 16:9，用作中层楼体起火近景"
+scene_2.jpg,derived,scene_1.jpg,"从同一真实现场图裁切得到，保证与 scene_1 / witness_video 视觉一致"
+crowd_1.jpg,derived,scene_1.jpg,"从同一真实现场图裁切得到，突出外围围观与处置状态"
+forwarded_scene.jpg,derived,https://commons.wikimedia.org/wiki/File:Firefighting_ladder_trucks.jpg,"真实旧图，叠加历史日期水印并保留原始 EXIF，用作 Stage 2 旧图陷阱"
+witness_video.mp4,derived,scripts/rebuild_witness_video.py,"交付版现场视频素材，使用视频模型生成真实感楼外目击视角后，叠加时间戳与现场喊话音轨"
+official_bulletin.pdf,scripted_document,scripts/rebuild_task_documents.py,"按中文政府通报版式重做的正式情况通报"
+safety_violation_notice.pdf,scripted_document,scripts/rebuild_task_documents.py,"按行政处罚决定书样式重做的处罚文书节选"
+health_commission_bulletin.pdf,scripted_document,scripts/rebuild_task_documents.py,"按卫健委情况说明版式重做的医疗收治通报"

@@ -1,0 +1,4 @@
+ServiceNow Q1 2024 coverage for Chen Yi, testing reported-vs-CC split and FX-vs-operational guide bridge.
+Wed 4/24: parse IR materials, draft the brief.
+Thu 4/25: decompose the guide raise and cRPO drag; an LP FX-vs-operational question sits in Notion.
+Thu 5/30: overnight Salesforce headline lands with a quiet software_comp note.

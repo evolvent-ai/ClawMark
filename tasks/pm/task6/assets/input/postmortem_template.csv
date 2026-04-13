@@ -1,0 +1,67 @@
+# Filling rules:
+# - severity enum values: P0 / P1 / P2 / P3
+#   - P0: Site-wide core functionality unavailable for more than 30 minutes
+#   - P1: Core functionality partially unavailable or degraded for more than 15 minutes
+#   - P2: Non-core functionality failure or brief fluctuation
+#   - P3: Minor anomaly, barely noticeable to users
+# - Time format: HH:MM (24-hour clock)
+# - db_connections_abnormal_start: The time when DB connection count began abnormally rising; this time point is only visible in the Grafana screenshot
+# - total_downtime_minutes: Integer, from service_unavailable_start to service_recovered_time
+# - affected_orders: Integer, number of affected unique orders (deduplicated by order_id)
+# - estimated_loss_amount: Integer, in CNY. Calculation = affected_orders x average order value for the current month from the SLA Assessment Table
+# - sla_violated enum values: yes / no
+# - march_actual_availability: Percentage, format XX.XX%. Calculation = (total minutes in month - cumulative March incident minutes - this incident's minutes) / total minutes in month x 100%
+# - trigger enum values: config_change / code_deploy / infra_failure / third_party / traffic_spike / unknown
+# - direct_cause enum values: connection_pool_exhaustion / memory_leak / disk_full / network_partition / third_party_timeout / code_bug / other
+# - root_cause enum values: config_change / code_defect / capacity_planning / third_party / operational_error / unknown
+# - config_change_detail: Specific description of the change, including parameter name and changed values
+# - action_priority enum values: P0 / P1 / P2
+# - action_deadline format: YYYY-MM-DD
+# - action rows are extensible (action_4_xxx, action_5_xxx...), at least 3 improvement actions required
+# - overall_severity_assessment enum values: critical / major / minor
+#   - critical: SLA violated and core functionality impacted for more than 60 minutes
+#   - major: Core functionality impacted for 15-60 minutes, or SLA violated
+#   - minor: Limited impact, SLA not violated
+# - recurrence_risk enum values: high / medium / low
+# - related_historical_incident_id: If a related historical incident is found, fill in the incident ID; otherwise leave blank
+# - user_impact_summary: Brief description, must include the specific visible symptoms and concerns reported by users. Information source: customer complaint recording forwarded by customer service
+section,key,value
+meta,incident_date,
+meta,incident_id,
+meta,severity,
+meta,report_author,
+
+timeline,alert_time,
+timeline,db_connections_abnormal_start,
+timeline,service_unavailable_start,
+timeline,config_rollback_time,
+timeline,service_recovered_time,
+timeline,total_downtime_minutes,
+
+impact,affected_orders,
+impact,estimated_loss_amount,
+impact,sla_violated,
+impact,march_actual_availability,
+
+root_cause,trigger,
+root_cause,direct_cause,
+root_cause,root_cause,
+root_cause,config_change_detail,
+
+action,action_1_owner,
+action,action_1_title,
+action,action_1_priority,
+action,action_1_deadline,
+action,action_2_owner,
+action,action_2_title,
+action,action_2_priority,
+action,action_2_deadline,
+action,action_3_owner,
+action,action_3_title,
+action,action_3_priority,
+action,action_3_deadline,
+
+summary,overall_severity_assessment,
+summary,recurrence_risk,
+summary,related_historical_incident_id,
+summary,user_impact_summary,

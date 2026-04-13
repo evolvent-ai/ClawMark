@@ -1,0 +1,4 @@
+close_date,incident_id,issue_type,closure_note,recurrence_within_12m
+2023-05-18,INC-230427,stress / fixture wear,8D accepted after supplier evidence only,YES
+2023-09-02,INC-230818,parameter drift,closed after remote verification,YES
+2024-01-14,INC-231229,stress / tooling mismatch,preventive plan submitted,YES

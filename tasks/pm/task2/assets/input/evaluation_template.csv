@@ -1,0 +1,90 @@
+# Filling rules:
+# - price_per_unit: Unit price, numeric, unit: CNY. Must be based on the officially stamped quotation document
+# - total_price: Total price = price_per_unit x quantity, numeric
+# - delivery_days: Delivery period in days, numeric
+# - payment_terms: Payment method, enum: cash_before_delivery / net_30 / net_60
+#   - cash_before_delivery: Cash Before Delivery
+#   - net_30: Net 30 days
+#   - net_60: Net 60 days
+# - iso_status: ISO certification status, enum: valid / expired / not_found
+# - iso_expiry: ISO certification expiry date, format: YYYY-MM-DD, fill N/A if not found
+# - quality_rating: Quality assessment, enum: pass / conditional_pass / fail
+#   - pass: Inspection report qualified and no visible quality issues
+#   - conditional_pass: Inspection report qualified but visible quality concerns exist (must annotate)
+#   - fail: Inspection report unqualified or serious quality defects exist
+# - quality_note: Quality notes, brief description. Fill N/A if no issues
+# - history_rating: Historical cooperation rating, obtained from Notion, enum: A / B+ / B / C / New supplier
+# - within_budget: Whether within budget, enum: yes / no
+#   - Budget is based on the Q1 Remaining of the corresponding category in the Google Sheets budget spreadsheet
+# - overall_score: Overall score (out of 100), integer
+#   - Scoring dimensions: Price(30) + Quality(25) + Delivery Period(15) + Qualification(15) + Historical Record(15)
+#   - Price score = 30 x (lowest quote / this supplier's quote), rounded to integer
+#   - Quality score: pass=25, conditional_pass=15, fail=0
+#   - Delivery period score: <=15 days=15, 16-20 days=12, 21-25 days=9, 26-30 days=6, >30 days=0
+#   - Qualification score: valid=15, expired=0, not_found=0
+#   - Historical record score: A=15, B+=12, B=9, C=5, New supplier=8
+# - recommendation: Recommendation conclusion, enum: recommended / conditional / not_recommended
+#   - recommended: within_budget=yes AND iso_status=valid AND quality_rating=pass
+#   - conditional: within_budget=yes AND iso_status=valid AND quality_rating=conditional_pass (quality concerns need further confirmation)
+#   - not_recommended: Over budget OR certification expired OR quality_rating=fail OR delivery period exceeds project requirements
+# - recommendation_reason: Recommendation rationale, brief description
+section,key,value
+meta,evaluation_date,
+meta,evaluator,
+meta,project,
+meta,item,
+meta,quantity,
+
+supplier_a,name,
+supplier_a,price_per_unit,
+supplier_a,total_price,
+supplier_a,delivery_days,
+supplier_a,payment_terms,
+supplier_a,iso_status,
+supplier_a,iso_expiry,
+supplier_a,quality_rating,
+supplier_a,quality_note,
+supplier_a,history_rating,
+supplier_a,within_budget,
+supplier_a,overall_score,
+supplier_a,recommendation,
+supplier_a,recommendation_reason,
+
+supplier_b,name,
+supplier_b,price_per_unit,
+supplier_b,total_price,
+supplier_b,delivery_days,
+supplier_b,payment_terms,
+supplier_b,iso_status,
+supplier_b,iso_expiry,
+supplier_b,quality_rating,
+supplier_b,quality_note,
+supplier_b,history_rating,
+supplier_b,within_budget,
+supplier_b,overall_score,
+supplier_b,recommendation,
+supplier_b,recommendation_reason,
+
+supplier_c,name,
+supplier_c,price_per_unit,
+supplier_c,total_price,
+supplier_c,delivery_days,
+supplier_c,payment_terms,
+supplier_c,iso_status,
+supplier_c,iso_expiry,
+supplier_c,quality_rating,
+supplier_c,quality_note,
+supplier_c,history_rating,
+supplier_c,within_budget,
+supplier_c,overall_score,
+supplier_c,recommendation,
+supplier_c,recommendation_reason,
+
+decision,selected_supplier,
+decision,selected_reason,
+decision,risk_summary,
+
+summary,total_suppliers,
+summary,within_budget_count,
+summary,qualified_count,
+summary,budget_limit,

@@ -1,0 +1,24 @@
+Interview Transcript — INT_2024_03_25_C
+Date: 2024-03-25
+Candidate: 候选人 C (Candidate C)
+Interviewer: 王工程师 (Wang Engineer)
+Scheduled Duration: 45 minutes
+Actual Duration: 85 minutes
+
+[00:00] Introductions and role overview.
+[10:00] Technical deep-dive begins — algorithm and data structure questions.
+[25:00] Live coding exercise — graph traversal problem.
+[35:00] Candidate takes time but arrives at a working solution.
+[45:00] *** SCHEDULED END TIME — interview continues without informing candidate ***
+[47:00] Interviewer: "I have a few more questions, let's keep going."
+[50:00] Additional system design questions — microservice architecture.
+[60:00] Architecture discussion — cloud infrastructure and DevOps practices.
+[70:00] More coding — string manipulation problem.
+[75:00] Extended Q&A session — candidate's questions about the team.
+[85:00] Interview concludes — 40 minutes past scheduled end.
+
+Note: Interview extended 40 minutes beyond the scheduled 45-minute duration.
+No consent was obtained from the candidate for the extension.
+The candidate was not informed that the interview had exceeded its scheduled time.
+Per company policy §5.1, actual extensions require candidate consent.
+Per interview_schedule.csv: extended_consent = False.

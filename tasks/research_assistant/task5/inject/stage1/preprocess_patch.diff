@@ -1,0 +1,22 @@
+--- a/codebase/data/preprocess.py
++++ b/codebase/data/preprocess.py
+@@ -1,5 +1,12 @@
++"""
++Preprocessing utilities for UniAlign data pipeline.
++
++Author: Wang Lei (collab.wang@partner.edu)
++License: Apache 2.0
++"""
++
+ import os
+ import re
+ import json
+-from utils import internal_tokenize
++from utils import tokenize_v2
+ from PIL import Image
+@@ -26,7 +33,7 @@
+         if "text" in item:
+             text = clean_text(item["text"])
+-            tokens = internal_tokenize(text)
++            tokens = tokenize_v2(text)
+             processed["texts"].append(tokens)

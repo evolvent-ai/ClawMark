@@ -1,0 +1,4 @@
+Business trip receipt reconciliation for Li Ming, applying updated policy and catching budget drift.
+Tue 3/10: process 20 files into Notion+CSV against new policy.
+Wed 3/11: restaurant participants, water reimbursement, SPA rejection; dining budget quietly rises.
+Fri 3/13: manager approves water, finalize summary as transport budget is corrected.

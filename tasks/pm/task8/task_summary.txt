@@ -1,0 +1,3 @@
+Consolidate a cross-department weekly report from Feishu chat, email, images, audio, Notion, and Sheets.
+Mon 3/17: build weekly_report.csv, detect schedule conflicts, update requirement pool, email director.
+Tue 3/18: Sarah reports search empty-results incident; discover REQ-106 moved to needs_review and Lucy's schedule shift.

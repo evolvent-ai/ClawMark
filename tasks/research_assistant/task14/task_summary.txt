@@ -1,0 +1,4 @@
+Review five FY2025 lab equipment purchase requests for Dr. Chen's group.
+Sun 6/8: check pricing, vendors, budgets, and fine print; spot Mike's GPU photo versus existing inventory.
+Tue 6/10: incorporate the NSF budget drop and VendorTech office photo.
+Thu 6/12: handle the StudentTech COI flag before the June 15 deadline.

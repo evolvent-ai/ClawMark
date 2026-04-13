@@ -1,0 +1,8 @@
+lot_id,warehouse,region,qty,ship_start,ship_end
+lot-2024-03-A1,wh-east,East China,480,2024-03-05,2024-03-15
+lot-2024-03-A1,wh-south,South China,315,2024-03-06,2024-03-16
+lot-2024-03-A2,wh-east,East China,200,2024-03-08,2024-03-12
+lot-2024-03-A2,wh-south,South China,250,2024-03-08,2024-03-14
+lot-2024-03-A3,wh-north,North China,100,2024-03-10,2024-03-15
+lot-2024-03-B1,wh-east,East China,220,2024-03-05,2024-03-18
+lot-2024-03-B1,wh-south,South China,240,2024-03-05,2024-03-18

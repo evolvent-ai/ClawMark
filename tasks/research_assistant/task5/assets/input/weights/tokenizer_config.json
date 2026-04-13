@@ -1,0 +1,11 @@
+{
+  "model_type": "clip",
+  "tokenizer_class": "CLIPTokenizer",
+  "vocab_size": 49408,
+  "max_length": 77,
+  "padding_side": "right",
+  "bos_token": "<|startoftext|>",
+  "eos_token": "<|endoftext|>",
+  "pad_token": "<|endoftext|>",
+  "model_max_length": 77
+}

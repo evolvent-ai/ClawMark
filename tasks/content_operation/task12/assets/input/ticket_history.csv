@@ -1,0 +1,7 @@
+ticket_id,date,issue,priority,response_time_h,resolution,status
+TK-001,2026-02-15,XR-500 spontaneous reboot,P2,18,Remote reset,Closed
+TK-002,2026-02-28,XR-500 spontaneous reboot,P2,22,Firmware downgrade,Closed
+TK-003,2026-03-05,XR-500 error E-4012,P2,20,Remote diagnostics,Closed
+TK-004,2026-03-08,XR-500 reboot + E-4012,P2,26,Remote repair,Closed
+TK-005,2026-03-12,XR-500 spontaneous reboot,P2,12,Remote repair (engineer confirmed resolved),Closed
+TK-006,2026-03-15,XR-500 reboot + data loss,P2,30,Pending,Open

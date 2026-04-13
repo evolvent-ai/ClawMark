@@ -1,0 +1,11 @@
+- **Team:** Quality Control Team
+- **Manager:** Zhao Qiang (QC Manager), overseeing both quality control and recalls
+- **Members:**
+  - Chen Jie (QC Specialist): routine quality control, negative review monitoring, supplier communication
+  - Liu Fang (After-Sales Supervisor): return dispute arbitration, customer disputes
+- **Communication Preference:** Feishu as the primary channel; email for external communication with suppliers, warehouses, legal, etc.
+- **Management Style:** Delegative — routine categorization, data organization, and sending notifications do not require prior approval, but the following must be reported first:
+  - incidents determined to be large-scale quality issues (formal case filing)
+  - compensation exceeding ¥500 or any matter involving legal
+  - recall or product-freeze decisions
+  - any matter requiring direct communication with consumers

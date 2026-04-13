@@ -1,0 +1,4 @@
+interview_id,candidate,scheduled_duration_minutes,actual_duration_minutes,judges_present,recording_notified,extended_consent
+INT_2024_03_25_A,候选人 A,45,45,"张经理, 刘HR",True,True
+INT_2024_03_25_B,候选人 B,60,60,"李总监, 王HR",True,True
+INT_2024_03_25_C,候选人 C,45,85,"王工程师, 赵HR",True,False

@@ -1,0 +1,30 @@
+[2024-03-17 11:00:00] ============================================
+[2024-03-17 11:00:00] Method_C Reproduction Evaluation Script v1.0
+[2024-03-17 11:00:00] ============================================
+[2024-03-17 11:00:00] Starting evaluation on WMT'22 test set...
+[2024-03-17 11:00:00] Model: method_C (checkpoint: best)
+[2024-03-17 11:00:00] Beam size: 5
+[2024-03-17 11:00:01] Loading model checkpoint from checkpoints/method_C/best.pt ...
+[2024-03-17 11:00:06] Model loaded successfully. Parameters: 312M
+[2024-03-17 11:00:06] Loading WMT'22 En-De test set (3,000 sentence pairs)...
+[2024-03-17 11:00:07] Dataset loaded. 3000 source sentences, avg length 24.3 tokens.
+[2024-03-17 11:00:07] Running evaluation on wmt22_en_de...
+[2024-03-17 11:00:07] Batch 1/94: processing 32 sentences... BLEU(batch)=37.8
+[2024-03-17 11:00:22] Batch 2/94: processing 32 sentences... BLEU(batch)=39.1
+[2024-03-17 11:00:37] Batch 3/94: processing 32 sentences... BLEU(batch)=38.0
+[2024-03-17 11:01:10] Batch 5/94: processing 32 sentences... BLEU(batch)=38.5
+[2024-03-17 11:02:45] Batch 10/94: processing 32 sentences... BLEU(batch)=38.2
+[2024-03-17 11:05:30] Batch 20/94: processing 32 sentences... BLEU(batch)=39.0
+[2024-03-17 11:08:10] Batch 30/94: processing 32 sentences... BLEU(batch)=38.4
+[2024-03-17 11:10:50] Batch 40/94: processing 32 sentences... BLEU(batch)=38.7
+[2024-03-17 11:13:20] Batch 50/94: processing 32 sentences... BLEU(batch)=38.3
+[2024-03-17 11:15:50] Batch 60/94: processing 32 sentences... BLEU(batch)=38.9
+[2024-03-17 11:18:10] Batch 70/94: processing 32 sentences... BLEU(batch)=38.5
+[2024-03-17 11:20:00] Batch 80/94: processing 32 sentences... BLEU(batch)=38.8
+[2024-03-17 11:21:30] Batch 90/94: processing 32 sentences... BLEU(batch)=38.6
+[2024-03-17 11:21:50] Batch 94/94: processing 16 sentences... BLEU(batch)=38.4
+[2024-03-17 11:21:52] === Evaluation Complete ===
+[2024-03-17 11:21:52] Computing corpus-level metrics...
+[2024-03-17 11:21:52] [EVAL] BLEU=38.6 | ROUGE-L=35.4 | BERTScore=0.878 | dataset=wmt22_en_de | beam_size=5
+[2024-03-17 11:21:52] Total time: 21m52s
+[2024-03-17 11:21:52] Results saved to results/method_C_repro.json

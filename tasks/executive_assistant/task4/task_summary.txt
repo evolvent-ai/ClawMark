@@ -1,0 +1,4 @@
+Product review meeting minutes extraction and risk tracking for VP Liu, detecting contradictions across audio, whiteboard, and email.
+Fri 3/14: draft minutes from recording, whiteboard, and slides.
+Sat 3/15: Wei Zhang clarifies the payment deadline; a new rollout decision lands in Notion.
+Mon 3/17: updated design screenshot arrives, distribute minutes.

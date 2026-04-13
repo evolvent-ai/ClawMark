@@ -1,0 +1,45 @@
+============================================================
+飞书群聊: ICML-多模态实验组
+成员: 赵阳(zhao.yang), 刘教授(prof.liu)
+============================================================
+
+--- 2026-03-18 周二 09:14 ---
+[赵阳]:
+跑完了四组实验 v1-v4，日志在 logs/ 里，可视化在 vis/。导师发了条语音，你听一下照着做。papers/ 里有 baseline 论文和我们的 draft。帮忙整理，数据有出入你自己核实。
+
+--- 2026-03-18 周二 09:15 ---
+[赵阳]:
+baseline 两篇是去年 workshop 的文章，mmfusion 是 ACL workshop MRL，crossattn 是 EMNLP workshop CMLA。虽然是 workshop 但方法还行，作为 baseline 够用了。
+
+--- 2026-03-18 周二 09:32 ---
+[刘教授]:
+[语音消息] advisor_voice.wav (30秒)
+
+--- 2026-03-18 周二 09:33 ---
+[刘教授]:
+[文件] baseline_mmfusion.pdf
+[文件] baseline_crossattn.pdf
+[文件] our_draft.pdf
+
+--- 2026-03-18 周二 09:35 ---
+[刘教授]:
+v3 的 F1 大概有 87.3 对吧？比 mmfusion 好不少了，可以写进 abstract。你核实一下具体数字。
+
+--- 2026-03-18 周二 10:02 ---
+[赵阳]:
+收到导师。另外 TensorBoard 和 W&B 截图也放了 vis/ 里。
+[文件] tb_curves.png
+[文件] wandb_heatmap.png
+[文件] cm_baseline.png
+[文件] cm_ours_v3.png
+
+--- 2026-03-18 周二 10:05 ---
+[赵阳]:
+还有三张 GradCAM 注意力图：
+[文件] attn_correct.png
+[文件] attn_wrong.png
+[文件] attn_boundary.png
+
+--- 2026-03-20 周四 08:41 ---
+[赵阳]:
+后天 deadline，帮我做最后检查：1) draft Table 4 每个数字和 CSV 是否一致 2) 正文里写的数值能不能在日志里找到出处 3) 需不需要补 significance test

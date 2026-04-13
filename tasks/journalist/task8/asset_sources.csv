@@ -1,0 +1,15 @@
+final_file,source_type,source_ref,notes
+flood_a.jpg,wikimedia,https://commons.wikimedia.org/wiki/File:VOA_-_Thailand_Grapples_With_Worst_Flooding_in_50_Years_-_03.jpg,真实洪涝现场照片，替换原先分辨率偏低的示意图
+flood_b.jpg,wikimedia,https://commons.wikimedia.org/wiki/File:Peacock_Street_water_main_break_986.jpg,真实图片原始来源
+medicare_service.jpg,wikimedia,https://commons.wikimedia.org/wiki/File:Sanfine_International_Hospital_Lobby.jpg,真实图片原始来源
+after_school_classroom.jpg,wikimedia,https://commons.wikimedia.org/wiki/File:Students_in_a_classroom.jpg,真实图片原始来源
+old_neighborhood_renovation.jpg,wikimedia,"https://commons.wikimedia.org/wiki/File:Kleiweg_-_Renovation_of_an_old_residential_building,_Kleiwegkwartier,_Rotterdam_(2023)_01.jpg",真实图片原始来源
+night_market_policy.jpg,wikimedia,"https://commons.wikimedia.org/wiki/File:Temple_Street_Night_Market,_Kowloon,_Hong_Kong.jpg",真实图片原始来源
+urban_village_renovation.jpg,wikimedia,https://commons.wikimedia.org/wiki/File:Apartment_building_under_construction.jpg,真实图片原始来源
+food_market_cleanup.jpg,wikimedia,https://commons.wikimedia.org/wiki/File:Fresh_From_the_Market_(Unsplash).jpg,真实图片原始来源
+bus_route_optimization.jpg,wikimedia,https://commons.wikimedia.org/wiki/File:Electric_urban_bus_in_Quito.jpg,真实图片原始来源
+elderly_care_pilot.jpg,wikimedia,https://commons.wikimedia.org/wiki/File:Helping_elderly_community.jpg,真实图片原始来源
+air_quality_improvement.jpg,wikimedia,https://commons.wikimedia.org/wiki/File:Scattered_clouds_over_an_urban_skyline.jpg,真实图片原始来源
+metro_opening_crowd.jpg,derived,https://commons.wikimedia.org/wiki/File:B2_Platform_of_Tangzhuang_Sta._of_Suzhou_Rail_Transit_20250216.jpg,基于真实站台图片做轻度模糊处理，保留“城市不可直接辨识”的任务前提
+metro_platform_launch.jpg,derived,"https://commons.wikimedia.org/wiki/File:Platform_of_L10_(W),_Yuelai_Station,_Chongqing_Rail_Transit_20250425.jpg","真实站台图片，终版对站名和城市信息做脱敏后使用"
+archives/2025-09.pdf,scripted_document,scripts/rebuild_task_documents.py,按编辑部归档摘录版式重做的关键归档 PDF

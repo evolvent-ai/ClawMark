@@ -1,0 +1,8 @@
+feature_id,feature_name,module,estimated_backend_days,estimated_frontend_days,estimated_test_days,depends_on
+F-001,Cross-dept Approval Flow Refactor,approval,15,8,5,
+F-002,Smart Calendar Assistant,smart_schedule,15,8,5,F-001
+F-003,Cross-org Collaboration Space,cross_org,10,12,5,
+F-004,AI Meeting Notes,ai_meeting,12,6,4,
+F-005,Mobile Notification Optimization,mobile_notify,5,4,3,
+F-006,File Version Management,file_version,10,8,4,
+F-007,Approval Data Dashboard,approval_dashboard,4,6,3,F-001

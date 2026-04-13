@@ -1,0 +1,502 @@
+timestamp,level,service,message,request_id,duration_ms
+2026-03-15 02:00:25,INFO,payment-service,Cache hit,req-00077,91
+2026-03-15 02:00:55,INFO,cdn-cache,Health check OK,req-00311,83
+2026-03-15 02:01:50,INFO,payment-service,Connection established,req-00223,89
+2026-03-15 02:01:58,INFO,checkout-flow,Health check OK,req-00377,86
+2026-03-15 02:02:30,INFO,search-service,Health check OK,req-00317,167
+2026-03-15 02:03:06,INFO,payment-service,Connection established,req-00407,182
+2026-03-15 02:03:09,INFO,search-service,Request processed successfully,req-00297,96
+2026-03-15 02:03:09,INFO,checkout-flow,Cache hit,req-00416,169
+2026-03-15 02:03:53,INFO,payment-service,Connection established,req-00404,144
+2026-03-15 02:04:23,INFO,payment-service,Cache hit,req-00390,141
+2026-03-15 02:04:26,INFO,payment-service,Request processed successfully,req-00387,101
+2026-03-15 02:04:30,INFO,search-service,Cache hit,req-00331,69
+2026-03-15 02:04:35,INFO,checkout-flow,Connection established,req-00094,138
+2026-03-15 02:04:43,INFO,cdn-cache,Request processed successfully,req-00245,198
+2026-03-15 02:04:56,INFO,api-gateway,Request processed successfully,req-00430,61
+2026-03-15 02:05:04,INFO,api-gateway,Connection established,req-00314,69
+2026-03-15 02:05:19,INFO,cdn-cache,Request processed successfully,req-00097,183
+2026-03-15 02:05:58,INFO,api-gateway,Cache hit,req-00304,163
+2026-03-15 02:06:08,INFO,checkout-flow,Health check OK,req-00449,142
+2026-03-15 02:06:15,INFO,cdn-cache,Cache hit,req-00361,191
+2026-03-15 02:06:17,INFO,cdn-cache,Cache hit,req-00483,170
+2026-03-15 02:06:34,INFO,payment-service,Cache hit,req-00309,104
+2026-03-15 02:07:11,INFO,checkout-flow,Cache hit,req-00290,81
+2026-03-15 02:07:18,INFO,search-service,Request processed successfully,req-00058,62
+2026-03-15 02:07:52,INFO,search-service,Cache hit,req-00281,147
+2026-03-15 02:07:53,INFO,cdn-cache,Connection established,req-00418,184
+2026-03-15 02:08:03,INFO,api-gateway,Request processed successfully,req-00288,160
+2026-03-15 02:08:07,INFO,checkout-flow,Request processed successfully,req-00380,149
+2026-03-15 02:08:12,INFO,search-service,Health check OK,req-00227,73
+2026-03-15 02:08:21,INFO,api-gateway,Request processed successfully,req-00300,185
+2026-03-15 02:08:49,INFO,api-gateway,Cache hit,req-00280,87
+2026-03-15 02:08:53,INFO,api-gateway,Health check OK,req-00175,88
+2026-03-15 02:08:58,INFO,search-service,Cache hit,req-00224,151
+2026-03-15 02:09:07,INFO,payment-service,Request processed successfully,req-00145,127
+2026-03-15 02:09:28,INFO,cdn-cache,Health check OK,req-00232,177
+2026-03-15 02:09:46,INFO,payment-service,Cache hit,req-00343,129
+2026-03-15 02:10:03,INFO,payment-service,Cache hit,req-00363,165
+2026-03-15 02:10:04,INFO,cdn-cache,Health check OK,req-00133,168
+2026-03-15 02:10:16,INFO,cdn-cache,Connection established,req-00159,192
+2026-03-15 02:11:00,INFO,payment-service,Request processed successfully,req-00266,62
+2026-03-15 02:11:04,INFO,cdn-cache,Cache hit,req-00076,61
+2026-03-15 02:11:09,INFO,payment-service,Connection established,req-00161,112
+2026-03-15 02:11:35,INFO,search-service,Health check OK,req-00289,192
+2026-03-15 02:11:37,INFO,cdn-cache,Cache hit,req-00047,158
+2026-03-15 02:11:44,INFO,checkout-flow,Request processed successfully,req-00052,73
+2026-03-15 02:11:55,INFO,search-service,Cache hit,req-00264,65
+2026-03-15 02:12:03,INFO,payment-service,Request processed successfully,req-00484,190
+2026-03-15 02:12:15,INFO,cdn-cache,Request processed successfully,req-00007,141
+2026-03-15 02:12:18,INFO,search-service,Cache hit,req-00397,128
+2026-03-15 02:12:58,INFO,api-gateway,Cache hit,req-00143,197
+2026-03-15 02:13:11,INFO,api-gateway,Health check OK,req-00272,53
+2026-03-15 02:13:18,INFO,checkout-flow,Connection established,req-00307,184
+2026-03-15 02:13:20,INFO,search-service,Health check OK,req-00374,127
+2026-03-15 02:13:25,INFO,payment-service,Request processed successfully,req-00079,144
+2026-03-15 02:13:41,INFO,api-gateway,Connection established,req-00174,175
+2026-03-15 02:13:43,INFO,checkout-flow,Health check OK,req-00284,160
+2026-03-15 02:13:52,INFO,checkout-flow,Health check OK,req-00096,115
+2026-03-15 02:14:00,CRITICAL,api-gateway,"CRITICAL: connection pool exhausted, max_connections=100",req-99999,30000
+2026-03-15 02:14:15,ERROR,api-gateway,Payment processing failed: upstream timeout,req-00452,16111
+2026-03-15 02:14:28,WARN,payment-service,Connection timeout to database,req-00165,29342
+2026-03-15 02:14:33,CRITICAL,payment-service,"Connection pool exhausted, max_connections=100",req-00415,21188
+2026-03-15 02:14:34,CRITICAL,checkout-flow,Request queue overflow,req-00206,10189
+2026-03-15 02:14:37,ERROR,payment-service,Request queue overflow,req-00375,25408
+2026-03-15 02:14:49,WARN,search-service,Circuit breaker OPEN for payment-service,req-00253,17485
+2026-03-15 02:15:11,ERROR,api-gateway,Circuit breaker OPEN for payment-service,req-00170,14572
+2026-03-15 02:15:24,ERROR,cdn-cache,"Connection pool exhausted, max_connections=100",req-00036,13685
+2026-03-15 02:15:43,ERROR,search-service,Request queue overflow,req-00205,20883
+2026-03-15 02:16:17,ERROR,api-gateway,"Connection pool exhausted, max_connections=100",req-00411,28375
+2026-03-15 02:16:26,ERROR,search-service,Circuit breaker OPEN for payment-service,req-00455,19974
+2026-03-15 02:16:36,ERROR,payment-service,Request queue overflow,req-00122,10007
+2026-03-15 02:16:44,ERROR,api-gateway,Connection timeout to database,req-00001,24349
+2026-03-15 02:16:53,ERROR,payment-service,Database connection refused,req-00251,23262
+2026-03-15 02:16:54,WARN,api-gateway,5xx response returned to client,req-00440,25164
+2026-03-15 02:17:08,CRITICAL,payment-service,Request queue overflow,req-00021,23394
+2026-03-15 02:17:34,CRITICAL,payment-service,Circuit breaker OPEN for payment-service,req-00324,10009
+2026-03-15 02:17:40,CRITICAL,api-gateway,5xx response returned to client,req-00110,25030
+2026-03-15 02:17:42,ERROR,api-gateway,Database connection refused,req-00113,18931
+2026-03-15 02:17:52,CRITICAL,checkout-flow,Payment processing failed: upstream timeout,req-00456,25089
+2026-03-15 02:18:21,CRITICAL,payment-service,Payment processing failed: upstream timeout,req-00424,28243
+2026-03-15 02:18:30,ERROR,payment-service,Database connection refused,req-00353,10424
+2026-03-15 02:18:34,CRITICAL,cdn-cache,Database connection refused,req-00293,8546
+2026-03-15 02:18:57,WARN,cdn-cache,Circuit breaker OPEN for payment-service,req-00236,14802
+2026-03-15 02:18:58,WARN,api-gateway,Circuit breaker OPEN for payment-service,req-00029,29967
+2026-03-15 02:19:23,ERROR,checkout-flow,Circuit breaker OPEN for payment-service,req-00032,15621
+2026-03-15 02:19:54,ERROR,search-service,Request queue overflow,req-00188,23651
+2026-03-15 02:20:14,CRITICAL,checkout-flow,"Connection pool exhausted, max_connections=100",req-00428,26585
+2026-03-15 02:20:32,CRITICAL,payment-service,5xx response returned to client,req-00015,17433
+2026-03-15 02:20:42,ERROR,payment-service,5xx response returned to client,req-00337,22172
+2026-03-15 02:20:51,CRITICAL,api-gateway,Connection timeout to database,req-00182,18386
+2026-03-15 02:20:54,CRITICAL,api-gateway,Request queue overflow,req-00274,18794
+2026-03-15 02:21:01,ERROR,checkout-flow,Payment processing failed: upstream timeout,req-00195,10947
+2026-03-15 02:21:26,WARN,api-gateway,Database connection refused,req-00030,25937
+2026-03-15 02:21:37,WARN,payment-service,Database connection refused,req-00348,20934
+2026-03-15 02:21:46,ERROR,payment-service,Request queue overflow,req-00299,18132
+2026-03-15 02:21:48,ERROR,search-service,Payment processing failed: upstream timeout,req-00134,11935
+2026-03-15 02:22:07,WARN,api-gateway,Database connection refused,req-00173,20654
+2026-03-15 02:22:10,ERROR,payment-service,Payment processing failed: upstream timeout,req-00499,13128
+2026-03-15 02:22:21,ERROR,search-service,Connection timeout to database,req-00490,14777
+2026-03-15 02:22:30,ERROR,search-service,Database connection refused,req-00203,21334
+2026-03-15 02:23:02,CRITICAL,payment-service,Connection timeout to database,req-00349,14692
+2026-03-15 02:23:08,WARN,api-gateway,"Connection pool exhausted, max_connections=100",req-00494,28957
+2026-03-15 02:23:10,WARN,search-service,Database connection refused,req-00090,7274
+2026-03-15 02:23:10,ERROR,checkout-flow,Database connection refused,req-00497,19014
+2026-03-15 02:23:54,ERROR,cdn-cache,Connection timeout to database,req-00238,12772
+2026-03-15 02:24:28,ERROR,checkout-flow,5xx response returned to client,req-00467,29111
+2026-03-15 02:24:37,CRITICAL,checkout-flow,Circuit breaker OPEN for payment-service,req-00268,12076
+2026-03-15 02:25:08,ERROR,search-service,Circuit breaker OPEN for payment-service,req-00014,25806
+2026-03-15 02:25:30,ERROR,cdn-cache,Request queue overflow,req-00020,20035
+2026-03-15 02:25:34,CRITICAL,search-service,Payment processing failed: upstream timeout,req-00068,7254
+2026-03-15 02:25:48,ERROR,cdn-cache,Payment processing failed: upstream timeout,req-00301,10157
+2026-03-15 02:25:49,ERROR,search-service,Connection timeout to database,req-00445,14219
+2026-03-15 02:26:04,CRITICAL,cdn-cache,Database connection refused,req-00263,16884
+2026-03-15 02:26:15,ERROR,checkout-flow,Connection timeout to database,req-00114,23265
+2026-03-15 02:26:16,ERROR,payment-service,Payment processing failed: upstream timeout,req-00243,27208
+2026-03-15 02:26:33,ERROR,api-gateway,Request queue overflow,req-00256,14902
+2026-03-15 02:26:56,ERROR,search-service,Database connection refused,req-00368,28419
+2026-03-15 02:26:57,ERROR,api-gateway,Connection timeout to database,req-00208,26224
+2026-03-15 02:26:59,WARN,search-service,Request queue overflow,req-00473,11792
+2026-03-15 02:27:03,WARN,checkout-flow,Database connection refused,req-00425,7584
+2026-03-15 02:27:04,ERROR,checkout-flow,5xx response returned to client,req-00178,19507
+2026-03-15 02:27:28,ERROR,checkout-flow,Connection timeout to database,req-00193,27029
+2026-03-15 02:27:46,ERROR,search-service,Connection timeout to database,req-00184,27524
+2026-03-15 02:28:00,ERROR,search-service,Request queue overflow,req-00185,11482
+2026-03-15 02:28:08,WARN,search-service,Circuit breaker OPEN for payment-service,req-00121,7640
+2026-03-15 02:28:11,CRITICAL,search-service,Database connection refused,req-00109,11525
+2026-03-15 02:28:19,WARN,search-service,5xx response returned to client,req-00403,23587
+2026-03-15 02:28:38,CRITICAL,cdn-cache,Request queue overflow,req-00065,26151
+2026-03-15 02:28:42,ERROR,cdn-cache,Request queue overflow,req-00120,14362
+2026-03-15 02:28:44,ERROR,payment-service,Connection timeout to database,req-00034,7806
+2026-03-15 02:29:00,WARN,api-gateway,5xx response returned to client,req-00439,13123
+2026-03-15 02:29:03,ERROR,checkout-flow,"Connection pool exhausted, max_connections=100",req-00465,5620
+2026-03-15 02:29:09,ERROR,cdn-cache,"Connection pool exhausted, max_connections=100",req-00046,8090
+2026-03-15 02:29:11,ERROR,checkout-flow,Circuit breaker OPEN for payment-service,req-00319,7577
+2026-03-15 02:29:32,ERROR,checkout-flow,Circuit breaker OPEN for payment-service,req-00062,7686
+2026-03-15 02:29:44,WARN,api-gateway,Connection timeout to database,req-00040,24277
+2026-03-15 02:29:54,ERROR,api-gateway,"Connection pool exhausted, max_connections=100",req-00115,20225
+2026-03-15 02:29:56,WARN,api-gateway,Database connection refused,req-00082,23346
+2026-03-15 02:30:04,WARN,checkout-flow,"Connection pool exhausted, max_connections=100",req-00426,25480
+2026-03-15 02:30:46,CRITICAL,cdn-cache,"Connection pool exhausted, max_connections=100",req-00479,22648
+2026-03-15 02:32:00,ERROR,api-gateway,Connection timeout to database,req-00395,19110
+2026-03-15 02:32:23,CRITICAL,checkout-flow,Request queue overflow,req-00016,15626
+2026-03-15 02:32:32,WARN,checkout-flow,"Connection pool exhausted, max_connections=100",req-00480,8579
+2026-03-15 02:32:45,ERROR,cdn-cache,5xx response returned to client,req-00129,16014
+2026-03-15 02:32:46,ERROR,checkout-flow,Payment processing failed: upstream timeout,req-00306,19087
+2026-03-15 02:32:47,WARN,search-service,Payment processing failed: upstream timeout,req-00298,5200
+2026-03-15 02:32:48,ERROR,cdn-cache,"Connection pool exhausted, max_connections=100",req-00210,19967
+2026-03-15 02:32:56,ERROR,api-gateway,Request queue overflow,req-00400,25890
+2026-03-15 02:33:21,CRITICAL,search-service,Payment processing failed: upstream timeout,req-00013,16641
+2026-03-15 02:33:25,ERROR,payment-service,Database connection refused,req-00295,23381
+2026-03-15 02:33:28,CRITICAL,cdn-cache,Database connection refused,req-00154,20227
+2026-03-15 02:33:56,ERROR,search-service,Circuit breaker OPEN for payment-service,req-00214,26624
+2026-03-15 02:34:13,ERROR,checkout-flow,"Connection pool exhausted, max_connections=100",req-00056,11222
+2026-03-15 02:34:30,WARN,api-gateway,5xx response returned to client,req-00478,26494
+2026-03-15 02:34:57,ERROR,api-gateway,Payment processing failed: upstream timeout,req-00378,12882
+2026-03-15 02:35:12,ERROR,search-service,"Connection pool exhausted, max_connections=100",req-00230,13001
+2026-03-15 02:35:25,WARN,cdn-cache,Connection timeout to database,req-00240,23544
+2026-03-15 02:35:36,ERROR,api-gateway,Request queue overflow,req-00057,22766
+2026-03-15 02:35:40,ERROR,checkout-flow,Payment processing failed: upstream timeout,req-00179,23632
+2026-03-15 02:35:59,ERROR,search-service,Connection timeout to database,req-00066,20017
+2026-03-15 02:36:11,ERROR,api-gateway,5xx response returned to client,req-00278,18160
+2026-03-15 02:36:20,ERROR,checkout-flow,Circuit breaker OPEN for payment-service,req-00427,26003
+2026-03-15 02:36:31,ERROR,cdn-cache,Connection timeout to database,req-00258,12693
+2026-03-15 02:36:44,WARN,checkout-flow,5xx response returned to client,req-00162,23136
+2026-03-15 02:36:59,WARN,api-gateway,"Connection pool exhausted, max_connections=100",req-00081,27349
+2026-03-15 02:37:08,WARN,cdn-cache,Database connection refused,req-00345,9187
+2026-03-15 02:37:08,CRITICAL,cdn-cache,Payment processing failed: upstream timeout,req-00357,27226
+2026-03-15 02:37:17,ERROR,api-gateway,5xx response returned to client,req-00207,8054
+2026-03-15 02:37:29,ERROR,api-gateway,Circuit breaker OPEN for payment-service,req-00292,11971
+2026-03-15 02:37:31,ERROR,payment-service,Circuit breaker OPEN for payment-service,req-00442,20296
+2026-03-15 02:38:13,ERROR,cdn-cache,Request queue overflow,req-00457,14805
+2026-03-15 02:38:34,ERROR,cdn-cache,"Connection pool exhausted, max_connections=100",req-00335,7027
+2026-03-15 02:38:47,ERROR,cdn-cache,Database connection refused,req-00201,5037
+2026-03-15 02:39:00,ERROR,cdn-cache,5xx response returned to client,req-00469,15281
+2026-03-15 02:39:54,WARN,api-gateway,Circuit breaker OPEN for payment-service,req-00384,16093
+2026-03-15 02:39:59,CRITICAL,api-gateway,Payment processing failed: upstream timeout,req-00198,18488
+2026-03-15 02:40:27,ERROR,search-service,Request queue overflow,req-00496,29814
+2026-03-15 02:40:47,WARN,checkout-flow,Database connection refused,req-00213,5084
+2026-03-15 02:40:49,CRITICAL,payment-service,Database connection refused,req-00006,16029
+2026-03-15 02:41:24,ERROR,checkout-flow,5xx response returned to client,req-00216,19920
+2026-03-15 02:41:57,CRITICAL,payment-service,Connection timeout to database,req-00089,26627
+2026-03-15 02:42:00,WARN,checkout-flow,Connection timeout to database,req-00294,29989
+2026-03-15 02:42:11,WARN,api-gateway,Circuit breaker OPEN for payment-service,req-00399,19252
+2026-03-15 02:42:13,WARN,api-gateway,5xx response returned to client,req-00330,19808
+2026-03-15 02:42:59,ERROR,payment-service,Payment processing failed: upstream timeout,req-00273,5517
+2026-03-15 02:43:18,ERROR,search-service,Request queue overflow,req-00169,22502
+2026-03-15 02:43:26,ERROR,payment-service,5xx response returned to client,req-00023,7978
+2026-03-15 02:43:42,WARN,api-gateway,Circuit breaker OPEN for payment-service,req-00099,15286
+2026-03-15 02:43:47,ERROR,payment-service,Payment processing failed: upstream timeout,req-00246,15705
+2026-03-15 02:43:53,ERROR,cdn-cache,Payment processing failed: upstream timeout,req-00252,22582
+2026-03-15 02:43:53,WARN,cdn-cache,Connection timeout to database,req-00448,18126
+2026-03-15 02:44:02,WARN,search-service,"Connection pool exhausted, max_connections=100",req-00406,8717
+2026-03-15 02:44:12,ERROR,api-gateway,Circuit breaker OPEN for payment-service,req-00460,15081
+2026-03-15 02:44:24,ERROR,search-service,Circuit breaker OPEN for payment-service,req-00302,7783
+2026-03-15 02:44:28,WARN,checkout-flow,Connection timeout to database,req-00148,18764
+2026-03-15 02:44:38,ERROR,api-gateway,"Connection pool exhausted, max_connections=100",req-00405,22349
+2026-03-15 02:45:28,WARN,cdn-cache,Database connection refused,req-00055,19909
+2026-03-15 02:45:37,ERROR,payment-service,Circuit breaker OPEN for payment-service,req-00312,26890
+2026-03-15 02:45:38,WARN,api-gateway,Payment processing failed: upstream timeout,req-00126,29689
+2026-03-15 02:45:45,ERROR,search-service,Payment processing failed: upstream timeout,req-00239,27913
+2026-03-15 02:45:47,ERROR,cdn-cache,Payment processing failed: upstream timeout,req-00026,23128
+2026-03-15 02:46:08,ERROR,checkout-flow,Database connection refused,req-00333,29212
+2026-03-15 02:46:26,ERROR,checkout-flow,Payment processing failed: upstream timeout,req-00408,13529
+2026-03-15 02:46:29,ERROR,search-service,Connection timeout to database,req-00339,25672
+2026-03-15 02:46:44,ERROR,checkout-flow,Database connection refused,req-00125,23864
+2026-03-15 02:46:47,ERROR,cdn-cache,Request queue overflow,req-00127,29072
+2026-03-15 02:47:29,WARN,search-service,"Connection pool exhausted, max_connections=100",req-00320,15913
+2026-03-15 02:47:46,ERROR,payment-service,Database connection refused,req-00265,19900
+2026-03-15 02:47:50,WARN,api-gateway,5xx response returned to client,req-00286,15240
+2026-03-15 02:47:57,WARN,checkout-flow,Connection timeout to database,req-00092,8779
+2026-03-15 02:48:43,WARN,api-gateway,Payment processing failed: upstream timeout,req-00104,11887
+2026-03-15 02:48:44,CRITICAL,checkout-flow,Connection timeout to database,req-00401,9678
+2026-03-15 02:49:17,ERROR,cdn-cache,Payment processing failed: upstream timeout,req-00291,24674
+2026-03-15 02:49:17,ERROR,cdn-cache,Connection timeout to database,req-00419,9106
+2026-03-15 02:49:19,ERROR,api-gateway,Connection timeout to database,req-00048,18193
+2026-03-15 02:50:10,WARN,payment-service,Circuit breaker OPEN for payment-service,req-00441,28629
+2026-03-15 02:50:18,ERROR,checkout-flow,Circuit breaker OPEN for payment-service,req-00063,15366
+2026-03-15 02:50:37,ERROR,api-gateway,"Connection pool exhausted, max_connections=100",req-00002,12623
+2026-03-15 02:50:48,ERROR,search-service,Payment processing failed: upstream timeout,req-00347,15120
+2026-03-15 02:51:01,CRITICAL,checkout-flow,Request queue overflow,req-00186,9882
+2026-03-15 02:51:09,ERROR,api-gateway,Request queue overflow,req-00279,19534
+2026-03-15 02:51:35,ERROR,checkout-flow,Request queue overflow,req-00105,15559
+2026-03-15 02:52:04,ERROR,api-gateway,5xx response returned to client,req-00228,10451
+2026-03-15 02:52:55,CRITICAL,cdn-cache,5xx response returned to client,req-00466,27626
+2026-03-15 02:53:24,WARN,api-gateway,Request queue overflow,req-00412,16384
+2026-03-15 02:53:30,ERROR,payment-service,5xx response returned to client,req-00118,13493
+2026-03-15 02:53:30,CRITICAL,cdn-cache,Request queue overflow,req-00398,19545
+2026-03-15 02:54:03,ERROR,checkout-flow,Payment processing failed: upstream timeout,req-00183,6069
+2026-03-15 02:54:03,ERROR,search-service,Circuit breaker OPEN for payment-service,req-00336,26172
+2026-03-15 02:54:11,ERROR,payment-service,Payment processing failed: upstream timeout,req-00285,19860
+2026-03-15 02:54:33,ERROR,search-service,Payment processing failed: upstream timeout,req-00135,29641
+2026-03-15 02:54:51,ERROR,api-gateway,Circuit breaker OPEN for payment-service,req-00376,22565
+2026-03-15 02:55:04,CRITICAL,search-service,Connection timeout to database,req-00495,29137
+2026-03-15 02:55:30,ERROR,api-gateway,Database connection refused,req-00051,23033
+2026-03-15 02:55:43,ERROR,search-service,"Connection pool exhausted, max_connections=100",req-00436,15242
+2026-03-15 02:55:47,CRITICAL,cdn-cache,Circuit breaker OPEN for payment-service,req-00106,20505
+2026-03-15 02:56:16,WARN,search-service,Circuit breaker OPEN for payment-service,req-00329,6840
+2026-03-15 02:56:26,ERROR,checkout-flow,Payment processing failed: upstream timeout,req-00137,12347
+2026-03-15 02:56:34,ERROR,checkout-flow,Payment processing failed: upstream timeout,req-00255,24991
+2026-03-15 02:56:49,ERROR,api-gateway,"Connection pool exhausted, max_connections=100",req-00140,20238
+2026-03-15 02:57:17,WARN,payment-service,Payment processing failed: upstream timeout,req-00486,14352
+2026-03-15 02:57:57,WARN,cdn-cache,5xx response returned to client,req-00434,7391
+2026-03-15 02:58:06,ERROR,checkout-flow,Circuit breaker OPEN for payment-service,req-00167,14273
+2026-03-15 02:58:16,ERROR,payment-service,Connection timeout to database,req-00054,10394
+2026-03-15 02:58:37,WARN,api-gateway,Database connection refused,req-00033,15076
+2026-03-15 02:58:45,ERROR,payment-service,Circuit breaker OPEN for payment-service,req-00215,20870
+2026-03-15 02:59:15,ERROR,api-gateway,Connection timeout to database,req-00191,19156
+2026-03-15 02:59:17,ERROR,checkout-flow,5xx response returned to client,req-00326,27319
+2026-03-15 02:59:23,WARN,cdn-cache,Circuit breaker OPEN for payment-service,req-00446,5267
+2026-03-15 02:59:32,WARN,cdn-cache,Database connection refused,req-00394,22015
+2026-03-15 02:59:45,WARN,checkout-flow,Request queue overflow,req-00433,14899
+2026-03-15 02:59:51,ERROR,search-service,Connection timeout to database,req-00443,7950
+2026-03-15 03:00:14,ERROR,payment-service,Connection timeout to database,req-00367,17285
+2026-03-15 03:00:16,WARN,checkout-flow,Database connection refused,req-00221,8288
+2026-03-15 03:00:38,ERROR,api-gateway,"Connection pool exhausted, max_connections=100",req-00003,28462
+2026-03-15 03:00:39,ERROR,cdn-cache,Database connection refused,req-00283,27995
+2026-03-15 03:00:55,CRITICAL,payment-service,Payment processing failed: upstream timeout,req-00031,29985
+2026-03-15 03:01:05,ERROR,checkout-flow,Connection timeout to database,req-00454,6275
+2026-03-15 03:01:35,ERROR,api-gateway,Circuit breaker OPEN for payment-service,req-00276,12259
+2026-03-15 03:01:50,ERROR,api-gateway,Request queue overflow,req-00498,8125
+2026-03-15 03:02:43,WARN,payment-service,Payment processing failed: upstream timeout,req-00338,14269
+2026-03-15 03:03:07,ERROR,api-gateway,5xx response returned to client,req-00275,16863
+2026-03-15 03:03:19,ERROR,checkout-flow,"Connection pool exhausted, max_connections=100",req-00037,22671
+2026-03-15 03:03:28,WARN,checkout-flow,Request queue overflow,req-00071,8394
+2026-03-15 03:03:40,WARN,payment-service,Payment processing failed: upstream timeout,req-00322,28834
+2026-03-15 03:03:42,ERROR,cdn-cache,Payment processing failed: upstream timeout,req-00163,16528
+2026-03-15 03:03:44,CRITICAL,checkout-flow,"Connection pool exhausted, max_connections=100",req-00231,10736
+2026-03-15 03:04:18,CRITICAL,payment-service,"Connection pool exhausted, max_connections=100",req-00166,29202
+2026-03-15 03:04:21,ERROR,payment-service,"Connection pool exhausted, max_connections=100",req-00050,14127
+2026-03-15 03:04:40,ERROR,checkout-flow,Circuit breaker OPEN for payment-service,req-00022,18087
+2026-03-15 03:05:06,ERROR,cdn-cache,"Connection pool exhausted, max_connections=100",req-00124,18767
+2026-03-15 03:05:32,CRITICAL,checkout-flow,5xx response returned to client,req-00128,12190
+2026-03-15 03:05:33,ERROR,search-service,5xx response returned to client,req-00471,11300
+2026-03-15 03:06:00,ERROR,cdn-cache,Payment processing failed: upstream timeout,req-00200,13270
+2026-03-15 03:06:09,CRITICAL,cdn-cache,Circuit breaker OPEN for payment-service,req-00211,21654
+2026-03-15 03:06:14,WARN,checkout-flow,Circuit breaker OPEN for payment-service,req-00010,11300
+2026-03-15 03:06:23,ERROR,api-gateway,Circuit breaker OPEN for payment-service,req-00450,19757
+2026-03-15 03:06:28,CRITICAL,checkout-flow,Connection timeout to database,req-00041,7326
+2026-03-15 03:06:31,ERROR,payment-service,Request queue overflow,req-00102,17423
+2026-03-15 03:06:56,CRITICAL,search-service,"Connection pool exhausted, max_connections=100",req-00453,24741
+2026-03-15 03:06:58,ERROR,cdn-cache,Circuit breaker OPEN for payment-service,req-00177,25264
+2026-03-15 03:07:15,WARN,search-service,Connection timeout to database,req-00475,23791
+2026-03-15 03:08:09,WARN,api-gateway,Payment processing failed: upstream timeout,req-00491,19888
+2026-03-15 03:08:22,WARN,cdn-cache,Connection timeout to database,req-00155,21197
+2026-03-15 03:08:28,ERROR,payment-service,Circuit breaker OPEN for payment-service,req-00379,16816
+2026-03-15 03:08:36,ERROR,payment-service,Connection timeout to database,req-00218,15426
+2026-03-15 03:08:53,ERROR,cdn-cache,5xx response returned to client,req-00172,16164
+2026-03-15 03:09:04,ERROR,cdn-cache,5xx response returned to client,req-00112,12994
+2026-03-15 03:09:54,ERROR,payment-service,"Connection pool exhausted, max_connections=100",req-00080,6370
+2026-03-15 03:10:06,ERROR,checkout-flow,"Connection pool exhausted, max_connections=100",req-00059,6863
+2026-03-15 03:10:42,CRITICAL,api-gateway,Request queue overflow,req-00005,18848
+2026-03-15 03:11:05,CRITICAL,search-service,Database connection refused,req-00153,7839
+2026-03-15 03:11:14,ERROR,checkout-flow,Circuit breaker OPEN for payment-service,req-00458,21051
+2026-03-15 03:11:24,ERROR,payment-service,Connection timeout to database,req-00061,23667
+2026-03-15 03:12:17,ERROR,payment-service,Payment processing failed: upstream timeout,req-00396,15525
+2026-03-15 03:12:34,CRITICAL,search-service,Request queue overflow,req-00074,25782
+2026-03-15 03:13:52,ERROR,search-service,Request queue overflow,req-00262,17141
+2026-03-15 03:13:52,CRITICAL,checkout-flow,"Connection pool exhausted, max_connections=100",req-00481,6663
+2026-03-15 03:14:31,ERROR,checkout-flow,Database connection refused,req-00180,11808
+2026-03-15 03:14:32,ERROR,checkout-flow,Connection timeout to database,req-00067,22617
+2026-03-15 03:14:56,WARN,checkout-flow,Database connection refused,req-00429,23468
+2026-03-15 03:15:02,CRITICAL,api-gateway,Payment processing failed: upstream timeout,req-00204,22996
+2026-03-15 03:15:03,ERROR,search-service,"Connection pool exhausted, max_connections=100",req-00181,12859
+2026-03-15 03:15:12,ERROR,cdn-cache,Connection timeout to database,req-00226,25232
+2026-03-15 03:15:28,ERROR,checkout-flow,"Connection pool exhausted, max_connections=100",req-00464,27306
+2026-03-15 03:15:48,ERROR,payment-service,Request queue overflow,req-00386,19997
+2026-03-15 03:16:32,WARN,cdn-cache,Request queue overflow,req-00234,5307
+2026-03-15 03:16:40,WARN,cdn-cache,5xx response returned to client,req-00237,14899
+2026-03-15 03:16:43,WARN,api-gateway,"Connection pool exhausted, max_connections=100",req-00000,12314
+2026-03-15 03:16:46,CRITICAL,payment-service,5xx response returned to client,req-00422,21477
+2026-03-15 03:17:21,ERROR,api-gateway,Circuit breaker OPEN for payment-service,req-00332,21615
+2026-03-15 03:17:30,ERROR,api-gateway,"Connection pool exhausted, max_connections=100",req-00487,22535
+2026-03-15 03:17:40,WARN,api-gateway,Connection timeout to database,req-00340,23283
+2026-03-15 03:17:54,CRITICAL,api-gateway,Connection timeout to database,req-00257,6219
+2026-03-15 03:17:58,ERROR,search-service,5xx response returned to client,req-00225,15376
+2026-03-15 03:17:59,ERROR,checkout-flow,"Connection pool exhausted, max_connections=100",req-00004,19719
+2026-03-15 03:17:59,ERROR,cdn-cache,5xx response returned to client,req-00039,8965
+2026-03-15 03:17:59,CRITICAL,payment-service,Connection timeout to database,req-00369,14400
+2026-03-15 03:18:01,ERROR,api-gateway,"Connection pool exhausted, max_connections=100",req-00138,11532
+2026-03-15 03:18:55,ERROR,checkout-flow,5xx response returned to client,req-00202,6776
+2026-03-15 03:19:25,ERROR,cdn-cache,5xx response returned to client,req-00305,18571
+2026-03-15 03:19:36,WARN,api-gateway,Circuit breaker OPEN for payment-service,req-00100,15134
+2026-03-15 03:19:39,WARN,checkout-flow,Connection timeout to database,req-00108,29613
+2026-03-15 03:19:48,CRITICAL,search-service,Request queue overflow,req-00287,20540
+2026-03-15 03:20:01,ERROR,search-service,Request queue overflow,req-00101,14688
+2026-03-15 03:20:03,CRITICAL,api-gateway,5xx response returned to client,req-00308,24638
+2026-03-15 03:20:06,ERROR,checkout-flow,Payment processing failed: upstream timeout,req-00116,29748
+2026-03-15 03:20:15,CRITICAL,cdn-cache,Database connection refused,req-00130,20315
+2026-03-15 03:20:16,ERROR,payment-service,"Connection pool exhausted, max_connections=100",req-00044,28702
+2026-03-15 03:20:22,CRITICAL,checkout-flow,Request queue overflow,req-00482,12629
+2026-03-15 03:20:24,ERROR,checkout-flow,Request queue overflow,req-00346,26969
+2026-03-15 03:20:27,ERROR,checkout-flow,Circuit breaker OPEN for payment-service,req-00260,29322
+2026-03-15 03:21:11,ERROR,cdn-cache,Database connection refused,req-00476,16309
+2026-03-15 03:21:16,ERROR,payment-service,Circuit breaker OPEN for payment-service,req-00103,14861
+2026-03-15 03:21:16,ERROR,cdn-cache,Request queue overflow,req-00144,11498
+2026-03-15 03:21:24,WARN,search-service,Request queue overflow,req-00341,26514
+2026-03-15 03:21:36,CRITICAL,search-service,Database connection refused,req-00421,23065
+2026-03-15 03:22:38,WARN,cdn-cache,Circuit breaker OPEN for payment-service,req-00190,22694
+2026-03-15 03:22:38,ERROR,payment-service,5xx response returned to client,req-00435,20867
+2026-03-15 03:22:49,WARN,cdn-cache,5xx response returned to client,req-00474,16429
+2026-03-15 03:23:14,ERROR,search-service,Database connection refused,req-00199,29920
+2026-03-15 03:23:16,ERROR,api-gateway,Payment processing failed: upstream timeout,req-00229,6838
+2026-03-15 03:23:41,ERROR,payment-service,Connection timeout to database,req-00171,5401
+2026-03-15 03:23:56,CRITICAL,search-service,Circuit breaker OPEN for payment-service,req-00141,24898
+2026-03-15 03:24:20,WARN,search-service,Payment processing failed: upstream timeout,req-00164,12554
+2026-03-15 03:24:29,ERROR,payment-service,Payment processing failed: upstream timeout,req-00409,27740
+2026-03-15 03:24:32,CRITICAL,api-gateway,Database connection refused,req-00011,14482
+2026-03-15 03:24:46,ERROR,api-gateway,5xx response returned to client,req-00123,15842
+2026-03-15 03:24:56,CRITICAL,api-gateway,Connection timeout to database,req-00042,6029
+2026-03-15 03:25:02,ERROR,search-service,Database connection refused,req-00459,5545
+2026-03-15 03:25:08,WARN,cdn-cache,Connection timeout to database,req-00316,18272
+2026-03-15 03:25:08,ERROR,checkout-flow,Payment processing failed: upstream timeout,req-00413,14828
+2026-03-15 03:26:21,ERROR,cdn-cache,Payment processing failed: upstream timeout,req-00355,29654
+2026-03-15 03:26:32,ERROR,api-gateway,Payment processing failed: upstream timeout,req-00354,27163
+2026-03-15 03:26:34,ERROR,checkout-flow,"Connection pool exhausted, max_connections=100",req-00463,22178
+2026-03-15 03:27:11,ERROR,cdn-cache,Database connection refused,req-00261,21034
+2026-03-15 03:27:17,ERROR,payment-service,"Connection pool exhausted, max_connections=100",req-00468,23379
+2026-03-15 03:27:23,CRITICAL,api-gateway,"Connection pool exhausted, max_connections=100",req-00049,11232
+2026-03-15 03:27:25,ERROR,search-service,Circuit breaker OPEN for payment-service,req-00095,21758
+2026-03-15 03:27:34,ERROR,checkout-flow,5xx response returned to client,req-00009,7582
+2026-03-15 03:27:49,ERROR,api-gateway,Database connection refused,req-00035,9120
+2026-03-15 03:27:57,ERROR,api-gateway,Request queue overflow,req-00383,29794
+2026-03-15 03:28:03,ERROR,search-service,Database connection refused,req-00151,22634
+2026-03-15 03:28:08,WARN,checkout-flow,Connection timeout to database,req-00192,7992
+2026-03-15 03:28:38,CRITICAL,api-gateway,5xx response returned to client,req-00488,10760
+2026-03-15 03:28:56,ERROR,checkout-flow,Circuit breaker OPEN for payment-service,req-00078,5316
+2026-03-15 03:29:21,ERROR,cdn-cache,Request queue overflow,req-00219,26365
+2026-03-15 03:29:33,ERROR,payment-service,Payment processing failed: upstream timeout,req-00212,18596
+2026-03-15 03:29:35,ERROR,search-service,5xx response returned to client,req-00250,7467
+2026-03-15 03:29:40,ERROR,search-service,Payment processing failed: upstream timeout,req-00382,12901
+2026-03-15 03:29:41,CRITICAL,payment-service,"Connection pool exhausted, max_connections=100",req-00247,22675
+2026-03-15 03:29:49,CRITICAL,cdn-cache,Circuit breaker OPEN for payment-service,req-00356,12837
+2026-03-15 03:30:06,ERROR,search-service,Payment processing failed: upstream timeout,req-00028,19246
+2026-03-15 03:30:12,ERROR,search-service,5xx response returned to client,req-00119,25537
+2026-03-15 03:30:37,WARN,payment-service,5xx response returned to client,req-00038,27009
+2026-03-15 03:30:40,ERROR,payment-service,Request queue overflow,req-00244,26179
+2026-03-15 03:30:41,CRITICAL,api-gateway,Request queue overflow,req-00024,10242
+2026-03-15 03:30:58,ERROR,cdn-cache,5xx response returned to client,req-00160,5565
+2026-03-15 03:31:03,ERROR,cdn-cache,Circuit breaker OPEN for payment-service,req-00371,5172
+2026-03-15 03:31:13,CRITICAL,api-gateway,Database connection refused,req-00325,25576
+2026-03-15 03:31:16,ERROR,checkout-flow,Connection timeout to database,req-00438,15456
+2026-03-15 03:31:43,ERROR,search-service,Request queue overflow,req-00451,25022
+2026-03-15 03:32:02,ERROR,cdn-cache,Request queue overflow,req-00432,5992
+2026-03-15 03:32:04,WARN,search-service,Payment processing failed: upstream timeout,req-00310,8931
+2026-03-15 03:32:57,ERROR,cdn-cache,Database connection refused,req-00152,28954
+2026-03-15 03:33:22,ERROR,checkout-flow,5xx response returned to client,req-00359,10310
+2026-03-15 03:33:29,ERROR,api-gateway,Request queue overflow,req-00321,8736
+2026-03-15 03:33:53,CRITICAL,cdn-cache,Payment processing failed: upstream timeout,req-00086,10216
+2026-03-15 03:33:54,ERROR,search-service,5xx response returned to client,req-00147,26676
+2026-03-15 03:34:24,CRITICAL,payment-service,Database connection refused,req-00267,23500
+2026-03-15 03:34:29,ERROR,api-gateway,Database connection refused,req-00087,6268
+2026-03-15 03:34:38,ERROR,checkout-flow,Payment processing failed: upstream timeout,req-00270,9741
+2026-03-15 03:35:02,ERROR,cdn-cache,Connection timeout to database,req-00025,17608
+2026-03-15 03:35:14,ERROR,payment-service,Payment processing failed: upstream timeout,req-00107,21890
+2026-03-15 03:35:36,ERROR,api-gateway,5xx response returned to client,req-00461,13700
+2026-03-15 03:35:44,WARN,search-service,Circuit breaker OPEN for payment-service,req-00157,27976
+2026-03-15 03:35:55,ERROR,cdn-cache,Request queue overflow,req-00392,19409
+2026-03-15 03:36:26,CRITICAL,checkout-flow,Circuit breaker OPEN for payment-service,req-00417,7825
+2026-03-15 03:36:36,WARN,cdn-cache,Connection timeout to database,req-00018,11913
+2026-03-15 03:36:44,ERROR,api-gateway,Database connection refused,req-00313,29315
+2026-03-15 03:37:20,ERROR,search-service,"Connection pool exhausted, max_connections=100",req-00176,8881
+2026-03-15 03:37:33,WARN,payment-service,Database connection refused,req-00269,9835
+2026-03-15 03:37:37,ERROR,payment-service,Request queue overflow,req-00385,20680
+2026-03-15 03:38:01,CRITICAL,checkout-flow,Database connection refused,req-00360,13192
+2026-03-15 03:38:34,ERROR,checkout-flow,Database connection refused,req-00194,29781
+2026-03-15 03:38:40,ERROR,api-gateway,Payment processing failed: upstream timeout,req-00149,25826
+2026-03-15 03:38:41,ERROR,search-service,Request queue overflow,req-00254,12661
+2026-03-15 03:39:39,ERROR,search-service,Database connection refused,req-00249,14671
+2026-03-15 03:39:50,ERROR,search-service,5xx response returned to client,req-00318,8468
+2026-03-15 03:39:51,WARN,cdn-cache,Circuit breaker OPEN for payment-service,req-00209,28114
+2026-03-15 03:39:56,CRITICAL,search-service,Circuit breaker OPEN for payment-service,req-00242,16544
+2026-03-15 03:40:02,ERROR,search-service,Database connection refused,req-00070,26429
+2026-03-15 03:40:11,ERROR,checkout-flow,Circuit breaker OPEN for payment-service,req-00373,18869
+2026-03-15 03:40:12,ERROR,checkout-flow,Request queue overflow,req-00351,16035
+2026-03-15 03:40:42,CRITICAL,checkout-flow,"Connection pool exhausted, max_connections=100",req-00139,9136
+2026-03-15 03:41:08,CRITICAL,api-gateway,Database connection refused,req-00017,6051
+2026-03-15 03:41:19,ERROR,api-gateway,Database connection refused,req-00350,22687
+2026-03-15 03:41:39,CRITICAL,cdn-cache,Payment processing failed: upstream timeout,req-00447,28838
+2026-03-15 03:41:41,WARN,checkout-flow,Database connection refused,req-00008,6423
+2026-03-15 03:41:50,ERROR,cdn-cache,"Connection pool exhausted, max_connections=100",req-00402,7203
+2026-03-15 03:41:58,ERROR,api-gateway,5xx response returned to client,req-00111,25636
+2026-03-15 03:42:02,ERROR,checkout-flow,Database connection refused,req-00146,23544
+2026-03-15 03:42:06,ERROR,payment-service,"Connection pool exhausted, max_connections=100",req-00156,16626
+2026-03-15 03:42:09,WARN,payment-service,Circuit breaker OPEN for payment-service,req-00414,12347
+2026-03-15 03:42:20,ERROR,checkout-flow,Payment processing failed: upstream timeout,req-00075,6664
+2026-03-15 03:43:01,CRITICAL,payment-service,Database connection refused,req-00088,20083
+2026-03-15 03:43:09,ERROR,api-gateway,"Connection pool exhausted, max_connections=100",req-00043,14125
+2026-03-15 03:43:17,ERROR,api-gateway,Request queue overflow,req-00027,22595
+2026-03-15 03:43:22,WARN,search-service,5xx response returned to client,req-00437,9284
+2026-03-15 03:43:27,ERROR,checkout-flow,Circuit breaker OPEN for payment-service,req-00315,18252
+2026-03-15 03:43:27,WARN,api-gateway,Payment processing failed: upstream timeout,req-00391,9078
+2026-03-15 03:43:42,CRITICAL,search-service,5xx response returned to client,req-00328,7237
+2026-03-15 03:43:48,ERROR,api-gateway,Request queue overflow,req-00241,21276
+2026-03-15 03:44:47,ERROR,api-gateway,Payment processing failed: upstream timeout,req-00381,13311
+2026-03-15 03:44:54,ERROR,cdn-cache,Circuit breaker OPEN for payment-service,req-00222,19972
+2026-03-15 03:45:10,ERROR,search-service,Circuit breaker OPEN for payment-service,req-00248,13930
+2026-03-15 03:45:10,CRITICAL,checkout-flow,Circuit breaker OPEN for payment-service,req-00352,17344
+2026-03-15 03:45:14,CRITICAL,search-service,Circuit breaker OPEN for payment-service,req-00093,13698
+2026-03-15 03:45:30,WARN,search-service,"Connection pool exhausted, max_connections=100",req-00069,19358
+2026-03-15 03:45:36,ERROR,checkout-flow,Circuit breaker OPEN for payment-service,req-00158,11260
+2026-03-15 03:45:46,CRITICAL,api-gateway,Request queue overflow,req-00085,15885
+2026-03-15 03:46:00,CRITICAL,payment-service,Database connection refused,req-00303,25245
+2026-03-15 03:46:05,ERROR,cdn-cache,Request queue overflow,req-00083,10064
+2026-03-15 03:46:17,WARN,search-service,Circuit breaker OPEN for payment-service,req-00388,18049
+2026-03-15 03:46:28,ERROR,payment-service,5xx response returned to client,req-00259,17157
+2026-03-15 03:46:42,ERROR,payment-service,5xx response returned to client,req-00493,13940
+2026-03-15 03:46:45,CRITICAL,checkout-flow,Payment processing failed: upstream timeout,req-00073,14232
+2026-03-15 03:46:58,ERROR,checkout-flow,5xx response returned to client,req-00117,22952
+2026-03-15 03:46:59,CRITICAL,cdn-cache,5xx response returned to client,req-00150,10771
+2026-03-15 03:47:21,INFO,cdn-cache,Service recovered,req-00393,97
+2026-03-15 03:47:30,INFO,cdn-cache,Connection pool healthy,req-00334,98
+2026-03-15 03:47:52,INFO,cdn-cache,Service recovered,req-00235,189
+2026-03-15 03:48:38,INFO,payment-service,Service recovered,req-00364,73
+2026-03-15 03:48:42,INFO,api-gateway,Service recovered,req-00372,105
+2026-03-15 03:48:49,INFO,checkout-flow,Connection pool healthy,req-00132,56
+2026-03-15 03:49:00,INFO,payment-service,Request processed successfully,req-00187,65
+2026-03-15 03:49:17,INFO,api-gateway,Request processed successfully,req-00423,182
+2026-03-15 03:49:32,INFO,payment-service,Request processed successfully,req-00233,168
+2026-03-15 03:49:34,INFO,checkout-flow,Connection pool healthy,req-00019,130
+2026-03-15 03:49:58,INFO,cdn-cache,Request processed successfully,req-00410,81
+2026-03-15 03:50:05,INFO,cdn-cache,Connection pool healthy,req-00370,85
+2026-03-15 03:50:20,INFO,checkout-flow,Connection pool healthy,req-00131,56
+2026-03-15 03:50:32,INFO,cdn-cache,Request processed successfully,req-00189,169
+2026-03-15 03:50:53,INFO,checkout-flow,Connection pool healthy,req-00327,132
+2026-03-15 03:51:04,INFO,checkout-flow,Connection pool healthy,req-00098,100
+2026-03-15 03:51:05,INFO,payment-service,Request processed successfully,req-00084,95
+2026-03-15 03:51:09,INFO,payment-service,Request processed successfully,req-00053,154
+2026-03-15 03:51:39,INFO,cdn-cache,Request processed successfully,req-00366,151
+2026-03-15 03:51:56,INFO,payment-service,Connection pool healthy,req-00217,111
+2026-03-15 03:52:04,INFO,api-gateway,Service recovered,req-00489,176
+2026-03-15 03:52:06,INFO,checkout-flow,Request processed successfully,req-00362,122
+2026-03-15 03:52:09,INFO,payment-service,Connection pool healthy,req-00064,130
+2026-03-15 03:52:15,INFO,checkout-flow,Connection pool healthy,req-00045,171
+2026-03-15 03:52:40,INFO,payment-service,Service recovered,req-00072,79
+2026-03-15 03:53:25,INFO,checkout-flow,Service recovered,req-00444,111
+2026-03-15 03:53:26,INFO,api-gateway,Connection pool healthy,req-00277,183
+2026-03-15 03:53:34,INFO,payment-service,Service recovered,req-00365,139
+2026-03-15 03:53:39,INFO,cdn-cache,Service recovered,req-00358,122
+2026-03-15 03:53:49,INFO,checkout-flow,Service recovered,req-00431,103
+2026-03-15 03:54:08,INFO,cdn-cache,Service recovered,req-00136,70
+2026-03-15 03:54:33,INFO,payment-service,Service recovered,req-00477,60
+2026-03-15 03:54:48,INFO,cdn-cache,Connection pool healthy,req-00470,137
+2026-03-15 03:54:52,INFO,search-service,Connection pool healthy,req-00472,126
+2026-03-15 03:54:59,INFO,payment-service,Request processed successfully,req-00323,76
+2026-03-15 03:55:17,INFO,api-gateway,Request processed successfully,req-00060,67
+2026-03-15 03:55:38,INFO,api-gateway,Request processed successfully,req-00142,129
+2026-03-15 03:55:43,INFO,checkout-flow,Request processed successfully,req-00342,135
+2026-03-15 03:56:01,INFO,search-service,Service recovered,req-00091,180
+2026-03-15 03:56:02,INFO,checkout-flow,Connection pool healthy,req-00462,108
+2026-03-15 03:56:07,INFO,cdn-cache,Request processed successfully,req-00344,71
+2026-03-15 03:56:17,INFO,cdn-cache,Service recovered,req-00197,154
+2026-03-15 03:56:41,INFO,api-gateway,Service recovered,req-00420,169
+2026-03-15 03:56:56,INFO,checkout-flow,Connection pool healthy,req-00296,192
+2026-03-15 03:57:20,INFO,payment-service,Service recovered,req-00485,171
+2026-03-15 03:57:39,INFO,payment-service,Service recovered,req-00168,108
+2026-03-15 03:57:41,INFO,cdn-cache,Request processed successfully,req-00220,82
+2026-03-15 03:58:13,INFO,payment-service,Request processed successfully,req-00012,147
+2026-03-15 03:58:30,INFO,checkout-flow,Service recovered,req-00271,94
+2026-03-15 03:58:41,INFO,checkout-flow,Service recovered,req-00389,114
+2026-03-15 03:58:41,INFO,checkout-flow,Connection pool healthy,req-00492,176
+2026-03-15 03:59:21,INFO,checkout-flow,Service recovered,req-00282,166
+2026-03-15 03:59:38,INFO,cdn-cache,Connection pool healthy,req-00196,175

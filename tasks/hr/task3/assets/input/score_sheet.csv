@@ -1,0 +1,4 @@
+interview_id,candidate,interviewer,technical_score,communication_score,problem_solving_score,teamwork_score,total_score,oral_summary,notes
+INT_2024_03_25_A,候选人 A,张经理,4,5,5,4,1,强烈推荐 - 技术深度很好，沟通清晰，非常优秀,
+INT_2024_03_25_B,候选人 B,李总监,5,4,4,4,17,表现良好 - 技术扎实，沟通顺畅,
+INT_2024_03_25_C,候选人 C,王工程师,3,4,3,4,14,技术基础扎实，有潜力,

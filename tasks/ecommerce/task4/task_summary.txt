@@ -1,0 +1,4 @@
+Re-inspection SOP audit and mis-attribution investigation for Chen Jie's QC assistant.
+Tue 3/26 AM: audit cases, flag skip-scan and SN issues without fraud language.
+Tue 3/26 PM: IT uptime log and backfilled timestamps point to process escape.
+Wed 3/27: Notion auto-tags candidates, supplier questioning email arrives; brief Chen Jie only.

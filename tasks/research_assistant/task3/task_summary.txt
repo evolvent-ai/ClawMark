@@ -1,0 +1,4 @@
+Track four students and an enterprise project in parallel for Lin Fan, catching cross-system inconsistencies.
+Wed 3/18: weekly assessment from meeting transcript, papers, and enterprise photos.
+Thu 3/19: fix Xiaoming's Table 2 NaN, review Xiaohong's R2 ablation, note Liu's verification date.
+Fri 3/20: overview before CVPR; Xiaogang surfaces a blocker.

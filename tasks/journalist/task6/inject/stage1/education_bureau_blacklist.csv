@@ -1,0 +1,9 @@
+institution_id,institution_name,district,year,inspection_result,issues,action
+EDU-2025-001,"Xueba Academy Education Technology Co., Ltd.",Chaoyang,2025,Failed,"False advertising, operating beyond licensed scope",Ordered to rectify
+EDU-2025-002,"Future Star Education Consulting Co., Ltd.",Haidian,2025,Passed,,
+EDU-2025-003,Boxue Education Training Center,Xicheng,2025,Passed,,
+EDU-2025-004,"Youcai Education Technology Co., Ltd.",Chaoyang,2025,Passed,,
+EDU-2025-005,"New Thinking Education Consulting Co., Ltd.",Fengtai,2025,Conditionally Passed,Some promotional materials need standardization,Written warning
+EDU-2025-006,Jinbang Education Training School,Dongcheng,2025,Passed,,
+EDU-2025-007,"Qihang Education Technology Co., Ltd.",Haidian,2025,Failed,No school operating permit,Ordered to cease operations
+EDU-2025-008,"Jingying Education Consulting Co., Ltd.",Chaoyang,2025,Passed,,

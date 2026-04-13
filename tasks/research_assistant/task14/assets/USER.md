@@ -1,0 +1,11 @@
+- Name: Dr. Wei Chen
+- Role: 终身教授，CS 系，从业 15 年
+- Active Grants: NSF CAREER Award (PI)、DARPA TANGO Project (co-PI)
+- 教学: CS 229 Machine Learning（每年秋季）
+- 实验室: 6 名 PhD 学生、2 名 postdoc
+- 沟通偏好: 飞书为主，正式事项邮件存档
+- 管理风格: 授权型——日常事务不需要请示，但以下事项必须先汇报：
+    - 涉及学术诚信的问题
+    - 单笔超过 $10,000 的采购决策
+    - 可能违反 grant policy 的事项
+    - 任何需要教授本人签字或确认的决定

@@ -1,0 +1,4 @@
+Audit Week 1 annotator quality for SocialMM-3K under Prof. Chen.
+Tue 3/18: review IAA heatmap, item #183 mismatch, and Annotator B speed anomaly; draft a quality report.
+Thu 3/20: handle Zhao's guideline revision and B's defense.
+Fri 3/21: arrange a B spot-check and adjust for D's absence.
