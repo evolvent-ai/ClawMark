@@ -3,6 +3,7 @@
 [![Evolvent AI][evolvent-image]][evolvent-url]
 [![Discord][discord-image]][discord-url]
 [![X][x-image]][x-url]
+[![LinkedIn][linkedin-image]][linkedin-url]
 [![WeChat][wechat-image]][wechat-url]
 [![Hugging Face][huggingface-image]][huggingface-url]
 [![Star][star-image]][star-url]
@@ -250,7 +251,7 @@ Join us for further discussions!
 
 This project is licensed under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license. See [LICENSE](LICENSE) for details.
 
-[evolvent-image]: https://img.shields.io/badge/Evolvent_AI-evolvent.co-0f141b
+[evolvent-image]: https://img.shields.io/badge/Evolvent_AI-evolvent.co-0f141b?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjMwIC01IDU1IDE0NSI+PHBhdGggZD0iTTUyLjcgNDkuN2MtNy45LTYuNy0xMS45LTE0LjUtMTItMjAuMi0uMi01LjcgMS44LTEwLjcgMTAuOS0xOC42IDkuMS03LjkgMTUuMy0xMi45IDE5LjgtMTkuOSA0LjUtNy4xIDQuOS0xMi4xIDIuOS0xNyA1LjkgMy45IDkuMiA5LjcgOS42IDE1LjYuNSA1LjktMS44IDE0LjUtOS4yIDIzLjItNy4zIDguNi0xMiAxNC0xNS4xIDE4LjItMyA0LjItNC41IDkuNS02LjkgMTguNyIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik01MC42IDkxLjZjLTUtNC4xLTcuNS05LTcuNi0xMi42LS4xLTMuNSAxLjItNi43IDYuOS0xMS42IDUuNy00LjkgOS42LTggMTIuNS0xMi40IDIuOS00LjQgMy4xLTcuNSAxLjgtMTAuNSAzLjcgMi40IDUuOCA2IDYuMSA5LjcuMyAzLjYtMS4yIDktNS44IDE0LjQtNC42IDUuNC03LjYgOC43LTkuNSAxMS4zLTIgMi42LTIuOCA2LTQuNCAxMS43IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTYxLjkgMzEuNGMtNS00LjEtNy41LTktNy42LTEyLjYtLjEtMy41IDEuMi02LjYgNi45LTExLjYgNS43LTQuOSA5LjYtOCAxMi41LTEyLjQgMi45LTQuNCAzLjEtNy41IDEuOC0xMC41IDMuNyAyLjQgNS44IDYgNi4xIDkuNy4zIDMuNi0xLjIgOS01LjggMTQuNC00LjYgNS40LTcuNiA4LjctOS41IDExLjMtMiAyLjYtMi44IDYtNC40IDExLjciIGZpbGw9IiNmZmYiLz48L3N2Zz4K&logoColor=white
 [evolvent-url]: https://evolvent.co
 [discord-image]: https://img.shields.io/badge/Discord-Join%20Us-5865F2?logo=discord&logoColor=white
 [discord-url]: https://discord.gg/RCFuy6wttC
@@ -262,5 +263,7 @@ This project is licensed under the [CC BY-NC 4.0](https://creativecommons.org/li
 [huggingface-url]: https://huggingface.co/EvolventAI
 [star-image]: https://img.shields.io/github/stars/evolvent-ai/ClawMark?label=stars&logo=github&color=brightgreen
 [star-url]: https://github.com/evolvent-ai/ClawMark/stargazers
+[linkedin-image]: https://img.shields.io/badge/LinkedIn-Evolvent_AI-0A66C2?logo=linkedin&logoColor=white
+[linkedin-url]: https://www.linkedin.com/company/evolvent-ai
 [license-image]: https://img.shields.io/badge/License-CC_BY--NC_4.0-blue.svg
 [license-url]: https://github.com/evolvent-ai/ClawMark/blob/main/LICENSE
