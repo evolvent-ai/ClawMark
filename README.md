@@ -1,4 +1,4 @@
-<h1 align="center">ClawMark: A Living-World Benchmark for Multi-Day, Multimodal Coworker Agents</h1>
+<h1 align="center">🦞 ClawMark: A Living-World Benchmark for Multi-Day, Multimodal Coworker Agents</h1>
 
 <div align="center">
 
@@ -15,7 +15,7 @@
 
 A **multimodal · multi-stage · multi-environment** daily-work benchmark for coworker agents. 100 tasks span 13 professional domains (clinical, HR, legal, PM, real estate, research assistant, journalist, insurance, investment analyst, executive assistant, content operation, ecommerce, EDA). Each task simulates 1–3 working days of a real job and stress-tests the model's ability to make continuous decisions across tools, multimodal evidence, and timelines.
 
-## Features
+## ✨ Features
 
 - **Timeline-driven multi-stage tasks** — Each task is built from 1–3 stages, where each stage corresponds to one working day (e.g. Mon 3/16 → Tue 3/17 → Wed 3/18). The agent receives that day's instructions, carries out the work against real tool backends, and only then does the framework advance to the next day.
 - **Cross-environment tool coordination** — Tasks mix filesystem, email (GreenMail), Notion (mock), Google Sheets (mock), and Calendar (Radicale CalDAV) backends, forcing the model to cross-reference and reconcile information across multiple systems.
@@ -23,7 +23,7 @@ A **multimodal · multi-stage · multi-environment** daily-work benchmark for co
 - **Implicit state changes** — Environment data mutates between stages (new email arrives, database rows get updated, files are appended, calendar events shift). The model has to proactively refresh external state rather than just react to the latest instruction.
 - **Strict rule-based scoring** — Every task ships with 10–25 deterministic Python checker functions. **Zero LLM-as-judge.** Results are 100% reproducible.
 
-## Results
+## 📊 Results
 
 `avg@3` leaderboard across **100 tasks × 6 models × 3 runs**:
 
@@ -63,7 +63,7 @@ A **multimodal · multi-stage · multi-environment** daily-work benchmark for co
 
 Some providers (Anthropic, Qwen) do not enable prompt caching by default when accessed through OpenRouter, so `cacheRead` is logged as 0 for them. This has no effect on `avg@3`, `turns`, or the merged input/output counts.
 
-## Quick Start
+## 🚀 Quick Start
 
 ### 1. Environment
 
@@ -133,7 +133,7 @@ results/content_operation_task1/
 
 Top-level fields in `result.json`: `task_id`, `score` (0–1), `execution_time`, `stages`, `rubric`.
 
-## Task layout
+## 📁 Task layout
 
 After cleanup, the tasks directory follows a strict two-level structure:
 
@@ -162,7 +162,7 @@ Fri 3/20: build Week 12 report; updated WeChat data (Thu+Fri) arrives by email.
 Sat 3/21: investigate the Douyin drop and reconcile a Xiaohongshu mismatch a colleague flagged.
 ```
 
-## Adding a new task
+## ➕ Adding a new task
 
 Create `tasks/{domain}/task{N}/task.py`:
 
@@ -214,7 +214,7 @@ RUBRIC = {
 
 Tasks are discovered automatically by walking the filesystem — there is no registry to update. The framework uses `METADATA["id"]` from each `task.py` as the canonical task ID.
 
-## Backend smoke tests
+## 🧪 Backend smoke tests
 
 Before running real tasks you can verify each mock backend in isolation:
 
@@ -231,7 +231,7 @@ uv run python tests/test_google_sheets_full.py   # full round-trip including a r
 docker compose -f docker/docker-compose.yaml down
 ```
 
-## Project structure
+## 🏗 Project structure
 
 ```
 ClawMark/
@@ -251,11 +251,11 @@ Join us for further discussions!
 
 <img src="./assets/wechat_qr.jpg" width="300" />
 
-## License
+## 📄 License
 
 This project is licensed under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license. See [LICENSE](LICENSE) for details.
 
-[evolvent-image]: https://img.shields.io/badge/Evolvent_AI-evolvent.co-0f141b?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjMwIC01IDU1IDE0NSI+PHBhdGggZD0iTTUyLjcgNDkuN2MtNy45LTYuNy0xMS45LTE0LjUtMTItMjAuMi0uMi01LjcgMS44LTEwLjcgMTAuOS0xOC42IDkuMS03LjkgMTUuMy0xMi45IDE5LjgtMTkuOSA0LjUtNy4xIDQuOS0xMi4xIDIuOS0xNyA1LjkgMy45IDkuMiA5LjcgOS42IDE1LjYuNSA1LjktMS44IDE0LjUtOS4yIDIzLjItNy4zIDguNi0xMiAxNC0xNS4xIDE4LjItMyA0LjItNC41IDkuNS02LjkgMTguNyIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik01MC42IDkxLjZjLTUtNC4xLTcuNS05LTcuNi0xMi42LS4xLTMuNSAxLjItNi43IDYuOS0xMS42IDUuNy00LjkgOS42LTggMTIuNS0xMi40IDIuOS00LjQgMy4xLTcuNSAxLjgtMTAuNSAzLjcgMi40IDUuOCA2IDYuMSA5LjcuMyAzLjYtMS4yIDktNS44IDE0LjQtNC42IDUuNC03LjYgOC43LTkuNSAxMS4zLTIgMi42LTIuOCA2LTQuNCAxMS43IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTYxLjkgMzEuNGMtNS00LjEtNy41LTktNy42LTEyLjYtLjEtMy41IDEuMi02LjYgNi45LTExLjYgNS43LTQuOSA5LjYtOCAxMi41LTEyLjQgMi45LTQuNCAzLjEtNy41IDEuOC0xMC41IDMuNyAyLjQgNS44IDYgNi4xIDkuNy4zIDMuNi0xLjIgOS01LjggMTQuNC00LjYgNS40LTcuNiA4LjctOS41IDExLjMtMiAyLjYtMi44IDYtNC40IDExLjciIGZpbGw9IiNmZmYiLz48L3N2Zz4K&logoColor=white
+[evolvent-image]: https://img.shields.io/badge/Evolvent_AI-evolvent.co-0f141b
 [evolvent-url]: https://evolvent.co
 [discord-image]: https://img.shields.io/badge/Discord-Join%20Us-5865F2?logo=discord&logoColor=white
 [discord-url]: https://discord.gg/RCFuy6wttC
