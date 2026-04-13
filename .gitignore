@@ -13,3 +13,4 @@ gcp-oauth.keys.json
 google_credentials.json
 vibe_context/
 docs/example/
+tmp/
