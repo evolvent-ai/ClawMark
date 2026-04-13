@@ -1,4 +1,6 @@
-# ClawMark
+<h1 align="center">ClawMark: A Living-World Benchmark for Multi-Day, Multimodal Coworker Agents</h1>
+
+<div align="center">
 
 [![Evolvent AI][evolvent-image]][evolvent-url]
 [![Discord][discord-image]][discord-url]
@@ -8,6 +10,8 @@
 [![Hugging Face][huggingface-image]][huggingface-url]
 [![Star][star-image]][star-url]
 [![License][license-image]][license-url]
+
+</div>
 
 A **multimodal · multi-stage · multi-environment** daily-work benchmark for coworker agents. 100 tasks span 13 professional domains (clinical, HR, legal, PM, real estate, research assistant, journalist, insurance, investment analyst, executive assistant, content operation, ecommerce, EDA). Each task simulates 1–3 working days of a real job and stress-tests the model's ability to make continuous decisions across tools, multimodal evidence, and timelines.
 
