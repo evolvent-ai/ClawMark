@@ -250,8 +250,6 @@ Join us for further discussions!
 
 This project is licensed under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license. See [LICENSE](LICENSE) for details.
 
-Copyright © 2025 [Evolvent AI](https://evolvent.co). All rights reserved.
-
 [evolvent-image]: https://img.shields.io/badge/Evolvent_AI-evolvent.co-0f141b
 [evolvent-url]: https://evolvent.co
 [discord-image]: https://img.shields.io/badge/Discord-Join%20Us-5865F2?logo=discord&logoColor=white
