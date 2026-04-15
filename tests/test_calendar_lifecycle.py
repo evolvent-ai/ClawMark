@@ -10,14 +10,32 @@ Usage:
 import asyncio
 import logging
 import os
+import subprocess
 from datetime import datetime, timedelta
+from pathlib import Path
 
 from dotenv import load_dotenv
 
 load_dotenv()
 
-# Default to localhost for tests running outside Docker
-os.environ.setdefault("CALDAV_URL", "http://localhost:5232")
+_COMPOSE = Path(__file__).resolve().parent.parent / "docker" / "docker-compose.yaml"
+
+
+def _docker_host_port(service: str, container_port: int) -> str | None:
+    """Resolve the host port docker-compose assigned to a service's container port."""
+    try:
+        out = subprocess.check_output(
+            ["docker", "compose", "-f", str(_COMPOSE), "port", service, str(container_port)],
+            stderr=subprocess.DEVNULL, text=True,
+        ).strip()
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        return None
+    return out.rsplit(":", 1)[1] if ":" in out else None
+
+
+if "CALDAV_URL" not in os.environ:
+    _port = _docker_host_port("radicale", 5232) or "5232"
+    os.environ["CALDAV_URL"] = f"http://localhost:{_port}"
 
 from clawmark.state.calendar import CalendarStateManager
 

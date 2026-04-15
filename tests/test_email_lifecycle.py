@@ -12,16 +12,34 @@ Usage:
 import asyncio
 import logging
 import os
+import subprocess
+from pathlib import Path
 
 from dotenv import load_dotenv
 
 load_dotenv()
 
-# Default to localhost for tests running outside Docker
+_COMPOSE = Path(__file__).resolve().parent.parent / "docker" / "docker-compose.yaml"
+
+
+def _docker_host_port(service: str, container_port: int) -> str | None:
+    """Resolve the host port docker-compose assigned to a service's container port."""
+    try:
+        out = subprocess.check_output(
+            ["docker", "compose", "-f", str(_COMPOSE), "port", service, str(container_port)],
+            stderr=subprocess.DEVNULL, text=True,
+        ).strip()
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        return None
+    return out.rsplit(":", 1)[1] if ":" in out else None
+
+
 os.environ.setdefault("EMAIL_IMAP_SERVER", "localhost")
-os.environ.setdefault("EMAIL_IMAP_PORT", "3143")
 os.environ.setdefault("EMAIL_SMTP_SERVER", "localhost")
-os.environ.setdefault("EMAIL_SMTP_PORT", "3025")
+if "EMAIL_IMAP_PORT" not in os.environ:
+    os.environ["EMAIL_IMAP_PORT"] = _docker_host_port("greenmail", 3143) or "3143"
+if "EMAIL_SMTP_PORT" not in os.environ:
+    os.environ["EMAIL_SMTP_PORT"] = _docker_host_port("greenmail", 3025) or "3025"
 
 from clawmark.state.email import EmailStateManager
 
