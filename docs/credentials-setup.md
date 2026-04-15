@@ -87,30 +87,36 @@ Both files are in `.gitignore`. Only `configs/google_credentials.json` is read b
    - **Google Drive API**
    - **Google Sheets API**
 
+
 ### 2.2 Configure the OAuth consent screen
 
-1. **APIs & Services → OAuth consent screen → External → Create**
-2. Fill in app name, user support email, developer contact.
-3. In **Scopes**, add:
-   - `https://www.googleapis.com/auth/drive`
-   - `https://www.googleapis.com/auth/spreadsheets`
-4. Under **Test users**, add the Google account you'll actually use to authorize.
-5. Save and return to the dashboard. If the app is in **Testing** mode, refresh tokens will expire after 7 days — either publish the app, or plan to re-bootstrap weekly.
+1.  **APIs & Services → OAuth consent screen** (or **Google Auth Platform**).
+2.  Select **User Type: External** and click **Create**.
+3.  Configure the application via the left sidebar:
+    *   **Branding**: Fill in the **App name**, **User support email**, and **Developer contact information**. Click **Save** at the bottom.
+    *   **Data Access**: Click **Add or remove scopes**. In the flyout menu, scroll to the bottom to "Manually add scopes" and paste the following two URLs:
+        - `https://www.googleapis.com/auth/drive`
+        - `https://www.googleapis.com/auth/spreadsheets`
+        Click **Add to table**, then **Update**.
+    *   **Audience**: Under **Test users**, click **+ Add Users** and enter the Gmail address you intend to use for running tasks. 
+4.  **Important**: Keep the Publishing status as **Testing**. Note that in Testing mode, refresh tokens typically expire after **7 days**. If you see auth errors later, simply re-run the `scripts/google_auth.py` script to re-mint the token.
 
-### 2.3 Create an OAuth 2.0 Client ID (Web application)
+### 2.3 Create an OAuth 2.0 Client ID
 
-1. **APIs & Services → Credentials → Create Credentials → OAuth client ID**
-2. **Application type: Web application**, name it anything.
-3. Under **Authorized redirect URIs**, add:
-   ```
-   http://localhost:3000/oauth2callback
-   ```
-   This exact URI must match — `scripts/google_auth.py` listens on that port.
-4. **Create** → a modal pops up with a **Download JSON** link. Download it.
-5. Move and rename:
-   ```bash
-   mv ~/Downloads/client_secret_*.json configs/gcp-oauth.keys.json
-   ```
+1.  Navigate to the **Clients** tab in the Google Auth Platform sidebar (or go to **APIs & Services → Credentials**).
+2.  Click **Create Credentials → OAuth client ID**.
+3.  **Application type**: Select **Web application**.
+4.  **Authorized redirect URIs**: Click **+ Add URI** and enter:
+    ```text
+    http://localhost:3000/oauth2callback
+    ```
+    *This exact URI must match — `scripts/google_auth.py` listens on this specific port.*
+5.  Click **Create**. A modal will appear; click **Download JSON** to save the file.
+6.  **Move and rename** the file to your project directory:
+    ```bash
+    # Rename and move to the configs folder
+    mv ~/Downloads/client_secret_*.json configs/gcp-oauth.keys.json
+    ```
 
 ### 2.4 Mint the refresh token
 
