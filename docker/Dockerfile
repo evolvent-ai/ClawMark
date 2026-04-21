@@ -22,6 +22,9 @@ ENV PATH="/root/.local/bin:$PATH"
 # Python libraries used by skills (calendar, sheets, etc.)
 RUN pip3 install caldav openai-whisper pymupdf
 
+# Pre-download all whisper models so containers don't download at runtime
+RUN python3 -c "import whisper; [whisper.load_model(m) for m in ('tiny', 'base', 'small', 'medium', 'large', 'turbo')]"
+
 RUN mkdir -p /workspace /logs /root/.openclaw
 WORKDIR /workspace
 

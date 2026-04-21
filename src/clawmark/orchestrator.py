@@ -56,12 +56,14 @@ class Orchestrator:
         api_key: str,
         api_base: str,
         api_format: str = "anthropic",
+        model_inputs: list[str] | None = None,
     ) -> list[StageResult]:
         results: list[StageResult] = []
         temp_dirs: list[Path] = []
 
         await self._setup_openclaw_config(
             model=model, api_key=api_key, api_base=api_base, api_format=api_format,
+            model_inputs=model_inputs,
         )
         await self._setup_skills()
 
@@ -158,8 +160,10 @@ class Orchestrator:
 
     async def _setup_openclaw_config(
         self, *, model: str, api_key: str, api_base: str, api_format: str = "anthropic",
+        model_inputs: list[str] | None = None,
     ) -> None:
         """Build OpenClaw config from YAML template + runtime values, write into container."""
+        inputs = model_inputs or ["text", "image"]
         config = _load_openclaw_template(self._openclaw_config_path)
 
         # Build provider block from runtime args
@@ -174,7 +178,7 @@ class Orchestrator:
                     "name": "Bench Model",
                     "api": api_type,
                     "reasoning": True,
-                    "input": ["text", "image"],
+                    "input": inputs,
                     "contextWindow": 200000,
                     "maxTokens": 16384,
                 }],
@@ -191,7 +195,7 @@ class Orchestrator:
                     "name": "Bench Model",
                     "api": api_type,
                     "reasoning": True,
-                    "input": ["text", "image"],
+                    "input": inputs,
                     "contextWindow": 200000,
                     "maxTokens": 16384,
                 }],
@@ -211,6 +215,16 @@ class Orchestrator:
             f"cat > /root/.openclaw/openclaw.json << 'CLAWEOF'\n{config_json}\nCLAWEOF"
         )
         logger.info("Configured OpenClaw: model=%s api_format=%s", model, api_format)
+
+        # Patch OpenClaw to disable tool call ID sanitization for openai-completions.
+        # Some models (e.g. Kimi) generate tool_call_ids that their API server expects
+        # verbatim; OpenClaw's strict sanitization rewrites them and causes mismatches.
+        if api_format == "openrouter":
+            target = "/usr/lib/node_modules/openclaw/dist/pi-embedded-iRgRpYxO.js"
+            await self.sandbox.exec(
+                f"sed -i 's/const requiresOpenAiCompatibleToolIdSanitization = params\\.modelApi/const requiresOpenAiCompatibleToolIdSanitization = false \\&\\& params.modelApi/' {target}"
+            )
+            logger.info("Patched OpenClaw: disabled tool call ID sanitization")
 
     async def _setup_skills(self, env_vars: dict[str, str] | None = None) -> None:
         """Copy all skills into the container, replacing $VAR placeholders with real values."""

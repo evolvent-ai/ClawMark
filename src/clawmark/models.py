@@ -33,7 +33,7 @@ class TaskDefinition:
     rubric: dict[str, list[RubricEntry]]         # "stage0" → entries, "final" → entries
     env_config: dict[str, dict[str, Any]]
     task_dir: Path
-    timeout_seconds: int = 600
+    timeout_seconds: int = 7200
     difficulty: str = "medium"
     mm_level: str = "L2"
     role: str = ""
