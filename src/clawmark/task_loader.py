@@ -101,7 +101,7 @@ def load_task_py(task_dir: Path) -> TaskDefinition:
         rubric=rubric,
         env_config=metadata.get("env_config", {}),
         task_dir=task_dir,
-        timeout_seconds=metadata.get("timeout_seconds", 600),
+        timeout_seconds=7200,
         difficulty=metadata.get("difficulty", "medium"),
         mm_level=metadata.get("mm_level", "L2"),
         role=metadata.get("role", ""),

@@ -232,7 +232,7 @@ async def main():
 
     # Get spreadsheet by name
     print("\n── Get spreadsheet by name ──")
-    found = await mgr.get_spreadsheet_id("clawmark-test-template")
+    found = await mgr.get_spreadsheet_id("mmclaw-test-template")
     check(found == sid, f"Found sheet by name: {found}")
     not_found = await mgr.get_spreadsheet_id("nonexistent-sheet-xyz")
     check(not_found is None, "Returns None for nonexistent sheet name")

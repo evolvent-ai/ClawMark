@@ -4,6 +4,10 @@ services:
     pull_policy: never
     command: ["sleep", "infinity"]
     working_dir: /workspace
+    environment:
+      - http_proxy=${http_proxy:-}
+      - https_proxy=${https_proxy:-}
+      - no_proxy=${no_proxy:-}
     networks:
       - bench-net
 

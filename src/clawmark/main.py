@@ -33,6 +33,7 @@ async def run_task(
     dry_run: bool = False,
     results_dir: Path = Path("results"),
     openclaw_config: Path | None = None,
+    model_inputs: list[str] | None = None,
 ) -> TaskResult:
     """Run a single task end-to-end."""
     start_time = time.time()
@@ -70,6 +71,7 @@ async def run_task(
         stage_results = await orchestrator.run(
             task=task, ctx=ctx, model=model, api_key=api_key,
             api_base=api_base, api_format=api_format,
+            model_inputs=model_inputs,
         )
 
         # Download final workspace
@@ -171,6 +173,9 @@ def main():
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--openclaw-config", type=str, default=None,
                         help="Path to OpenClaw YAML config (default: configs/openclaw.yaml)")
+    parser.add_argument("--model-inputs", nargs="+", choices=["text", "image"],
+                        default=["text", "image"],
+                        help="Input modalities the model supports (default: text image)")
     args = parser.parse_args()
 
     args.api_key = os.environ.get("ANTHROPIC_API_KEY", "")
@@ -185,6 +190,10 @@ def main():
 
     openclaw_cfg = Path(args.openclaw_config) if args.openclaw_config else None
 
+    # Use model name as subdirectory to avoid overwriting across models
+    model_slug = args.model.replace("/", "_")
+    results_base = Path(args.results_dir) / model_slug
+
     if args.task:
         result = asyncio.run(run_task(
             task_dir=Path(args.task),
@@ -194,8 +203,9 @@ def main():
             api_format=args.api_format,
             compose_file=Path(args.compose_file),
             dry_run=args.dry_run,
-            results_dir=Path(args.results_dir),
+            results_dir=results_base,
             openclaw_config=openclaw_cfg,
+            model_inputs=args.model_inputs,
         ))
         print(f"\nFinal Score: {result.score:.2f}")
     else:
@@ -212,8 +222,9 @@ def main():
                     api_format=args.api_format,
                     compose_file=Path(args.compose_file),
                     dry_run=args.dry_run,
-                    results_dir=Path(args.results_dir),
+                    results_dir=results_base,
                     openclaw_config=openclaw_cfg,
+                    model_inputs=args.model_inputs,
                 ))
                 results.append(r)
             except Exception as e:
