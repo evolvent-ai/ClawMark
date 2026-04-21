@@ -27,34 +27,17 @@ A **multimodal · multi-stage · multi-environment** daily-work benchmark for co
 
 ## 📊 Results
 
-`avg@3` leaderboard across **100 tasks × 6 models × 3 runs**:
+Leaderboard across **100 tasks**:
 
-| Model | avg@3 | turns / task | input tokens / task | output tokens / task |
-|---|---:|---:|---:|---:|
-| openai/gpt-5.4 | **0.5504** | 24.5 | 905k | 17.3k |
-| anthropic/claude-sonnet-4.6 | 0.5492 | 48.3 | 3.03M | 24.9k |
-| qwen/qwen3.6-plus | 0.4981 | 41.4 | 2.89M | 35.8k |
-| google/gemini-3.1-pro-preview | 0.3934 | 42.9 | 1.62M | 7.3k |
-| minimax/minimax-m2.7 | 0.3437 | 33.7 | 1.70M | 18.0k |
-| moonshotai/kimi-k2.5 | 0.2686 | 18.1 | 866k | 9.1k |
-
-### avg@3 by domain
-
-| Domain | n | gpt-5.4 | claude-4.6 | qwen3.6 | gemini-3.1 | minimax-m2.7 | kimi-k2.5 |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| clinical_assistant | 4 | 0.7313 | 0.5538 | 0.6838 | 0.3523 | 0.4466 | 0.3945 |
-| content_operation | 12 | 0.5461 | 0.5362 | 0.5823 | 0.3931 | 0.3149 | 0.2714 |
-| ecommerce | 9 | 0.4909 | 0.4864 | 0.4244 | 0.3737 | 0.1828 | 0.2229 |
-| eda | 1 | 0.7826 | 0.5072 | 0.9420 | 0.7246 | 0.0870 | 0.0870 |
-| executive_assistant | 7 | 0.5042 | 0.3256 | 0.5176 | 0.3794 | 0.2830 | 0.2540 |
-| hr | 11 | 0.5664 | 0.5707 | 0.5281 | 0.3639 | 0.4131 | 0.2187 |
-| insurance | 7 | 0.7880 | 0.8007 | 0.6384 | 0.4931 | 0.6086 | 0.3666 |
-| investment_analyst | 6 | 0.4847 | 0.5935 | 0.2103 | 0.5701 | 0.5975 | 0.3466 |
-| journalist | 8 | 0.4593 | 0.4781 | 0.3431 | 0.4660 | 0.1861 | 0.1188 |
-| legal_assistant | 6 | 0.3531 | 0.6338 | 0.2981 | 0.5040 | 0.2877 | 0.2070 |
-| pm | 8 | 0.3723 | 0.3846 | 0.3149 | 0.1360 | 0.2060 | 0.1605 |
-| real_estate | 6 | 0.7828 | 0.6022 | 0.6970 | 0.5263 | 0.4479 | 0.3860 |
-| research_assistant | 15 | 0.5807 | 0.6229 | 0.5953 | 0.3061 | 0.3437 | 0.3540 |
+| Rank | Model | Tasks | Avg Score | Total Time |
+|---:|---|---:|---:|---:|
+| 1 | claude-sonnet-4-6 | 100/100 | **0.758** | 22.3h |
+| 2 | claude-opus-4-6 | 100/100 | **0.746** | 22.6h |
+| 3 | gpt-5.4-high | 100/100 | **0.720** | 26.1h |
+| 4 | kimi-k26 | 100/100 | **0.684** | 22.6h |
+| 5 | gemini-3.1-pro-preview | 100/100 | **0.682** | 18.9h |
+| 6 | qwen/qwen3.6-plus | 100/100 | **0.572** | 33.3h |
+| 7 | kimi-k2.5 | 100/100 | **0.560** | early test |
 
 ### Metric definitions
 
