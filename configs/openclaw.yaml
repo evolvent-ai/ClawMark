@@ -25,6 +25,9 @@ agents:
     workspace: /workspace
     sandbox:
       mode: "off"
+    llm:
+      idleTimeoutSeconds: 1800
+    thinkingDefault: "high"
 
 # Model provider — populated at runtime by the orchestrator.
 # Supports two api_format values:
