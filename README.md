@@ -258,7 +258,7 @@ This project is licensed under the [CC BY-NC 4.0](https://creativecommons.org/li
 [x-image]: https://img.shields.io/twitter/follow/Evolvent_AI?style=social
 [x-url]: https://x.com/Evolvent_AI
 [wechat-image]: https://img.shields.io/badge/WeChat-ClawMark-brightgreen?logo=wechat&logoColor=white
-[wechat-url]: ./assets/wechat_qr.png
+[wechat-url]: ./assets/wechat_qr.jpg
 [huggingface-image]: https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-EvolventAI-ffc107?color=ffc107&logoColor=white
 [huggingface-url]: https://huggingface.co/EvolventAI
 [star-image]: https://img.shields.io/github/stars/evolvent-ai/ClawMark?label=stars&logo=github&color=brightgreen
