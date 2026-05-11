@@ -26,8 +26,14 @@ mcporter config add notion --command "npx @notionhq/notion-mcp-server" --env OPE
 # List available tools
 mcporter list notion --schema
 
-# Call a tool
-mcporter call notion.<tool_name> '{"param": "value"}'
+# Call a tool with key=value arguments
+mcporter call notion.<tool_name> field=value
+
+# Or use function-call syntax
+mcporter call 'notion.<tool_name>(field: "value")'
+
+# If a tool needs a JSON object body, use --args
+mcporter call notion.<tool_name> --args '{"field":"value"}'
 ```
 
 Database ID and other task-specific details will be provided in the task context.

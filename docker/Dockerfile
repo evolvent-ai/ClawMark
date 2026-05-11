@@ -12,8 +12,15 @@ RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
     && apt-get install -y nodejs \
     && rm -rf /var/lib/apt/lists/*
 
-# Install OpenClaw CLI
-RUN npm install -g openclaw@2026.3.31 && openclaw --version
+# Install OpenClaw CLI and MCP tooling used by bundled skills.
+# Preinstalling these avoids the agent wasting turns on setup and ensures the
+# Notion skill can run end-to-end out of the box.
+RUN npm install -g \
+    openclaw@2026.3.31 \
+    mcporter \
+    @notionhq/notion-mcp-server \
+    && openclaw --version \
+    && mcporter --help >/dev/null
 
 # Install uv for uvx (MCP server execution)
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
