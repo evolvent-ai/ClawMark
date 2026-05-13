@@ -259,6 +259,43 @@ class Orchestrator:
                 await self.sandbox.upload_dir(tmp_skill, f"/root/.openclaw/skills/{skill_path.name}")
             logger.info("Injected skill: %s", skill_path.name)
 
+        await self._setup_mcporter_servers(subs)
+
+    async def _setup_mcporter_servers(self, env_vars: dict[str, str]) -> None:
+        """Preconfigure bundled MCP servers so the agent can use them immediately."""
+        notion_agent_key = env_vars.get("NOTION_AGENT_KEY")
+        if not notion_agent_key:
+            return
+
+        # Custom images may omit mcporter; do not fail the whole task if the CLI
+        # is unavailable. When present, preconfigure Notion so the agent does not
+        # have to spend turns on setup.
+        probe = await self.sandbox.exec("command -v mcporter >/dev/null 2>&1")
+        if probe.return_code != 0:
+            logger.warning("mcporter not found; skipping Notion MCP preconfiguration")
+            return
+
+        headers = json.dumps({
+            "Authorization": f"Bearer {notion_agent_key}",
+            "Notion-Version": "2022-06-28",
+        }, separators=(",", ":"))
+        env_arg = shlex.quote(f"OPENAPI_MCP_HEADERS={headers}")
+        cmd = (
+            "mkdir -p /root/.mcporter && "
+            "mcporter config remove notion --scope home >/dev/null 2>&1 || true && "
+            'mcporter config add notion --scope home '
+            '--command "npx @notionhq/notion-mcp-server" '
+            f"--env {env_arg}"
+        )
+        result = await self.sandbox.exec(cmd)
+        if result.return_code != 0:
+            logger.warning(
+                "Failed to preconfigure Notion MCP server: %s",
+                result.stderr or result.stdout,
+            )
+        else:
+            logger.info("Preconfigured Notion MCP server via mcporter")
+
     async def _send_to_agent(self, *, message: str, timeout_sec: int) -> ExecResult:
         msg_escaped = shlex.quote(message)
         cmd = (
