@@ -29,8 +29,17 @@ ENV PATH="/root/.local/bin:$PATH"
 # Python libraries used by skills (calendar, sheets, etc.)
 RUN pip3 install caldav openai-whisper pymupdf
 
-# Pre-download all whisper models so containers don't download at runtime
-RUN python3 -c "import whisper; [whisper.load_model(m) for m in ('tiny', 'base', 'small', 'medium', 'large', 'turbo')]"
+# Pre-download all whisper models so containers don't download at runtime.
+# Download-only (not load_model) so the build doesn't hold every model in RAM at
+# once — loading all 6 simultaneously needs ~13GB and OOM-kills the build on
+# <=16GB machines. The cached files on disk are identical either way.
+RUN python3 - <<'PY'
+import os, whisper
+root = os.path.join(os.path.expanduser("~"), ".cache", "whisper")
+os.makedirs(root, exist_ok=True)
+for m in ("tiny", "base", "small", "medium", "large", "turbo"):
+    whisper._download(whisper._MODELS[m], root, in_memory=False)
+PY
 
 RUN mkdir -p /workspace /logs /root/.openclaw
 WORKDIR /workspace
